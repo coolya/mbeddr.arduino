@@ -7,7 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/mbeddr.arduino.core/mbeddr.arduino.core.mpl" folder="" />
-      <modulePath path="${project}/solutions/mbeddr.arduino.samples/mbeddr.arduino.samples.msd" />
+      <modulePath path="${project}/solutions/arduino.samples/arduino.samples.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>
