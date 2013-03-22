@@ -4,7 +4,11 @@
     <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)</dependency>
+  </dependencies>
   <usedLanguages>
+    <usedLanguage>70b87b6c-9896-41b4-b968-0fb3e595f4cc(avr)</usedLanguage>
     <usedLanguage>3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
