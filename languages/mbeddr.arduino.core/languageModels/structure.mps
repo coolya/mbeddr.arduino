@@ -25,9 +25,9 @@
     </node>
   </roots>
   <root id="2350648883898812438">
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2350648883898812440">
-      <property name="name" nameId="tpck.1169194664001" value="cpuSpeed" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="2350648883898983197">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="51wr.4509600423770387303" resolveInfo="binaryKind" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="51wr.5046689135693761554" resolveInfo="Executable" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="2350648883898812442">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />

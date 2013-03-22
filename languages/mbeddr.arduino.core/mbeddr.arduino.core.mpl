@@ -4,7 +4,28 @@
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
   <accessoryModels />
-  <generators />
+  <generators>
+    <generator name="" generatorUID="mbeddr.arduino.core#2350648883898979172" uuid="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb">
+      <models>
+        <modelRoot path="${language_descriptor}/generator/template" />
+      </models>
+      <external-templates />
+      <dependencies>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
+      </dependencies>
+      <usedLanguages>
+        <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
+        <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
+        <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
+      </usedLanguages>
+      <usedDevKits>
+        <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
+        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
+      </usedDevKits>
+      <mapping-priorities />
+    </generator>
+  </generators>
   <sourcePath />
   <usedDevKits>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
