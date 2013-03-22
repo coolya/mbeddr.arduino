@@ -217,9 +217,13 @@
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoUnoPlatform" typeId="koo2.2350648883898848334" id="2350648883899090342" />
   </root>
   <root id="2350648883899159443">
-    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalInput" typeId="koo2.2350648883899144435" id="2350648883899159444">
+    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalInput" typeId="koo2.2350648883899144435" id="2350648883899162166">
       <property name="number" nameId="koo2.2350648883899144429" value="1" />
-      <property name="name" nameId="tpck.1169194664001" value="redLight" />
+      <property name="name" nameId="tpck.1169194664001" value="test" />
+    </node>
+    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalInput" typeId="koo2.2350648883899144435" id="2350648883899164402">
+      <property name="number" nameId="koo2.2350648883899144429" value="2" />
+      <property name="name" nameId="tpck.1169194664001" value="dummy" />
     </node>
   </root>
 </model>

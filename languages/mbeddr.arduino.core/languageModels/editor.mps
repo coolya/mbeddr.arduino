@@ -91,6 +91,12 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2350648883899146624">
         <property name="text" nameId="tpc2.1073389577007" value="" />
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2350648883899169755">
+        <property name="text" nameId="tpc2.1073389577007" value="digital pins:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2350648883899169757">
+        <property name="text" nameId="tpc2.1073389577007" value="" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="2350648883899146626">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.2350648883899146611" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="2350648883899146627" />
