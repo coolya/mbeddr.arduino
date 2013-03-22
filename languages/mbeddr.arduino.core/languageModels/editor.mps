@@ -25,7 +25,7 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.2350648883899144448" resolveInfo="DigitalOutput" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2350648883899146612">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.2350648883899146610" resolveInfo="PinConfiguration" />
     </node>
   </roots>
