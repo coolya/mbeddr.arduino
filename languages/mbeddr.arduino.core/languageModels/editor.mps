@@ -34,6 +34,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.5466295800791582505" resolveInfo="PinRef" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5466295800791649750">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital.typesystem" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.5466295800791649747" resolveInfo="HighLiteral" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5466295800791649756">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital.typesystem" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.5466295800791649753" resolveInfo="LowLiteral" />
+    </node>
   </roots>
   <root id="2350648883898848337">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2350648883899081849">
@@ -68,6 +76,10 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2350648883899144456">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.2350648883899144429" resolveInfo="number" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5466295800791652894">
+        <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.5466295800791652888" resolveInfo="direction" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2350648883899144459">
         <property name="text" nameId="tpc2.1073389577007" value="name =" />
@@ -134,6 +146,16 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="5466295800791649750">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5466295800791649752">
+      <property name="text" nameId="tpc2.1073389577007" value="high" />
+    </node>
+  </root>
+  <root id="5466295800791649756">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5466295800791649758">
+      <property name="text" nameId="tpc2.1073389577007" value="low" />
     </node>
   </root>
 </model>

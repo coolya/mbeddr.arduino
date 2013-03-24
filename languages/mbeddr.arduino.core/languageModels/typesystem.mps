@@ -16,7 +16,7 @@
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5466295800791614236">
       <property name="name" nameId="tpck.1169194664001" value="typeof_DigitalValueLiteral" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital.typesystem" />
     </node>
   </roots>
   <root id="5466295800791614159">

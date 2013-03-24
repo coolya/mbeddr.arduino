@@ -30,6 +30,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="koo2.5466295800791582505" resolveInfo="PinRef" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5466295800791652896">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="koo2.2350648883899144448" resolveInfo="DigitalOutput" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5466295800791652953">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin.digital" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="koo2.2350648883899144435" resolveInfo="DigitalInput" />
+    </node>
   </roots>
   <root id="2350648883898930014">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2350648883898930017">
@@ -123,6 +131,44 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5466295800791614046">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5466295800791614047" />
+    </node>
+  </root>
+  <root id="5466295800791652896">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5466295800791652897">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5466295800791652898">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5466295800791652899">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5466295800791652949">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5466295800791652952">
+              <property name="value" nameId="tpee.1070475926801" value="output" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5466295800791652921">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="5466295800791652900" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5466295800791652927">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="koo2.5466295800791652888" resolveInfo="direction" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="5466295800791652953">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5466295800791652954">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5466295800791652955">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5466295800791652956">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5466295800791653006">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5466295800791653009">
+              <property name="value" nameId="tpee.1070475926801" value="input" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5466295800791652978">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="5466295800791652957" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5466295800791652984">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="koo2.5466295800791652888" resolveInfo="direction" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>

@@ -23,7 +23,8 @@
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2350648883899084570">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2350648883899084571" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5466295800791656477" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5466295800791656733" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2350648883899084572">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2350648883899084573">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
@@ -217,13 +218,15 @@
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoUnoPlatform" typeId="koo2.2350648883898848334" id="2350648883899090342" />
   </root>
   <root id="2350648883899159443">
-    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalInput" typeId="koo2.2350648883899144435" id="2350648883899162166">
+    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalInput" typeId="koo2.2350648883899144435" id="5466295800791655923">
+      <property name="direction" nameId="koo2.5466295800791652888" value="input" />
       <property name="number" nameId="koo2.2350648883899144429" value="1" />
-      <property name="name" nameId="tpck.1169194664001" value="test" />
+      <property name="name" nameId="tpck.1169194664001" value="doorSensor" />
     </node>
-    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalInput" typeId="koo2.2350648883899144435" id="2350648883899164402">
+    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalOutput" typeId="koo2.2350648883899144448" id="5466295800791656475">
+      <property name="direction" nameId="koo2.5466295800791652888" value="output" />
       <property name="number" nameId="koo2.2350648883899144429" value="2" />
-      <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <property name="name" nameId="tpck.1169194664001" value="lazerBeam" />
     </node>
   </root>
 </model>
