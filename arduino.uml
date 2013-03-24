@@ -1,0 +1,19 @@
+@startuml
+Arduino <|-- ATmega168
+Arduino <|-- ATmega328
+Arduino <|-- ATmega1280
+Arduino <|-- ATmega2560
+Arduino <|-- ATmega32U4
+Arduino <|-- AT91SAM3X8E
+ATmega328 <|-- Nano
+ATmega328 <|-- Duemilanove
+ATmega328 <|-- Uno
+ATmega328 <|-- Bluetooth
+ATmega168 <|-- Diecimila
+ATmega1280 <|-- Mega
+ATmega2560 <|-- Mega2560
+ATmega2560 <|-- Mega_ADK
+ATmega32U4 <|-- Leonardo
+ATmega32U4 <|-- Esplora
+AT91SAM3X8E <|-- Due
+@enduml
