@@ -17,6 +17,9 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2350648883899084580" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2350648883899084622" />
     <node type=".mbeddr.arduino.core.structure.PinConfiguration" id="2350648883899159443" />
+    <node type="koo2.ArduinoDiscription" typeId="koo2.5466295800791659568" id="5466295800791779780">
+      <property name="name" nameId="tpck.1169194664001" value="arduino uno" />
+    </node>
   </roots>
   <root id="2350648883899084568">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2350648883899084569">
@@ -227,6 +230,24 @@
       <property name="direction" value="output" />
       <property name="number" value="2" />
       <property name="name" value="lazerBeam" />
+    </node>
+  </root>
+  <root id="5466295800791779780">
+    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="5466295800791779783">
+      <property name="number" nameId="koo2.5466295800791763780" value="0" />
+      <property name="bit" nameId="koo2.5466295800791763771" value="0" />
+      <property name="configBit" nameId="koo2.5466295800791763864" value="0" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
+      <property name="canBePWM" nameId="koo2.5466295800791763772" value="true" />
+      <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="5466295800791779782" resolveInfo="PORTA" />
+      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="5466295800791779785" resolveInfo="PORTD" />
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5466295800791779782">
+      <property name="name" nameId="tpck.1169194664001" value="PORTA" />
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5466295800791779785">
+      <property name="name" nameId="tpck.1169194664001" value="PORTD" />
     </node>
   </root>
 </model>
