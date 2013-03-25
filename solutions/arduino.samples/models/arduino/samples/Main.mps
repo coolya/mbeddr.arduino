@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="2" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -16,7 +16,7 @@
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2350648883899084580" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2350648883899084622" />
-    <node type="koo2.PinConfiguration" typeId="koo2.2350648883899146610" id="2350648883899159443" />
+    <node type=".mbeddr.arduino.core.structure.PinConfiguration" id="2350648883899159443" />
   </roots>
   <root id="2350648883899084568">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2350648883899084569">
@@ -218,15 +218,15 @@
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoUnoPlatform" typeId="koo2.2350648883898848334" id="2350648883899090342" />
   </root>
   <root id="2350648883899159443">
-    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalInput" typeId="koo2.2350648883899144435" id="5466295800791655923">
-      <property name="direction" nameId="koo2.5466295800791652888" value="input" />
-      <property name="number" nameId="koo2.2350648883899144429" value="1" />
-      <property name="name" nameId="tpck.1169194664001" value="doorSensor" />
+    <node role="digitalPins" type=".mbeddr.arduino.core.structure.DigitalInput" id="5466295800791655923">
+      <property name="direction" value="input" />
+      <property name="number" value="1" />
+      <property name="name" value="doorSensor" />
     </node>
-    <node role="digitalPins" roleId="koo2.2350648883899146611" type="koo2.DigitalOutput" typeId="koo2.2350648883899144448" id="5466295800791656475">
-      <property name="direction" nameId="koo2.5466295800791652888" value="output" />
-      <property name="number" nameId="koo2.2350648883899144429" value="2" />
-      <property name="name" nameId="tpck.1169194664001" value="lazerBeam" />
+    <node role="digitalPins" type=".mbeddr.arduino.core.structure.DigitalOutput" id="5466295800791656475">
+      <property name="direction" value="output" />
+      <property name="number" value="2" />
+      <property name="name" value="lazerBeam" />
     </node>
   </root>
 </model>

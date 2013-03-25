@@ -18,5 +18,11 @@
     </dependencies>
     <rename id="koo2.2350648883898848334" type="CONCEPT" from="Arduino_Uno" to="ArduinoUnoPlatform" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="2" />
+    </dependencies>
+    <rename id="koo2.5466295800791745449" type="CONCEPT" from="BitRegister" to="ByteRegister" />
+  </StructureModification>
 </history>
 
