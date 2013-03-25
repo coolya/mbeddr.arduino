@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="4" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="6" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -17,7 +17,7 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2350648883899084580" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2350648883899084622" />
     <node type=".mbeddr.arduino.core.structure.PinConfiguration" id="2350648883899159443" />
-    <node type="koo2.ArduinoDiscription" typeId="koo2.5466295800791659568" id="5466295800791779780">
+    <node type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="5466295800791779780">
       <property name="name" nameId="tpck.1169194664001" value="arduino uno" />
     </node>
   </roots>
@@ -257,11 +257,6 @@
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5466295800791779785">
       <property name="name" nameId="tpck.1169194664001" value="PORTD" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.DualByteRegister" typeId="koo2.5466295800791788560" id="5466295800791800544">
-      <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <link role="LSB" roleId="koo2.5466295800791788561" targetNodeId="5466295800791779782" resolveInfo="PORTA" />
-      <link role="MSB" roleId="koo2.5466295800791788562" targetNodeId="5466295800791779785" resolveInfo="PORTD" />
     </node>
   </root>
 </model>

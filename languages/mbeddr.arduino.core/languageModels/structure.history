@@ -30,5 +30,17 @@
     </dependencies>
     <rename id="koo2.5466295800791788562" type="REFERENCE" from="HSB" to="MSB" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="4" />
+    </dependencies>
+    <rename id="koo2.5466295800791659568" type="CONCEPT" from="ArduinoDiscription" to="ArduinoDescription" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="5" />
+    </dependencies>
+    <rename id="koo2.2350648883898812438" type="CONCEPT" from="Arduino" to="ArduinoPlatform" />
+  </StructureModification>
 </history>
 
