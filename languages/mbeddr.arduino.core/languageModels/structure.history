@@ -42,5 +42,17 @@
     </dependencies>
     <rename id="koo2.2350648883898812438" type="CONCEPT" from="Arduino" to="ArduinoPlatform" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="6" />
+    </dependencies>
+    <rename id="koo2.5466295800791827903" type="PROPERTY" from="MCU" to="mcu" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="7" />
+    </dependencies>
+    <rename id="koo2.5466295800791827904" type="PROPERTY" from="C" to="cpuSpeed" />
+  </StructureModification>
 </history>
 

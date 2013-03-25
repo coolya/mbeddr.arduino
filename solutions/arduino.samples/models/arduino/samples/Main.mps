@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="6" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="8" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -16,9 +16,8 @@
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2350648883899084580" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2350648883899084622" />
-    <node type=".mbeddr.arduino.core.structure.PinConfiguration" id="2350648883899159443" />
     <node type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="5466295800791779780">
-      <property name="name" nameId="tpck.1169194664001" value="arduino uno" />
+      <property name="name" nameId="tpck.1169194664001" value="Uno" />
     </node>
   </roots>
   <root id="2350648883899084568">
@@ -27,7 +26,6 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2350648883899084570">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5466295800791656477" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5466295800791656733" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2350648883899084572">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2350648883899084573">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
@@ -218,18 +216,8 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2350648883899084568" resolveInfo="main" />
       </node>
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoUnoPlatform" typeId="koo2.2350648883898848334" id="2350648883899090342" />
-  </root>
-  <root id="2350648883899159443">
-    <node role="digitalPins" type=".mbeddr.arduino.core.structure.DigitalInput" id="5466295800791655923">
-      <property name="direction" value="input" />
-      <property name="number" value="1" />
-      <property name="name" value="doorSensor" />
-    </node>
-    <node role="digitalPins" type=".mbeddr.arduino.core.structure.DigitalOutput" id="5466295800791656475">
-      <property name="direction" value="output" />
-      <property name="number" value="2" />
-      <property name="name" value="lazerBeam" />
+    <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="3750746866331575318">
+      <link role="platform" roleId="koo2.5466295800791814503" targetNodeId="5466295800791779780" resolveInfo="Uno" />
     </node>
   </root>
   <root id="5466295800791779780">
