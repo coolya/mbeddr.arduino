@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="3" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="4" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -243,11 +243,25 @@
       <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="5466295800791779782" resolveInfo="PORTA" />
       <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="5466295800791779785" resolveInfo="PORTD" />
     </node>
+    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="5466295800791787557">
+      <property name="number" nameId="koo2.5466295800791763780" value="1" />
+      <property name="bit" nameId="koo2.5466295800791763771" value="1" />
+      <property name="configBit" nameId="koo2.5466295800791763864" value="1" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
+      <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="5466295800791779782" resolveInfo="PORTA" />
+      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="5466295800791779785" resolveInfo="PORTD" />
+    </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5466295800791779782">
       <property name="name" nameId="tpck.1169194664001" value="PORTA" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5466295800791779785">
       <property name="name" nameId="tpck.1169194664001" value="PORTD" />
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.DualByteRegister" typeId="koo2.5466295800791788560" id="5466295800791800544">
+      <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <link role="LSB" roleId="koo2.5466295800791788561" targetNodeId="5466295800791779782" resolveInfo="PORTA" />
+      <link role="MSB" roleId="koo2.5466295800791788562" targetNodeId="5466295800791779785" resolveInfo="PORTD" />
     </node>
   </root>
 </model>
