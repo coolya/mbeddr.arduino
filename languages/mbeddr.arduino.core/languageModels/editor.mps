@@ -472,6 +472,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="3750746866331689439">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="0" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.3750746866331621563" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="3750746866331689440" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3750746866331689441">
@@ -482,6 +483,9 @@
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="3750746866331689443">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5379590057552978400">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
       </node>
     </node>

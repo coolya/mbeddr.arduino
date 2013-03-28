@@ -211,25 +211,26 @@
     </node>
   </root>
   <root id="2350648883899084622">
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="3750746866331689434">
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="3750746866331689435">
-        <property name="name" nameId="tpck.1169194664001" value="test" />
-        <property name="direction" nameId="koo2.3750746866331613775" value="output" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791779783" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="3750746866331689824">
-        <property name="name" nameId="tpck.1169194664001" value="doorSwitch" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791787557" />
-      </node>
-    </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="2350648883899085026">
       <property name="name" nameId="tpck.1169194664001" value="arduino" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2350648883899085028">
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5379590057552994290">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2350648883899084568" resolveInfo="main" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="3750746866331575318">
       <link role="platform" roleId="koo2.5466295800791814503" targetNodeId="5466295800791779780" resolveInfo="Uno" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="5379590057552977879">
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="5379590057552977880">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin0" />
+        <property name="direction" nameId="koo2.3750746866331613775" value="input" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791779783" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="5379590057552977881">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin1" />
+        <property name="direction" nameId="koo2.3750746866331613775" value="output" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791787557" />
+      </node>
     </node>
   </root>
   <root id="5466295800791779780">
