@@ -10,6 +10,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2350648883899084568">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -210,6 +211,17 @@
     </node>
   </root>
   <root id="2350648883899084622">
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="3750746866331689434">
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="3750746866331689435">
+        <property name="name" nameId="tpck.1169194664001" value="test" />
+        <property name="direction" nameId="koo2.3750746866331613775" value="output" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791779783" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="3750746866331689824">
+        <property name="name" nameId="tpck.1169194664001" value="doorSwitch" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791787557" />
+      </node>
+    </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="2350648883899085026">
       <property name="name" nameId="tpck.1169194664001" value="arduino" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2350648883899085028">
