@@ -3,23 +3,24 @@
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="9" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="11" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2350648883899084568">
       <property name="name" nameId="tpck.1169194664001" value="main" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2350648883899084580" />
-    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2350648883899084622" />
     <node type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="5466295800791779780">
       <property name="name" nameId="tpck.1169194664001" value="Uno" />
+      <property name="cpuSpeed" nameId="koo2.5466295800791827904" value="16" />
+      <property name="mcu" nameId="koo2.5466295800791827903" value="atmega328p" />
     </node>
+    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="431962681142833672" />
   </roots>
   <root id="2350648883899084568">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2350648883899084569">
@@ -27,15 +28,6 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2350648883899084570">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5466295800791656477" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="5140268293012395198">
-          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5140268293012395199" />
-          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5140268293012395650">
-            <node role="right" roleId="mj1l.8860443239512128065" type="koo2.HighLiteral" typeId="koo2.5140268293012326489" id="5140268293012395653" />
-            <node role="left" roleId="mj1l.8860443239512128064" type="koo2.PinRefExpression" typeId="koo2.5379590057553076723" id="5140268293012395649">
-              <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="5379590057552977880" resolveInfo="doorSwitch" />
-            </node>
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5140268293012395654" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2350648883899084572">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2350648883899084573">
@@ -221,29 +213,6 @@
       </node>
     </node>
   </root>
-  <root id="2350648883899084622">
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="2350648883899085026">
-      <property name="name" nameId="tpck.1169194664001" value="arduino" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5379590057552994290">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2350648883899084568" resolveInfo="main" />
-      </node>
-    </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="3750746866331575318">
-      <link role="platform" roleId="koo2.5466295800791814503" targetNodeId="5466295800791779780" resolveInfo="Uno" />
-    </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="5379590057552977879">
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="5379590057552977880">
-        <property name="name" nameId="tpck.1169194664001" value="doorSwitch" />
-        <property name="direction" nameId="koo2.3750746866331613775" value="input" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791779783" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="5379590057552977881">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin1" />
-        <property name="direction" nameId="koo2.3750746866331613775" value="output" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="5466295800791787557" />
-      </node>
-    </node>
-  </root>
   <root id="5466295800791779780">
     <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="5466295800791779783">
       <property name="number" nameId="koo2.5466295800791763780" value="0" />
@@ -269,6 +238,17 @@
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5466295800791779785">
       <property name="name" nameId="tpck.1169194664001" value="PORTD" />
+    </node>
+  </root>
+  <root id="431962681142833672">
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="431962681142833675">
+      <property name="name" nameId="tpck.1169194664001" value="arduino" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="431962681142833677">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2350648883899084568" resolveInfo="main" />
+      </node>
+    </node>
+    <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="431962681142833673">
+      <link role="description" roleId="koo2.5466295800791814503" targetNodeId="5466295800791779780" resolveInfo="Uno" />
     </node>
   </root>
 </model>
