@@ -5,8 +5,9 @@
   <language namespace="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" />
   <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
   <language namespace="d8f591ec-4d86-4af2-9f92-a9e93c803ffa(jetbrains.mps.lang.scopes)" />
+  <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="8" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="9" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
@@ -25,6 +26,10 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5379590057552977618">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="koo2.3750746866331613766" resolveInfo="DigitalPinConfiguration" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5140268293012361792">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
     </node>
   </roots>
   <root id="5466295800791894879">
@@ -208,5 +213,6 @@
       </node>
     </node>
   </root>
+  <root id="5140268293012361792" />
 </model>
 
