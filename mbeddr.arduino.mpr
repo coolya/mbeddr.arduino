@@ -8,6 +8,7 @@
     <projectModules>
       <modulePath path="${project}/languages/mbeddr.arduino.core/mbeddr.arduino.core.mpl" folder="" />
       <modulePath path="${project}/solutions/arduino.samples/arduino.samples.msd" folder="" />
+      <modulePath path="${project}/solutions/mbeddr.arduino.headers/mbeddr.arduino.headers.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>

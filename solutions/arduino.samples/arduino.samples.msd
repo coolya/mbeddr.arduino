@@ -6,6 +6,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)</dependency>
+    <dependency reexport="false">672dfb4a-e1a7-4990-b786-493e256c21a7(mbeddr.arduino.headers)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)</usedLanguage>

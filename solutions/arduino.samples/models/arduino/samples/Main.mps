@@ -4,6 +4,7 @@
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="11" />
+  <import index="7xel" modelUID="r:95e54aec-4d46-4f9d-a724-831040905cbc(mbeddr.arduino.headers.Main)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
@@ -27,7 +28,11 @@
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2350648883899084570">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="227931566096579388" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="227931566096621485">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.PinRefExpression" typeId="koo2.5379590057553076723" id="227931566096621486">
+            <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="227931566096576224" resolveInfo="digitalPin0" />
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2350648883899084572">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2350648883899084573">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
@@ -219,13 +224,10 @@
       <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
       <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
       <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="227931566096576218" resolveInfo="PORTA" />
-      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="227931566096576220" resolveInfo="PORTB" />
+      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="227931566096576218" resolveInfo="PORTA" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="227931566096576218">
       <property name="name" nameId="tpck.1169194664001" value="PORTA" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="227931566096576220">
-      <property name="name" nameId="tpck.1169194664001" value="PORTB" />
     </node>
   </root>
 </model>
