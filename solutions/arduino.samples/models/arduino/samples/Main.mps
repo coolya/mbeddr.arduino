@@ -211,6 +211,36 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="431962681142833677">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2350648883899084568" resolveInfo="main" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654872">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096640129" resolveInfo="stdint" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654873">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096642398" resolveInfo="avr_io" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654874">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096642386" resolveInfo="avr_lock" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654875">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096642242" resolveInfo="avr_portpins" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654876">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096640650" resolveInfo="avr_iom328p" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654877">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096640595" resolveInfo="avr_sfr_defs" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654878">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096642294" resolveInfo="avr_common" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654879">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096642376" resolveInfo="avr_fuse" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654880">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096642358" resolveInfo="avr_version" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654881">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.227931566096640382" resolveInfo="inttypes" />
+      </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="431962681142833673">
       <link role="description" roleId="koo2.5466295800791814503" targetNodeId="227931566096576216" resolveInfo="uno" />
@@ -223,11 +253,12 @@
       <property name="configBit" nameId="koo2.5466295800791763864" value="0" />
       <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
       <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="227931566096576218" resolveInfo="PORTA" />
-      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="227931566096576218" resolveInfo="PORTA" />
+      <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="227931566096576218" resolveInfo="P" />
+      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="227931566096576218" resolveInfo="P" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="227931566096576218">
-      <property name="name" nameId="tpck.1169194664001" value="PORTA" />
+      <property name="name" nameId="tpck.1169194664001" value="P" />
+      <link role="const" roleId="koo2.227931566096664400" targetNodeId="7xel.227931566096641172" resolveInfo="PORF" />
     </node>
   </root>
 </model>
