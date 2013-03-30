@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="11" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="12" />
   <import index="7xel" modelUID="r:95e54aec-4d46-4f9d-a724-831040905cbc(mbeddr.arduino.headers.Main)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
@@ -253,12 +253,12 @@
       <property name="configBit" nameId="koo2.5466295800791763864" value="0" />
       <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
       <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="227931566096576218" resolveInfo="P" />
-      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="227931566096576218" resolveInfo="P" />
+      <link role="reg" roleId="koo2.5466295800791763770" targetNodeId="227931566096723299" resolveInfo="PORTB" />
+      <link role="configReg" roleId="koo2.5466295800791763774" targetNodeId="227931566096723299" resolveInfo="PORTB" />
     </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="227931566096576218">
-      <property name="name" nameId="tpck.1169194664001" value="P" />
-      <link role="const" roleId="koo2.227931566096664400" targetNodeId="7xel.227931566096641172" resolveInfo="PORF" />
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="227931566096723299">
+      <property name="name" nameId="tpck.1169194664001" value="PORTB" />
+      <link role="const" roleId="koo2.227931566096664400" targetNodeId="7xel.227931566096640694" resolveInfo="PORTB" />
     </node>
   </root>
 </model>
