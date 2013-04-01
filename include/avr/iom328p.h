@@ -49,6 +49,8 @@
 #ifndef _AVR_IOM328P_H_
 #define _AVR_IOM328P_H_ 1
 
+#include <avr/sfr_defs.h>
+
 /* Registers and associated bit numbers */
 
 #define PINB _SFR_IO8(0x03)
