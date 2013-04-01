@@ -4,7 +4,6 @@
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="12" />
-  <import index="7xel" modelUID="r:95e54aec-4d46-4f9d-a724-831040905cbc(mbeddr.arduino.headers.Main)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
@@ -74,9 +73,6 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="koo2.InitializePinsAnnotation" typeId="koo2.5379590057552996070" id="5379590057553040064" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="227931566096747902">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7xel.3136527326024250488" resolveInfo="avr_io" />
     </node>
   </root>
   <root id="2350648883899084580">
@@ -233,40 +229,10 @@
     </node>
   </root>
   <root id="431962681142833672">
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="431962681142833675">
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6220665928366982202">
       <property name="name" nameId="tpck.1169194664001" value="arduino" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="431962681142833677">
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6220665928366982204">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2350648883899084568" resolveInfo="main" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654872">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024248218" resolveInfo="stdint" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654873">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024250488" resolveInfo="avr_io" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654874">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024250476" resolveInfo="avr_lock" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654875">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024250332" resolveInfo="avr_portpins" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654876">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024248739" resolveInfo="avr_iom328p" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654877">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024248684" resolveInfo="avr_sfr_defs" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654878">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024250384" resolveInfo="avr_common" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654879">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024250466" resolveInfo="avr_fuse" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654880">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024250448" resolveInfo="avr_version" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="227931566096654881">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7xel.3136527326024248471" resolveInfo="inttypes" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="431962681142833673">
