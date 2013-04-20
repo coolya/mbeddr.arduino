@@ -36,6 +36,17 @@
             <node role="value" roleId="koo2.2709324298540967795" type="koo2.HighLiteral" typeId="koo2.5140268293012326489" id="2709324298541000836" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="6541745845170656321">
+          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6541745845170656322">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6541745845170656325" />
+          </node>
+          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6541745845170657318">
+            <node role="left" roleId="mj1l.8860443239512128064" type="koo2.PinRefExpression" typeId="koo2.5379590057553076723" id="6541745845170657317">
+              <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="2709324298540871923" resolveInfo="digitalPin0" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="koo2.HighLiteral" typeId="koo2.5140268293012326489" id="6541745845170657319" />
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6541745845170589792">
           <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.SetExpression" typeId="koo2.2709324298541016486" id="6541745845170589793">
             <link role="pin" roleId="koo2.2709324298541037085" targetNodeId="2709324298540871923" resolveInfo="digitalPin0" />
