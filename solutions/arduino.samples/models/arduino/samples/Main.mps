@@ -39,7 +39,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6541745845170589792">
           <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.SetExpression" typeId="koo2.2709324298541016486" id="6541745845170589793">
             <link role="pin" roleId="koo2.2709324298541037085" targetNodeId="2709324298540871923" resolveInfo="digitalPin0" />
-            <node role="value" roleId="koo2.2709324298541016488" type="koo2.HighLiteral" typeId="koo2.5140268293012326489" id="6541745845170589795" />
+            <node role="value" roleId="koo2.2709324298541016488" type="koo2.LowLiteral" typeId="koo2.5140268293012377429" id="6541745845170656145" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2350648883899084572">
