@@ -4,6 +4,7 @@
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="14" />
+  <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
@@ -16,11 +17,6 @@
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2350648883899084580" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="431962681142833672" />
-    <node type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="3127472417296265384">
-      <property name="name" nameId="tpck.1169194664001" value="uno" />
-      <property name="cpuSpeed" nameId="koo2.5466295800791827904" value="16" />
-      <property name="mcu" nameId="koo2.5466295800791827903" value="atmega328" />
-    </node>
   </roots>
   <root id="2350648883899084568">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2350648883899084569">
@@ -33,14 +29,14 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2426951403070432283">
                 <node role="right" roleId="mj1l.8860443239512128065" type="koo2.LowLiteral" typeId="koo2.5140268293012377429" id="2426951403070432286" />
                 <node role="left" roleId="mj1l.8860443239512128064" type="koo2.PinRefExpression" typeId="koo2.5379590057553076723" id="2426951403070432287">
-                  <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="2709324298540871924" resolveInfo="digitalPin1" />
+                  <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="2426951403070495754" resolveInfo="digitalPin1" />
                 </node>
               </node>
             </node>
           </node>
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6541745845170657318">
             <node role="left" roleId="mj1l.8860443239512128064" type="koo2.PinRefExpression" typeId="koo2.5379590057553076723" id="6541745845170657317">
-              <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="2709324298540871923" resolveInfo="digitalPin0" />
+              <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="2426951403070495753" resolveInfo="digitalPin0" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="koo2.HighLiteral" typeId="koo2.5140268293012326489" id="6541745845170657319" />
           </node>
@@ -213,65 +209,6 @@
     </node>
   </root>
   <root id="431962681142833672">
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="2709324298540871922">
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871923">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin0" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540823970" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871924">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin1" />
-        <property name="direction" nameId="koo2.3750746866331613775" value="output" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540870997" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871925">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin2" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540870998" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871926">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin3" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540870999" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871927">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin4" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871000" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871928">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin5" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871002" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871929">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin6" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871003" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871930">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin7" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871004" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871931">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin8" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871005" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871932">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin9" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871006" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871933">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin10" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871007" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871934">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin11" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871008" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871935">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin12" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871009" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871936">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin13" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540871010" />
-      </node>
-    </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6220665928366982202">
       <property name="name" nameId="tpck.1169194664001" value="arduino" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6220665928366982204">
@@ -279,191 +216,66 @@
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="431962681142833673">
-      <link role="description" roleId="koo2.5466295800791814503" targetNodeId="3127472417296265384" resolveInfo="uno" />
+      <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.3127472417296265384" resolveInfo="uno" />
     </node>
-  </root>
-  <root id="3127472417296265384">
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540823970">
-      <property name="number" nameId="koo2.5466295800791763780" value="0" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="0" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="0" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540870997">
-      <property name="number" nameId="koo2.5466295800791763780" value="1" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="1" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="1" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540870998">
-      <property name="number" nameId="koo2.5466295800791763780" value="2" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="2" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="2" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540870999">
-      <property name="number" nameId="koo2.5466295800791763780" value="3" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="3" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="3" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <property name="canBePWM" nameId="koo2.5466295800791763772" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871000">
-      <property name="number" nameId="koo2.5466295800791763780" value="4" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="4" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="4" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871002">
-      <property name="number" nameId="koo2.5466295800791763780" value="5" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="5" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="5" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <property name="canBePWM" nameId="koo2.5466295800791763772" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871003">
-      <property name="number" nameId="koo2.5466295800791763780" value="6" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="6" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="6" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <property name="canBePWM" nameId="koo2.5466295800791763772" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871004">
-      <property name="number" nameId="koo2.5466295800791763780" value="7" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="7" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="7" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540823964" resolveInfo="PIND" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540823969" resolveInfo="PORTD" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871005">
-      <property name="number" nameId="koo2.5466295800791763780" value="8" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="0" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="0" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540620205" resolveInfo="PINB" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540620209" resolveInfo="PORTB" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871006">
-      <property name="number" nameId="koo2.5466295800791763780" value="9" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="1" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="1" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <property name="canBePWM" nameId="koo2.5466295800791763772" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540620205" resolveInfo="PINB" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540620209" resolveInfo="PORTB" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871007">
-      <property name="number" nameId="koo2.5466295800791763780" value="10" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="2" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="2" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <property name="canBePWM" nameId="koo2.5466295800791763772" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540620209" resolveInfo="PORTB" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871008">
-      <property name="number" nameId="koo2.5466295800791763780" value="11" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="3" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="3" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <property name="canBePWM" nameId="koo2.5466295800791763772" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540620205" resolveInfo="PINB" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540620209" resolveInfo="PORTB" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871009">
-      <property name="number" nameId="koo2.5466295800791763780" value="12" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="4" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="4" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540620205" resolveInfo="PINB" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540620209" resolveInfo="PORTB" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
-    </node>
-    <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540871010">
-      <property name="number" nameId="koo2.5466295800791763780" value="13" />
-      <property name="bit" nameId="koo2.5466295800791763771" value="5" />
-      <property name="configBit" nameId="koo2.5466295800791763864" value="5" />
-      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
-      <property name="canBeOutput" nameId="koo2.5466295800791659573" value="true" />
-      <link role="inputReg" roleId="koo2.5466295800791763770" targetNodeId="2709324298540620205" resolveInfo="PINB" />
-      <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2709324298540620209" resolveInfo="PORTB" />
-      <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620205">
-      <property name="name" nameId="tpck.1169194664001" value="PINB" />
-      <property name="address" nameId="koo2.6220665928366983921" value="35" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620207">
-      <property name="name" nameId="tpck.1169194664001" value="DDRB" />
-      <property name="address" nameId="koo2.6220665928366983921" value="36" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620209">
-      <property name="name" nameId="tpck.1169194664001" value="PORTB" />
-      <property name="address" nameId="koo2.6220665928366983921" value="37" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620211">
-      <property name="name" nameId="tpck.1169194664001" value="PINC" />
-      <property name="address" nameId="koo2.6220665928366983921" value="38" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823960">
-      <property name="name" nameId="tpck.1169194664001" value="DDRC" />
-      <property name="address" nameId="koo2.6220665928366983921" value="39" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823962">
-      <property name="name" nameId="tpck.1169194664001" value="PORTC" />
-      <property name="address" nameId="koo2.6220665928366983921" value="40" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823964">
-      <property name="name" nameId="tpck.1169194664001" value="PIND" />
-      <property name="address" nameId="koo2.6220665928366983921" value="41" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823966">
-      <property name="name" nameId="tpck.1169194664001" value="DDRD" />
-      <property name="address" nameId="koo2.6220665928366983921" value="42" />
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823969">
-      <property name="name" nameId="tpck.1169194664001" value="PORTD" />
-      <property name="address" nameId="koo2.6220665928366983921" value="43" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="2426951403070495752">
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495753">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin0" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540823970" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495754">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin1" />
+        <property name="direction" nameId="koo2.3750746866331613775" value="output" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540870997" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495755">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin2" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540870998" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495756">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin3" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540870999" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495757">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin4" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871000" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495758">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin5" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871002" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495759">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin6" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871003" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495760">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin7" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871004" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495761">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin8" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871005" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495762">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin9" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871006" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495763">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin10" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871007" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495764">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin11" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871008" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495765">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin12" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871009" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495766">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin13" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871010" />
+      </node>
     </node>
   </root>
 </model>
