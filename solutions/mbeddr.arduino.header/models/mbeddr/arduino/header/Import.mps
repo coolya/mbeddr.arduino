@@ -9,7 +9,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
   <roots>
     <node type="punb.HeaderImportSpecHFile" typeId="punb.7097640331099443677" id="2426951403070495568">
-      <property name="includeDir" nameId="punb.7097640331099443678" value="/build/mbeddr.arduino/inlcude" />
+      <property name="includeDir" nameId="punb.7097640331099443678" value="/build/mbeddr.arduino/include" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="2426951403070495570">
       <property name="name" nameId="tpck.1169194664001" value="util_delay" />
@@ -18,10 +18,10 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2426951403070495589" />
   </roots>
   <root id="2426951403070495568">
-    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="2426951403070495569">
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="2426951403070495998">
       <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="delay.h" />
-      <property name="path" nameId="punb.3907424226054658974" value="/build/mbeddr.arduino/inlcude/util/delay.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="/build/mbeddr.arduino/include/util/delay.h" />
     </node>
   </root>
   <root id="2426951403070495570">
