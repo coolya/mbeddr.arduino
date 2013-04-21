@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:e4b545e6-6fe3-42de-99b5-b63911e1420f(arduino.samples.Main)">
+<model modelUID="r:e4b545e6-6fe3-42de-99b5-b63911e1420f(arduino.samples.Blinker)">
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -305,6 +305,7 @@
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495764">
         <property name="name" nameId="tpck.1169194664001" value="digitalPin11" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="input" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871008" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2426951403070495765">

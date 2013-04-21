@@ -10,12 +10,8 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <roots>
-    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5140268293012321352">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_PinRefExpression" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
-    </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5140268293012321492">
       <property name="name" nameId="tpck.1169194664001" value="typeof_DigitalValueLiteral" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
@@ -35,35 +31,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
     </node>
   </roots>
-  <root id="5140268293012321352">
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5140268293012321353">
-      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5140268293012321369">
-        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5140268293012321373">
-          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5140268293012321374">
-            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5140268293012321457">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5140268293012321436">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5140268293012321354" resolveInfo="pre" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5140268293012321463">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="koo2.5379590057553076724" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5140268293012321372">
-          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5140268293012321356">
-            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5140268293012321358">
-              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5140268293012321354" resolveInfo="pre" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5140268293012321354">
-      <property name="name" nameId="tpck.1169194664001" value="pre" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
-    </node>
-  </root>
   <root id="5140268293012321492">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5140268293012321493">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5140268293012321509">
