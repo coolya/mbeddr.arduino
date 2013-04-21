@@ -3,7 +3,9 @@
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" />
+  </accessoryModels>
   <generators>
     <generator name="" generatorUID="mbeddr.arduino.core#2350648883898979172" uuid="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb">
       <models>
@@ -27,6 +29,9 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="true">336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
     <usedLanguage>d8f591ec-4d86-4af2-9f92-a9e93c803ffa(jetbrains.mps.lang.scopes)</usedLanguage>
