@@ -670,9 +670,6 @@
           </node>
         </node>
       </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SideTransformAnchorTagStyleClassItem" typeId="tpc2.1214320119173" id="2709324298540992438">
-        <property name="tag" nameId="tpc2.1214320119174" value="ext_2_RTransform" />
-      </node>
     </node>
   </root>
   <root id="5140268293012361789">

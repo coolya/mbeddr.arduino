@@ -29,7 +29,14 @@
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2350648883899084570">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="6541745845170656321">
           <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6541745845170656322">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6541745845170656325" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2426951403070407433">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2426951403070432283">
+                <node role="right" roleId="mj1l.8860443239512128065" type="koo2.LowLiteral" typeId="koo2.5140268293012377429" id="2426951403070432286" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="koo2.PinRefExpression" typeId="koo2.5379590057553076723" id="2426951403070432287">
+                  <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="2709324298540871924" resolveInfo="digitalPin1" />
+                </node>
+              </node>
+            </node>
           </node>
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6541745845170657318">
             <node role="left" roleId="mj1l.8860443239512128064" type="koo2.PinRefExpression" typeId="koo2.5379590057553076723" id="6541745845170657317">
@@ -213,6 +220,7 @@
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871924">
         <property name="name" nameId="tpck.1169194664001" value="digitalPin1" />
+        <property name="direction" nameId="koo2.3750746866331613775" value="output" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="2709324298540870997" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="2709324298540871925">
