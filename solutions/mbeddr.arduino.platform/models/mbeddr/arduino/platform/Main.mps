@@ -9,6 +9,7 @@
       <property name="name" nameId="tpck.1169194664001" value="uno" />
       <property name="cpuSpeed" nameId="koo2.5466295800791827904" value="16" />
       <property name="mcu" nameId="koo2.5466295800791827903" value="atmega328" />
+      <property name="sReg" nameId="koo2.765565756796570994" value="95" />
     </node>
   </roots>
   <root id="3127472417296265384">

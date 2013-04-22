@@ -9,18 +9,58 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="16" implicit="yes" />
+  <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" version="-1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1617988773807677179">
       <property name="name" nameId="tpck.1169194664001" value="Atomic" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="1617988773807677180" />
+    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="765565756796664140" />
   </roots>
   <root id="1617988773807677179">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1617988773807677222">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1617988773807677223">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1617988773807679717" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="765565756796664157">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.AtomicExpression" typeId="koo2.1617988773807665687" id="765565756796664158">
+            <node role="body" roleId="koo2.1617988773807665767" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="765565756796664159">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="765565756796664160">
+                <property name="name" nameId="tpck.1169194664001" value="foo" />
+                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="765565756796664161">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                </node>
+              </node>
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="765565756796664163">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="765565756796664167">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="765565756796664164">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="765565756796664160" resolveInfo="foo" />
+                  </node>
+                </node>
+              </node>
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="765565756796664170">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="765565756796664174">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="765565756796664181">
+                    <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="765565756796664178">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="765565756796664160" resolveInfo="foo" />
+                    </node>
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="765565756796664185">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                    </node>
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="765565756796664171">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="765565756796664160" resolveInfo="foo" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1617988773807677225">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1617988773807677226">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -202,6 +242,78 @@
       <node role="ieee754Type" roleId="mj1l.9149785691755093698" type="mj1l.LongDoubleType" typeId="mj1l.9149785691754701072" id="1617988773807677221">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+  </root>
+  <root id="765565756796664140">
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="765565756796664188">
+      <property name="name" nameId="tpck.1169194664001" value="atomic" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="765565756796664191">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1617988773807677179" resolveInfo="Atomic" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="765565756796664193">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="aelz.765565756796628177" resolveInfo="avr_interrupt" />
+      </node>
+    </node>
+    <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="765565756796664141">
+      <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.3127472417296265384" resolveInfo="uno" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="765565756796664142">
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664143">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin0" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540823970" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664144">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin1" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540870997" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664145">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin2" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540870998" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664146">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin3" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540870999" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664147">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin4" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871000" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664148">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin5" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871002" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664149">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin6" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871003" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664150">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin7" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871004" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664151">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin8" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871005" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664152">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin9" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871006" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664153">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin10" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871007" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664154">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin11" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871008" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664155">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin12" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871009" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="765565756796664156">
+        <property name="name" nameId="tpck.1169194664001" value="digitalPin13" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871010" />
       </node>
     </node>
   </root>
