@@ -63,6 +63,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2426951403070520633">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.2426951403070495999" resolveInfo="DelayExpression" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1617988773807665768">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.1617988773807665687" resolveInfo="AtomicExpression" />
+    </node>
   </roots>
   <root id="5466295800791763759">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5466295800791763761">
@@ -300,6 +303,15 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="431962681142786738">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.5466295800791827903" resolveInfo="mcu" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="765565756796570998">
+        <property name="text" nameId="tpc2.1073389577007" value="status register adress:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="765565756796571001">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="765565756796571000">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.765565756796570994" resolveInfo="sReg" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5466295800791783187">
         <property name="text" nameId="tpc2.1073389577007" value="" />
@@ -720,6 +732,17 @@
         <property name="text" nameId="tpc2.1073389577007" value=")" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2426951403070520637" />
+    </node>
+  </root>
+  <root id="1617988773807665768">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1617988773807665770">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1617988773807665771" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1617988773807665772">
+        <property name="text" nameId="tpc2.1073389577007" value="atomic" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="1617988773807665774">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.1617988773807665767" />
+      </node>
     </node>
   </root>
 </model>
