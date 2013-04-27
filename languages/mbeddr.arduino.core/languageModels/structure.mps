@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="18">
+<model modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="19">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="18" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="19" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
@@ -117,6 +117,16 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1617988773807665687">
       <property name="name" nameId="tpck.1169194664001" value="AtomicExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1630441749093712280">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
+      <property name="name" nameId="tpck.1169194664001" value="AnalogPinRefExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1630441749093712323">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
+      <property name="name" nameId="tpck.1169194664001" value="AnalogPinConfiguration" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
   <root id="2350648883898812438">
@@ -409,6 +419,25 @@
       <property name="role" nameId="tpce.1071599776563" value="body" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
+    </node>
+  </root>
+  <root id="1630441749093712280">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1630441749093712285">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="pin" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1630441749093712323" resolveInfo="AnalogPinConfiguration" />
+    </node>
+  </root>
+  <root id="1630441749093712323">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1630441749093712325">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="analogPin" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5466295800791800545" resolveInfo="AnalogPin" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1630441749093712324">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
 </model>
