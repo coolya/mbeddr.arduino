@@ -4,9 +4,10 @@
   <language namespace="b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)" />
   <language namespace="d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="16" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="18" />
   <import index="ahli" modelUID="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" version="-1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="7ord" modelUID="r:73ed2111-380d-4165-b748-fc106633f87d(mbeddr.arduino.core.behavior)" version="-1" />
@@ -488,7 +489,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="2709324298540993605">
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2709324298540993607">
         <node role="templateNode" roleId="tpf8.1177093586806" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="2709324298540993609">
           <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.BitwiseAndExpression" typeId="mj1l.5962749441518381743" id="2709324298540993610">
@@ -655,7 +656,7 @@
                                       <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482421">
                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070482422">
                                           <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070482423">
-                                            <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                            <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                             <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482424">
                                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070482425" />
                                               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070482426">
@@ -688,7 +689,7 @@
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2426951403070482434">
                                 <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2426951403070482435">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                 </node>
                               </node>
                             </node>
@@ -703,7 +704,7 @@
                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482442">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070482443">
                                             <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070482444">
-                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                               <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482445">
                                                 <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070482446" />
                                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070482447">
@@ -758,7 +759,7 @@
                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482465">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070482466">
                                             <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070482467">
-                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                               <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482468">
                                                 <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070482469" />
                                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070482470">
@@ -795,7 +796,7 @@
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2426951403070482479">
                                 <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2426951403070482480">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                 </node>
                               </node>
                             </node>
@@ -811,7 +812,7 @@
                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482488">
                                             <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070482489">
                                               <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070482490">
-                                                <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                                <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                                 <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070482491">
                                                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070482492" />
                                                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070482493">
@@ -922,7 +923,7 @@
                                       <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540871798">
                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2709324298540871799">
                                           <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2709324298540871800">
-                                            <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                            <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                             <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540871801">
                                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2709324298540871802" />
                                               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2709324298540871803">
@@ -955,7 +956,7 @@
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2709324298540871811">
                                 <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2709324298540871812">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                 </node>
                               </node>
                             </node>
@@ -970,7 +971,7 @@
                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540871819">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2709324298540871820">
                                             <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2709324298540871821">
-                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                               <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540871822">
                                                 <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2709324298540871823" />
                                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2709324298540871824">
@@ -1025,7 +1026,7 @@
                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540885115">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2709324298540885116">
                                             <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2709324298540885117">
-                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                              <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                               <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540885118">
                                                 <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2709324298540885119" />
                                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2709324298540885120">
@@ -1062,7 +1063,7 @@
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2709324298540885128">
                                 <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2709324298540885129">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                 </node>
                               </node>
                             </node>
@@ -1078,7 +1079,7 @@
                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540885136">
                                             <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2709324298540885137">
                                               <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2709324298540885138">
-                                                <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                                <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                                 <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2709324298540885139">
                                                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2709324298540885140" />
                                                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2709324298540885141">
@@ -1187,7 +1188,7 @@
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480005">
                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070480006">
                                       <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070480007">
-                                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                         <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480008">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070480009" />
                                           <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070480010">
@@ -1245,7 +1246,7 @@
                                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480052">
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070480053">
                                     <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070480054">
-                                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                       <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480055">
                                         <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070480056" />
                                         <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070480057">
@@ -1342,7 +1343,7 @@
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480232">
                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070480233">
                                       <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070480234">
-                                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                         <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480235">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070480236" />
                                           <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070480237">
@@ -1401,7 +1402,7 @@
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480254">
                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2426951403070480255">
                                       <node role="expression" roleId="tpee.1079359253376" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="2426951403070480256">
-                                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="PinRefExpression" />
+                                        <link role="concept" roleId="tp25.1140138128738" targetNodeId="koo2.5379590057553076723" resolveInfo="DigitalPinRefExpression" />
                                         <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2426951403070480257">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2426951403070480258" />
                                           <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2426951403070480259">
