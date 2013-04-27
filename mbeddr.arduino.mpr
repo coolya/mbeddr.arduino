@@ -7,7 +7,6 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/mbeddr.arduino.core/mbeddr.arduino.core.mpl" folder="" />
-      <modulePath path="${project}/languages/registers/mbeddr.arduino.registers.mpl" folder="" />
       <modulePath path="${project}/solutions/arduino.samples/arduino.samples.msd" folder="" />
       <modulePath path="${project}/solutions/mbeddr.arduino.header/mbeddr.arduino.header.msd" folder="" />
       <modulePath path="${project}/solutions/mbeddr.arduino.platform/mbeddr.arduino.platform.msd" folder="" />
