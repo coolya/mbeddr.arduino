@@ -58,7 +58,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5466295800791800545">
       <property name="name" nameId="tpck.1169194664001" value="AnalogPin" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3750746866331613764">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
@@ -126,6 +126,11 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1630441749093712323">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
       <property name="name" nameId="tpck.1169194664001" value="AnalogPinConfiguration" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1630441749093733643">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
+      <property name="name" nameId="tpck.1169194664001" value="AnalogPinType" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
@@ -440,5 +445,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
+  <root id="1630441749093733643" />
 </model>
 
