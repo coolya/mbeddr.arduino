@@ -42,22 +42,7 @@
                   </node>
                 </node>
               </node>
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="765565756796664170">
-                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="765565756796664174">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="765565756796664181">
-                    <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="765565756796664178">
-                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="765565756796664160" resolveInfo="foo" />
-                    </node>
-                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="765565756796664185">
-                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
-                    </node>
-                  </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="765565756796664171">
-                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="765565756796664160" resolveInfo="foo" />
-                  </node>
-                </node>
-              </node>
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1630441749093572003" />
             </node>
           </node>
         </node>
@@ -90,6 +75,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1630441749093587843">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="aelz.765565756796628177" resolveInfo="avr_interrupt" />
     </node>
   </root>
   <root id="1617988773807677180">
