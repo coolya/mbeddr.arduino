@@ -1,0 +1,8 @@
+*.mps text merge=mps
+*.mpl text merge=mps
+*.msd text merge=mps
+*.devkit text merge=mps
+*.mpr text merge=mps
+trace.info text merge=mps
+dependencies text merge=mps
+generated text merge=mps
