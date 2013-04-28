@@ -657,7 +657,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="1630441749093856680">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.1630441749093747254" />
-        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="1630441749093856681" />
+        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="1630441749093860223" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="1630441749093856682">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
