@@ -522,7 +522,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5466295800791800590">
-        <property name="text" nameId="tpc2.1073389577007" value="configuration bit :" />
+        <property name="text" nameId="tpc2.1073389577007" value="multiplex selector value :" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="5466295800791800591">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
