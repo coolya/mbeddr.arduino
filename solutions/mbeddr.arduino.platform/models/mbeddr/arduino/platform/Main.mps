@@ -4,6 +4,7 @@
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="20" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <roots>
     <node type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="3127472417296265384">
       <property name="name" nameId="tpck.1169194664001" value="uno" />
@@ -17,6 +18,54 @@
     </node>
   </roots>
   <root id="3127472417296265384">
+    <node role="analogPins" roleId="koo2.3750746866331575347" type="koo2.AnalogPin" typeId="koo2.5466295800791800545" id="1630441749093852534">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <property name="number" nameId="koo2.5466295800791763780" value="0" />
+      <property name="resolution" nameId="koo2.5466295800791800550" value="10" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+      <property name="muxSelector" nameId="koo2.5466295800791800549" value="0" />
+    </node>
+    <node role="analogPins" roleId="koo2.3750746866331575347" type="koo2.AnalogPin" typeId="koo2.5466295800791800545" id="1630441749093852535">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <property name="number" nameId="koo2.5466295800791763780" value="1" />
+      <property name="resolution" nameId="koo2.5466295800791800550" value="10" />
+      <property name="muxSelector" nameId="koo2.5466295800791800549" value="1" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+    </node>
+    <node role="analogPins" roleId="koo2.3750746866331575347" type="koo2.AnalogPin" typeId="koo2.5466295800791800545" id="1630441749093852536">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <property name="number" nameId="koo2.5466295800791763780" value="2" />
+      <property name="resolution" nameId="koo2.5466295800791800550" value="10" />
+      <property name="muxSelector" nameId="koo2.5466295800791800549" value="2" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+    </node>
+    <node role="analogPins" roleId="koo2.3750746866331575347" type="koo2.AnalogPin" typeId="koo2.5466295800791800545" id="1630441749093852537">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <property name="number" nameId="koo2.5466295800791763780" value="3" />
+      <property name="resolution" nameId="koo2.5466295800791800550" value="10" />
+      <property name="muxSelector" nameId="koo2.5466295800791800549" value="3" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+    </node>
+    <node role="analogPins" roleId="koo2.3750746866331575347" type="koo2.AnalogPin" typeId="koo2.5466295800791800545" id="1630441749093852538">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <property name="number" nameId="koo2.5466295800791763780" value="4" />
+      <property name="resolution" nameId="koo2.5466295800791800550" value="10" />
+      <property name="muxSelector" nameId="koo2.5466295800791800549" value="4" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+    </node>
+    <node role="analogPins" roleId="koo2.3750746866331575347" type="koo2.AnalogPin" typeId="koo2.5466295800791800545" id="1630441749093852539">
+      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <property name="number" nameId="koo2.5466295800791763780" value="5" />
+      <property name="resolution" nameId="koo2.5466295800791800550" value="10" />
+      <property name="muxSelector" nameId="koo2.5466295800791800549" value="5" />
+      <property name="canBeInput" nameId="koo2.5466295800791659572" value="true" />
+    </node>
     <node role="digitalPins" roleId="koo2.5466295800791763891" type="koo2.DigitalPin" typeId="koo2.5466295800791659569" id="2709324298540823970">
       <property name="number" nameId="koo2.5466295800791763780" value="0" />
       <property name="bit" nameId="koo2.5466295800791763771" value="0" />
