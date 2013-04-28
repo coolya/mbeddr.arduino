@@ -10,6 +10,10 @@
       <property name="cpuSpeed" nameId="koo2.5466295800791827904" value="16" />
       <property name="mcu" nameId="koo2.5466295800791827903" value="atmega328" />
       <property name="sReg" nameId="koo2.765565756796570994" value="95" />
+      <property name="ADCL" nameId="koo2.1630441749093775818" value="120" />
+      <property name="ADCH" nameId="koo2.1630441749093775820" value="121" />
+      <property name="ADCSRA" nameId="koo2.1630441749093760735" value="122" />
+      <property name="ADMUX" nameId="koo2.1630441749093760729" value="124" />
     </node>
   </roots>
   <root id="3127472417296265384">
