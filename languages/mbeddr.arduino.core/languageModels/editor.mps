@@ -339,6 +339,24 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1630441749093760739">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.1630441749093760735" resolveInfo="ADCSRA" />
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1630441749093849043">
+        <property name="text" nameId="tpc2.1073389577007" value="ADC Low Register" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="1630441749093849051">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1630441749093849045">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.1630441749093775818" resolveInfo="ADCL" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1630441749093849047">
+        <property name="text" nameId="tpc2.1073389577007" value="ADC High Register" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="1630441749093849050">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1630441749093849049">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.1630441749093775820" resolveInfo="ADCH" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5466295800791783187">
         <property name="text" nameId="tpc2.1073389577007" value="" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="5466295800791783188">
