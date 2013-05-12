@@ -4088,11 +4088,8 @@
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.RootTemplateAnnotation" typeId="tpf8.1168619357332" id="3162129685906443448">
       <link role="applicableConcept" roleId="tpf8.1168619429071" targetNodeId="koo2.3750746866331613764" resolveInfo="ArduinoConfiguration" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3162129685906443449">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="aelz.3162129685906441115" resolveInfo="adc" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="3162129685906443452">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="ADMUX" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3162129685906443454">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -4118,7 +4115,7 @@
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="3162129685906443493">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="ADCSRA" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3162129685906443497">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -4144,7 +4141,7 @@
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="3162129685906443521">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="ADC" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3162129685906443527">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
