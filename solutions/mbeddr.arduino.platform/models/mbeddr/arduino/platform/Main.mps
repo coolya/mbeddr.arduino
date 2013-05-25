@@ -11,14 +11,59 @@
       <property name="name" nameId="tpck.1169194664001" value="uno" />
       <property name="cpuSpeed" nameId="koo2.5466295800791827904" value="16" />
       <property name="mcu" nameId="koo2.5466295800791827903" value="atmega328" />
-      <property name="sReg" nameId="koo2.765565756796570994" value="95" />
-      <property name="ADCL" nameId="koo2.1630441749093775818" value="120" />
-      <property name="ADCH" nameId="koo2.1630441749093775820" value="121" />
-      <property name="ADCSRA" nameId="koo2.1630441749093760735" value="122" />
-      <property name="ADMUX" nameId="koo2.1630441749093760729" value="124" />
+      <property name="sReg" value="95" />
+      <property name="ADCL" value="120" />
+      <property name="ADCH" value="121" />
+      <property name="ADCSRA" value="122" />
+      <property name="ADMUX" value="124" />
+      <link role="sReg" roleId="koo2.5996559263525069901" targetNodeId="5996559263525067018" resolveInfo="SREG" />
+      <link role="ADMUX" roleId="koo2.5996559263525069902" targetNodeId="5996559263525082759" resolveInfo="ADMUX" />
+      <link role="ADCSRA" roleId="koo2.5996559263525069903" targetNodeId="5996559263525082764" resolveInfo="ADCSRA" />
+      <link role="ADCL" roleId="koo2.5996559263525069904" targetNodeId="5996559263525082769" resolveInfo="ADCL" />
+      <link role="ADCH" roleId="koo2.5996559263525069906" targetNodeId="5996559263525082776" resolveInfo="ADCH" />
     </node>
   </roots>
   <root id="3127472417296265384">
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5996559263525067018">
+      <property name="name" nameId="tpck.1169194664001" value="SREG" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="5996559263525067020">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="3f" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5996559263525082759">
+      <property name="name" nameId="tpck.1169194664001" value="ADMUX" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="5996559263525082761">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="7c" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5996559263525082764">
+      <property name="name" nameId="tpck.1169194664001" value="ADCSRA" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="5996559263525082766">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="7a" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5996559263525082769">
+      <property name="name" nameId="tpck.1169194664001" value="ADCL" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="5996559263525082771">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="78" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="5996559263525082776">
+      <property name="name" nameId="tpck.1169194664001" value="ADCH" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525082780">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525082783">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525082779">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="5996559263525082769" resolveInfo="ADCL" />
+        </node>
+      </node>
+    </node>
     <node role="analogPins" roleId="koo2.3750746866331575347" type="koo2.AnalogPin" typeId="koo2.5466295800791800545" id="1630441749093852534">
       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       <property name="const" nameId="mj1l.2941277002445651368" value="false" />
