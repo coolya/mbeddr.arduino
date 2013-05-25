@@ -2,9 +2,10 @@
 <model modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)">
   <persistence version="7" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="20" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <roots>
     <node type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="3127472417296265384">
       <property name="name" nameId="tpck.1169194664001" value="uno" />
@@ -214,39 +215,61 @@
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620205">
       <property name="name" nameId="tpck.1169194664001" value="PINB" />
-      <property name="address" nameId="koo2.6220665928366983921" value="35" />
+      <property name="address" value="35" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="5996559263525052756">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="23" />
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620207">
       <property name="name" nameId="tpck.1169194664001" value="DDRB" />
-      <property name="address" nameId="koo2.6220665928366983921" value="36" />
+      <property name="address" value="36" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525024354">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525024357">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525024353">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540620205" resolveInfo="PINB" />
+        </node>
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620209">
       <property name="name" nameId="tpck.1169194664001" value="PORTB" />
-      <property name="address" nameId="koo2.6220665928366983921" value="37" />
+      <property name="address" value="37" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525052749">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525052753">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525052748">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
+        </node>
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620211">
       <property name="name" nameId="tpck.1169194664001" value="PINC" />
-      <property name="address" nameId="koo2.6220665928366983921" value="38" />
+      <property name="address" value="38" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823960">
       <property name="name" nameId="tpck.1169194664001" value="DDRC" />
-      <property name="address" nameId="koo2.6220665928366983921" value="39" />
+      <property name="address" value="39" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823962">
       <property name="name" nameId="tpck.1169194664001" value="PORTC" />
-      <property name="address" nameId="koo2.6220665928366983921" value="40" />
+      <property name="address" value="40" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823964">
       <property name="name" nameId="tpck.1169194664001" value="PIND" />
-      <property name="address" nameId="koo2.6220665928366983921" value="41" />
+      <property name="address" value="41" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823966">
       <property name="name" nameId="tpck.1169194664001" value="DDRD" />
-      <property name="address" nameId="koo2.6220665928366983921" value="42" />
+      <property name="address" value="42" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823969">
       <property name="name" nameId="tpck.1169194664001" value="PORTD" />
-      <property name="address" nameId="koo2.6220665928366983921" value="43" />
+      <property name="address" value="43" />
     </node>
   </root>
 </model>

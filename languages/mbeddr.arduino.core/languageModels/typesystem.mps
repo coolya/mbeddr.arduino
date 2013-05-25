@@ -51,6 +51,10 @@
       <property name="name" nameId="tpck.1169194664001" value="check_ByteRegister" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="register" />
     </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5996559263525050085">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_Register" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="register" />
+    </node>
   </roots>
   <root id="5140268293012321492">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5140268293012321493">
@@ -304,7 +308,7 @@
           <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5996559263524966584">
             <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="5996559263524975156">
               <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5996559263524975157">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
               </node>
             </node>
           </node>
@@ -366,6 +370,32 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5996559263525023034">
       <property name="name" nameId="tpck.1169194664001" value="reg" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="koo2.5466295800791745449" resolveInfo="ByteRegister" />
+    </node>
+  </root>
+  <root id="5996559263525050085">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5996559263525050086">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5996559263525050103">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5996559263525050107">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5996559263525050108">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="5996559263525050120">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5996559263525050121">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5996559263525050106">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5996559263525050089">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5996559263525050092">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5996559263525050087" resolveInfo="reg" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5996559263525050087">
+      <property name="name" nameId="tpck.1169194664001" value="reg" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="koo2.5466295800791659577" resolveInfo="Register" />
     </node>
   </root>
 </model>
