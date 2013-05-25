@@ -66,10 +66,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="koo2.1630441749093712280" resolveInfo="AnalogPinRefExpression" />
     </node>
-    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2587867526354797950">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
-      <link role="concept" roleId="1i04.1225194240799" targetNodeId="koo2.1630441749093733643" resolveInfo="AnalogPinType" />
-    </node>
   </roots>
   <root id="2350648883898930014">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2350648883898930017">
@@ -604,11 +600,6 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="1630441749093847754" />
-    </node>
-  </root>
-  <root id="2587867526354797950">
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2587867526354797951">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2587867526354797952" />
     </node>
   </root>
 </model>

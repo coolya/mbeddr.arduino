@@ -102,8 +102,8 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6220665928366983938">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.6220665928366983921" resolveInfo="address" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5996559263524930016">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.5996559263524930014" />
       </node>
     </node>
   </root>
