@@ -370,6 +370,106 @@
         </node>
       </node>
     </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180506">
+      <property name="name" nameId="tpck.1169194664001" value="External Interrupt Request 0" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="1" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180507">
+      <property name="name" nameId="tpck.1169194664001" value="External Interrupt Request 1" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="2" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180508">
+      <property name="name" nameId="tpck.1169194664001" value="Pin Change Interrupt Request 0" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="3" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180509">
+      <property name="name" nameId="tpck.1169194664001" value="Pin Change Interrupt Request 0 (4)" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="4" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180510">
+      <property name="name" nameId="tpck.1169194664001" value="Pin Change Interrupt Request 1" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="5" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180511">
+      <property name="name" nameId="tpck.1169194664001" value="Watchdog Time-out Interrupt" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="6" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180512">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter2 Compare Match A" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="7" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180513">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter2 Compare Match B" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="8" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180514">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter2 Overflow " />
+      <property name="vector" nameId="koo2.5996559263525145878" value="9" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180515">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Capture Event" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="10" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180516">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Compare Match A" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="11" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180517">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Compare Match B" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="12" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180518">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Overflow" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="13" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180519">
+      <property name="name" nameId="tpck.1169194664001" value="TimerCounter0 Compare Match A " />
+      <property name="vector" nameId="koo2.5996559263525145878" value="14" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180520">
+      <property name="name" nameId="tpck.1169194664001" value="TimerCounter0 Compare Match B" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="15" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180521">
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Couner0 Overflow" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="16" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180522">
+      <property name="name" nameId="tpck.1169194664001" value="SPI Serial Transfer Complete" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="17" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180523">
+      <property name="name" nameId="tpck.1169194664001" value="USART Rx Complete " />
+      <property name="vector" nameId="koo2.5996559263525145878" value="18" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180524">
+      <property name="name" nameId="tpck.1169194664001" value="USART, Data Register Empty" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="19" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180525">
+      <property name="name" nameId="tpck.1169194664001" value="USART Tx Complete" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="20" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180526">
+      <property name="name" nameId="tpck.1169194664001" value="ADC Conversion Complete " />
+      <property name="vector" nameId="koo2.5996559263525145878" value="21" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180527">
+      <property name="name" nameId="tpck.1169194664001" value="EEPROM Ready" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="22" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180528">
+      <property name="name" nameId="tpck.1169194664001" value="Analog Comparator" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="23" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180530">
+      <property name="name" nameId="tpck.1169194664001" value="Two-wire Serial Interface " />
+      <property name="vector" nameId="koo2.5996559263525145878" value="24" />
+    </node>
+    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="5996559263525180529">
+      <property name="name" nameId="tpck.1169194664001" value="Store Program Memory Read" />
+      <property name="vector" nameId="koo2.5996559263525145878" value="25" />
+    </node>
   </root>
 </model>
 
