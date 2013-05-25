@@ -238,38 +238,92 @@
       <property name="name" nameId="tpck.1169194664001" value="PORTB" />
       <property name="address" value="37" />
       <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525052749">
-        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525052753">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
-        </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525052748">
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525053976">
           <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540620207" resolveInfo="DDRB" />
+        </node>
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525053979">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
         </node>
       </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540620211">
       <property name="name" nameId="tpck.1169194664001" value="PINC" />
       <property name="address" value="38" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525053985">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525053988">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525053982">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540620209" resolveInfo="PORTB" />
+        </node>
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823960">
       <property name="name" nameId="tpck.1169194664001" value="DDRC" />
       <property name="address" value="39" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525053996">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525053999">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525053992">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540620211" resolveInfo="PINC" />
+        </node>
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823962">
       <property name="name" nameId="tpck.1169194664001" value="PORTC" />
       <property name="address" value="40" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525054009">
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525054004">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540823960" resolveInfo="DDRC" />
+        </node>
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525054022">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823964">
       <property name="name" nameId="tpck.1169194664001" value="PIND" />
       <property name="address" value="41" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525054029">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525054032">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525054028">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540823962" resolveInfo="PORTC" />
+        </node>
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823966">
       <property name="name" nameId="tpck.1169194664001" value="DDRD" />
       <property name="address" value="42" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525054046">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525054049">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525054039">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540823964" resolveInfo="PIND" />
+        </node>
+      </node>
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2709324298540823969">
       <property name="name" nameId="tpck.1169194664001" value="PORTD" />
       <property name="address" value="43" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5996559263525054065">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5996559263525054068">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="koo2.RegisterRefExpression" typeId="koo2.227931566096621662" id="5996559263525054057">
+          <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2709324298540823966" resolveInfo="DDRD" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
