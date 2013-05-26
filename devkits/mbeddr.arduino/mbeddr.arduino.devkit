@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="mbeddr.arduino" uuid="6845f348-7ea5-449c-ae3b-3d600bc3b73d">
+  <exported-language name="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
+  <extendedDevKits>
+    <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</exported-solution>
+    <exported-solution>8e15ed0b-eb5e-477c-a001-d8e231c8fba9(mbeddr.arduino.util)</exported-solution>
+    <exported-solution>3779e7cd-02e4-4dc4-89a1-6e8e31efc854(mbeddr.arduino.platform)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

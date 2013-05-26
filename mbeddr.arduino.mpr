@@ -16,6 +16,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/devkits/mbeddr.arduino/mbeddr.arduino.devkit" folder="" />
       <modulePath path="${project}/languages/mbeddr.arduino.core/mbeddr.arduino.core.mpl" folder="" />
       <modulePath path="${project}/solutions/arduino.samples/arduino.samples.msd" folder="" />
       <modulePath path="${project}/solutions/mbeddr.arduino.header/mbeddr.arduino.header.msd" folder="" />
