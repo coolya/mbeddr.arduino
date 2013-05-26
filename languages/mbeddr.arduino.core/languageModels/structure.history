@@ -132,5 +132,11 @@
     </dependencies>
     <rename id="koo2.5996559263525145909" type="CHILD" from="interrupt" to="interrupts" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="21" />
+    </dependencies>
+    <rename id="koo2.1885912986662341396" type="CONCEPT" from="ArduinoBinary" to="ArduinoExecutale" />
+  </StructureModification>
 </history>
 

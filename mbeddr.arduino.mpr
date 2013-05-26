@@ -20,6 +20,7 @@
       <modulePath path="${project}/solutions/arduino.samples/arduino.samples.msd" folder="" />
       <modulePath path="${project}/solutions/mbeddr.arduino.header/mbeddr.arduino.header.msd" folder="" />
       <modulePath path="${project}/solutions/mbeddr.arduino.platform/mbeddr.arduino.platform.msd" folder="" />
+      <modulePath path="${project}/solutions/mbeddr.arduino.util/mbeddr.arduino.util.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>
