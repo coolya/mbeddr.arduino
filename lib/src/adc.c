@@ -3,14 +3,16 @@
 void ADC_Init(void) {
  
   uint16_t result;
+  //set ADCref to AVcc
   ADMUX = (1<<REFS0);    
 
-  ADCSRA = (1<<ADPS1) | (1<<ADPS0);     // Frequenzvorteiler
-  ADCSRA |= (1<<ADEN);                  // ADC aktivieren
+  //set ADC prescale to 128
+  ADCSRA = (1<<ADPS1) | (1<<ADPS0);
+  ADCSRA |= (1<<ADEN);                  // enable ADC
  
-  ADCSRA |= (1<<ADSC);                  // eine ADC-Wandlung 
-  while (ADCSRA & (1<<ADSC) ) {         // auf Abschluss der Konvertierung warten
-  }
+  ADCSRA |= (1<<ADSC);                  // start a dummy conversion
+  while (ADCSRA & (1<<ADSC) ) {         // because the first conversion after          
+  }                                     // after set up is invalid
 
   result = ADCW;
 }
