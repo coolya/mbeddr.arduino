@@ -8,4 +8,5 @@ tests/*/classes_gen/
 tests/*/source_gen/
 tests/*/source_gen.caches/
 *.iws
+*.o
 build.properties
