@@ -256,7 +256,11 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1617988773807677179" resolveInfo="Atomic" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="765565756796664193">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="aelz.765565756796628177" resolveInfo="avr_interrupt" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="aelz.1125629915293422015" resolveInfo="avr_interrupt" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1125629915293506976" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1125629915293506977">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="aelz.1125629915293422013" resolveInfo="avr_io" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="765565756796664141">

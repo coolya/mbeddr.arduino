@@ -2749,10 +2749,6 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="51wr.7717755763392524104" resolveInfo="BuildConfiguration" />
       <link role="template" roleId="tpf8.1167514355421" targetNodeId="2350648883898983199" resolveInfo="makefile" />
     </node>
-    <node role="rootMappingRule" roleId="tpf8.1167514678247" type="tpf8.Root_MappingRule" typeId="tpf8.1167514355419" id="3162129685906443445">
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="koo2.3750746866331613764" resolveInfo="ArduinoConfiguration" />
-      <link role="template" roleId="tpf8.1167514355421" targetNodeId="3162129685906443447" resolveInfo="__gen_arduino" />
-    </node>
     <node role="condition" roleId="tpf8.7830515785164764091" type="tpf8.MappingConfiguration_Condition" typeId="tpf8.7830515785164762753" id="2350648883898979224">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2350648883898979225">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2350648883898983193">
