@@ -300,12 +300,6 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2487509330181426782">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="aelz.1125629915293421994" resolveInfo="util_delay" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2487509330181426784">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="aelz.1125629915293421984" resolveInfo="adc" />
-      </node>
-      <node role="linkables" roleId="51wr.4809476668198796998" type="51wr.Linkable" typeId="51wr.4809476668198796988" id="2487509330181426785">
-        <property name="name" nameId="51wr.4809476668198808306" value="adc.o" />
-      </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="431962681142833673">
       <property name="libPath" nameId="koo2.5865116309641288761" value="/build/mbeddr.arduino/lib" />
