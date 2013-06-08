@@ -23,11 +23,27 @@
     <arg value='-Didea.config.path=${mps.platform.caches}/config'/>
     <arg value='-Didea.plugins.path=${mps.platform.caches}/plugins'/>
   </jvmargs>
-  <target name='build'>
+
+  <target name="build">
+    <antcall target="build-languages"/>
+    <antcall target="build-solutions"/>
+  </target>
+
+  <target name='build-languages'>
     <mps.generate parallelMode='true' fork='true'>
       <jvmargs refid='myargs'/>
       <project file='mbeddr.arduino.mpr'/>
       <modules dir='./languages'/>
+      <library name="mbeddr"
+         dir="${mbeddr.github.core.home}/code/languages"/>
+    </mps.generate>
+  </target>
+    <target name='build-solutions'>
+    <mps.generate parallelMode='true' fork='true'>
+      <jvmargs refid='myargs'/>
+      <project file='mbeddr.arduino.mpr'/>
+      <modules dir='./solutions'/>
+      <library name="mbeddr.arduino" dir="./languages"/>
       <library name="mbeddr"
          dir="${mbeddr.github.core.home}/code/languages"/>
     </mps.generate>
