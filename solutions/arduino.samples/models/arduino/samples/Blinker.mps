@@ -308,6 +308,7 @@
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="431962681142833673">
+      <property name="libPath" nameId="koo2.5865116309641288761" value="/build/mbeddr.arduino/lib" />
       <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.3127472417296265384" resolveInfo="uno" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="1630441749093860200">
