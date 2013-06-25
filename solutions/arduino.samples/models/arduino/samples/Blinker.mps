@@ -12,6 +12,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" version="-1" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2350648883899084568">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -394,6 +395,11 @@
       <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="1630441749093860220">
         <property name="name" nameId="tpck.1169194664001" value="analogPin5" />
         <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.1630441749093852539" />
+      </node>
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="6749790727191605891">
+      <node role="strategy" roleId="k146.4459718605982051999" type="koo2.SerialReporting" typeId="koo2.6749790727191518940" id="6749790727191605893">
+        <property name="baud" nameId="koo2.6749790727191518945" value="9600" />
       </node>
     </node>
   </root>

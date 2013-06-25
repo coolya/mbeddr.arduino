@@ -82,6 +82,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5996559263525145879">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.5996559263525145875" resolveInfo="Interrupt" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6749790727191518951">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="koo2.6749790727191518940" resolveInfo="SerialReporting" />
+    </node>
   </roots>
   <root id="5466295800791763759">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5466295800791763761">
@@ -1228,6 +1231,38 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.5996559263525145878" resolveInfo="vector" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5996559263525145896" />
+    </node>
+  </root>
+  <root id="6749790727191518951">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6749790727191558152">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6749790727191558156">
+        <property name="text" nameId="tpc2.1073389577007" value="serial reporting" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNewLineStyleClassItem" typeId="tpc2.1237308012275" id="6749790727191558157">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6749790727191558159">
+        <property name="text" nameId="tpc2.1073389577007" value="baud rate:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="6749790727191558160">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6749790727191558162">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.6749790727191518945" resolveInfo="baud" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6749790727191558164">
+        <property name="text" nameId="tpc2.1073389577007" value="optimized for:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="6749790727191558167">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="6749790727191558168">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6749790727191558166">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.6749790727191518950" resolveInfo="opt" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6749790727191558154" />
     </node>
   </root>
 </model>

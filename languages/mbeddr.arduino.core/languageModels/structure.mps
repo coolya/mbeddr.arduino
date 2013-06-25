@@ -12,6 +12,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2350648883898812438">
       <property name="name" nameId="tpck.1169194664001" value="ArduinoPlatform" />
@@ -130,6 +131,14 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1885912986662341396">
       <property name="name" nameId="tpck.1169194664001" value="ArduinoExecutale" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="51wr.5046689135693761554" resolveInfo="Executable" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6749790727191518940">
+      <property name="name" nameId="tpck.1169194664001" value="SerialReporting" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="k146.4459718605982051978" resolveInfo="ReportingStrategy" />
+    </node>
+    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="6749790727191518947">
+      <property name="name" nameId="tpck.1169194664001" value="Optimization" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
   </roots>
   <root id="2350648883898812438">
@@ -481,6 +490,34 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1885912986662385984">
       <property name="value" nameId="tpce.1105725733873" value="an arduino executable binary" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+  </root>
+  <root id="6749790727191518940">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6749790727191518945">
+      <property name="name" nameId="tpck.1169194664001" value="baud" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6749790727191518950">
+      <property name="name" nameId="tpck.1169194664001" value="opt" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="6749790727191518947" resolveInfo="Optimization" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6749790727191518942">
+      <property name="value" nameId="tpce.1105725733873" value="serial" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6749790727191518944">
+      <property name="value" nameId="tpce.1105725733873" value="reporting via UART" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+  </root>
+  <root id="6749790727191518947">
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="6749790727191518948">
+      <property name="internalValue" nameId="tpce.1083923523171" value="false" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="code size" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="6749790727191518949">
+      <property name="internalValue" nameId="tpce.1083923523171" value="true" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="stack size" />
     </node>
   </root>
 </model>
