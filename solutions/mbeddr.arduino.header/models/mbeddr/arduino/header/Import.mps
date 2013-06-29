@@ -402,33 +402,6 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="1125629915293422035">
-      <property name="name" nameId="tpck.1169194664001" value="ISR" />
-      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="content" roleId="x27k.8655966904682451042" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="1125629915293422036">
-        <node role="dummyType" roleId="c4fa.6275956088646286745" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1125629915293422037">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="1125629915293422038">
-          <property name="text" nameId="c4fa.3830958861296879114" value="void vector (void) __attribute__ ((signal,__INTR_ATTRS)) __VA_ARGS__; void vector (void)" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="1125629915293422039">
-        <property name="name" nameId="tpck.1169194664001" value="vector" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="1125629915293422040">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="1125629915293422041">
-        <property name="name" nameId="tpck.1169194664001" value="..." />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="1125629915293422042">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="1125629915293422043">
       <property name="name" nameId="tpck.1169194664001" value="SIGNAL" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
