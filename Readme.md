@@ -58,7 +58,7 @@ If should look like this:
 	mps.platform.caches=/path/to/cache
 	mbeddr.github.core.home=/path/to/mbeddr.core/root
 
-Once you have done this you can run `ant` in the root of the repository and it should buil fine.
+Once you have done this you can run `ant` in the root of the repository and it should build fine.
 
 #### Building the support library
 
