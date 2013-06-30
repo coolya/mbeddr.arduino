@@ -37,10 +37,38 @@ There is no binary distribution at this time, since changes are likely. So you n
 
 	git clone https://github.com/coolya/mbeddr.arduino.git
 
+### Build it
+
+The `mbeddr.arduino` repository contains tow parts:
+
+The first one is `mbeddr.arduino` itself which is a MPS plug-in that is using mbeddr. This plugin can be build two ways, directly from the MPS IDE or with `ant` from the command line. 
+
+#### Building the plug-in with MPS
+
+Open `mbeddr.arduino.mpr` from the root of the repository with MPS. If you are using mbeddr build from source you need to add a extra library to the project. To do so navigate to `File->Settings`, then select `Project Librariess` and add a new library named `mbeddr.core` that point to your mbeddr `code` directory **not** the mbeddr.ardunio directory. 
+Now you can build the solution.
+
+#### Building the plug-in with ant
+
+This is the preferred way to build when you are using mbeddr [build from source](http://logv.ws/b/2013/04/27/installing-mbeddr-on-ubuntu-13-04/). First you need the `build.properties` file. You can used the skeleton `build.properties.example` in the root directory of the repository to create your own.
+
+If should look like this:
+
+	mps.home=/path/to/mps
+	mps.platform.caches=/path/to/cache
+	mbeddr.github.core.home=/path/to/mbeddr.core/root
+
+Once you have done this you can run `ant` in the root of the repository and it should buil fine.
+
+#### Building the support library
+
+The second one is a support library that is used by the generated code to perform operations like accessing the analog inputs. This is done because the code needs some more complexity like loops and dealing with interrupts which would be a pain to express with generator templates. The code for this library is located in the `lib` [subdirectory](https://github.com/coolya/mbeddr.arduino/tree/master/lib).
+
+To build it navigate to the `lib` folder of the repository and run `make` this will build the library for all supported platforms.
+
 ### Try it
 
-After you have done this, open the `mbeddr.arduino.mpr` from the root of the repository. 
-Build the solution, now should open your favorite shell and navigate to `solutions/arduino.samples/source_gen/arduino/samples/Blinker` from the root of the source code.
+Now open your favorite shell and navigate to `solutions/arduino.samples/source_gen/arduino/samples/Blinker` from the root of the source code.
 
 You will find the generated source code from the sample here which you can build with a simple
 
