@@ -1,0 +1,3 @@
+mps.home=/path/to/mps
+mps.platform.caches=/path/to/cache
+mbeddr.github.core.home=/path/to/mbeddr.core/root
