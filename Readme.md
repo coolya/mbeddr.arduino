@@ -21,6 +21,8 @@ These should be available for any platform, though I have only tested it on Mac 
 * [avr-libc][avrlibc]
 * [avrdude][avrdude]
 
+#### Linux
+
 On most Linux distributions you will get all these when you install the following packages:
 
 	avr-binutils avrdude avr-gcc avr-libc
@@ -30,6 +32,17 @@ You might also want to install
 	avr-gdb
 
 But currently there is no support for direct debugging out of mbeddr.arduino!
+
+#### Mac
+
+You need to have a working [Mac Ports](http://www.macports.org/) installation to get the needed libraries. Then you can use the following commands to install the needed programs and libraries:
+
+    sudo port install avr-libc avr-gdb avrdude
+
+
+#### Windows
+
+ToDo (I don't have a working windows arduino environment, so I would be happy if someone would contribute this.)
 
 ### Get it
 
