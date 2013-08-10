@@ -10,7 +10,10 @@ Currently this project nothing but a playground if offers some really limited su
 
 ### Prerequisites
 
-Obviously you will need a working MPS and mbeddr installation. The current release version (1268) ob mbeddr is **not** supported! You will need to build mbeddr from source.
+Obviously you will need a working MPS and mbeddr installation. The current release version (1268) ov mbeddr is **not** supported! You will need to build mbeddr from source.
+
+
+If you want to work with the master branch you will also need version 3.0 of MPS which is [available](http://confluence.jetbrains.com/display/MPS/JetBrains+MPS+EAP+Download+Page) as a relase candidate. If you arn't using it you can checkout the git tag ´MPS25´ which gives you the last verion compatible with MPS 2.5 an the corespoding mbeddr.
 
 ### Setup
 
