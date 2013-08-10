@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.arduino.core" uuid="3c4c8461-a533-4459-916a-dc0176793b4c" doNotGenerateAdapters="true">
+<language namespace="mbeddr.arduino.core" uuid="3c4c8461-a533-4459-916a-dc0176793b4c">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels>
     <model modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" />
@@ -9,7 +11,9 @@
   <generators>
     <generator name="" generatorUID="mbeddr.arduino.core#2350648883898979172" uuid="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates />
       <dependencies>
@@ -34,6 +38,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">fda566a8-0df7-442b-b355-ba0f7b3d1cbd(com.mbeddr.core.modules.runtime)</dependency>
+    <dependency reexport="false">dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)</dependency>
     <dependency reexport="true">336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</dependency>
   </dependencies>
   <usedLanguages>

@@ -6,3 +6,5 @@
 trace.info text merge=mps
 dependencies text merge=mps
 generated text merge=mps
+*.mpsr text merge=mps
+*.model text merge=mps

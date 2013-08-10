@@ -4,9 +4,13 @@ solutions/*/source_gen.caches/
 languages/*/classes_gen/
 languages/*/source_gen/
 languages/*/source_gen.caches/
+languages/*/*/classes_gen
+languages/*/*/source_gen/
+languages/*/*/source_gen.caches/
 tests/*/classes_gen/
 tests/*/source_gen/
 tests/*/source_gen.caches/
 *.iws
 *.o
 build.properties
+lib/out/*
