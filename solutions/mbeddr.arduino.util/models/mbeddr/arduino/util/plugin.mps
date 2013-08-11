@@ -246,7 +246,9 @@
   </root>
   <root type="uhxm.RunConfigurationKind" typeId="uhxm.2401501559171345994" id="4801491939901071376" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Arduino Binary" />
-    <node role="icon" roleId="uhxm.7966814097310618131" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="4801491939901071377" nodeInfo="ng" />
+    <node role="icon" roleId="uhxm.7966814097310618131" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="4801491939901071377" nodeInfo="ng">
+      <property name="path" nameId="1oap.8974276187400029899" value="/Users/kdummann/source/mbeddr.arduino/icons/arduino-icon-small.png" />
+    </node>
   </root>
   <root type="uhxm.RunConfiguration" typeId="uhxm.2401501559171345993" id="4801491939901062739" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="mbeddr arduino executable configuration" />
@@ -854,7 +856,9 @@
         </node>
       </node>
     </node>
-    <node role="icon" roleId="uhxm.4763274727405873310" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="4801491939901062743" nodeInfo="ng" />
+    <node role="icon" roleId="uhxm.4763274727405873310" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="4801491939901062743" nodeInfo="ng">
+      <property name="path" nameId="1oap.8974276187400029899" value="/Users/kdummann/source/mbeddr.arduino/icons/arduino-icon-small.png" />
+    </node>
     <node role="checkProperties" roleId="fb9u.946964771156066338" type="fb9u.CheckProperties_Function" typeId="fb9u.946964771156066597" id="4801491939901076451" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4801491939901076452" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4801491939901099947" nodeInfo="nn">
