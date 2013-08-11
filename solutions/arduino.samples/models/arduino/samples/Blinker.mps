@@ -297,7 +297,7 @@
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="431962681142833673" nodeInfo="ng">
-      <property name="libPath" nameId="koo2.5865116309641288761" value="/build/mbeddr.arduino/lib" />
+      <property name="libPath" nameId="koo2.5865116309641288761" value="/Users/kdummann/source/mbeddr.arduino/lib" />
       <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.3127472417296265384" resolveInfo="uno" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="1630441749093860200" nodeInfo="ng">
@@ -343,22 +343,27 @@
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860209" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="digitalPin8" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871005" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860210" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="digitalPin9" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871006" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860211" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="digitalPin10" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871007" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860212" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="digitalPin11" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871008" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860213" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="digitalPin12" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="none°" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2709324298540871009" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860214" nodeInfo="ng">
