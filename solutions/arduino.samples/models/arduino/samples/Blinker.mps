@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="22" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="23" />
   <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
@@ -397,7 +397,7 @@
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="6749790727191605891" nodeInfo="ng">
-      <node role="strategy" roleId="k146.4459718605982051999" type="koo2.SerialReporting" typeId="koo2.6749790727191518940" id="6749790727191605893" nodeInfo="ng">
+      <node role="strategy" roleId="k146.4459718605982051999" type="koo2.SerialReportingStrategy" typeId="koo2.6749790727191518940" id="6749790727191605893" nodeInfo="ng">
         <property name="baud" nameId="koo2.6749790727191518945" value="9600" />
       </node>
     </node>
