@@ -15,4 +15,8 @@ tests/*/source_gen.caches/
 build.properties
 lib/out/*
 
+classes_gen
+source_gen
+source_gen.caches
+
 */.DS_Store
