@@ -444,10 +444,6 @@
       <property name="name" nameId="tpck.1169194664001" value="databits" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3762453592947589643" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="opt" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="6749790727191518947" resolveInfo="Optimization" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3762453592947589650" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
