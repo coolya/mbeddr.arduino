@@ -25,3 +25,27 @@ uint16_t ADC_Read( uint8_t channel )
   }
   return ADCW;                    // ADC auslesen und zurückgeben
 }
+
+
+int uart_putc(unsigned char c)
+{
+     while(!(UCSR0A & (1<<UDRE0)));
+      UDR0 = c;
+    return 0;
+}
+
+void uart_write(char* s)
+{
+  while(*s)
+  {
+    uart_putc(*s);
+    s++;
+  }
+}
+
+unsigned char uart_receive(void){
+ 
+ while(!(UCSR0A & (1<<RXC0)));
+ return UDR0;
+ 
+}
