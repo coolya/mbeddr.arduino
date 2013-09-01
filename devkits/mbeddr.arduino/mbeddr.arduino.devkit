@@ -6,8 +6,8 @@
   </extendedDevKits>
   <exported-solutions>
     <exported-solution>336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</exported-solution>
-    <exported-solution>8e15ed0b-eb5e-477c-a001-d8e231c8fba9(mbeddr.arduino.util)</exported-solution>
     <exported-solution>3779e7cd-02e4-4dc4-89a1-6e8e31efc854(mbeddr.arduino.platform)</exported-solution>
+    <exported-solution>8e15ed0b-eb5e-477c-a001-d8e231c8fba9(mbeddr.arduino.core.pluginSolution)</exported-solution>
   </exported-solutions>
 </dev-kit>
 
