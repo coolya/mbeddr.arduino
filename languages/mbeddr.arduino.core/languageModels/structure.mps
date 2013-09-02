@@ -12,6 +12,7 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="15" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2350648883898812438" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ArduinoPlatform" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
@@ -274,6 +275,12 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
     <property name="name" nameId="tpck.1169194664001" value="InitializePinsAnnotation" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="7400745919300577250" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="pinInit" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="7400745919300577584" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
+      </node>
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5379590057553076718" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="pin" />
