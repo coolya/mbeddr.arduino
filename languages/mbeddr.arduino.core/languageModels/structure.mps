@@ -507,7 +507,7 @@
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="4546342499720442549" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
     <property name="name" nameId="tpck.1169194664001" value="Baudrate" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4546342499720442550" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="300" />
       <property name="externalValue" nameId="tpce.1083923523172" value="300" />
