@@ -5,7 +5,7 @@
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="23" implicit="yes" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="24" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <root type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="2399978797584514209" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="uno" />
@@ -452,6 +452,60 @@
           <link role="reg" roleId="koo2.227931566096621663" targetNodeId="2399978797584528177" resolveInfo="DDRD" />
         </node>
       </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="8357009515672593054" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="UCSR0A" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="8357009515672593239" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="c0" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="8357009515672593501" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="UCSR0B" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="8357009515672593690" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="c1" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="8357009515672593956" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="UCSR0C" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="8357009515672594149" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="c2" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="8357009515672594419" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="UDR0" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="8357009515672594717" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="c6" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="8357009515672927482" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="UBRR0H" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="8357009515672927582" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="c5" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="8357009515672927864" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="UBRR0L" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="8357009515672928073" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="c4" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.Register" typeId="koo2.5466295800791659577" id="8357009515672927416" nodeInfo="ng">
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="8357009515672927417" nodeInfo="ng" />
+    </node>
+    <node role="serialPorts" roleId="koo2.8357009515671906835" type="koo2.SerialPort" typeId="koo2.3762453592947589650" id="8357009515672189717" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Port A" />
+      <link role="UCSRA" roleId="koo2.8357009515672220618" targetNodeId="8357009515672593054" resolveInfo="UCSR0A" />
+      <link role="UCSRB" roleId="koo2.8357009515672220744" targetNodeId="8357009515672593501" resolveInfo="UCSR0B" />
+      <link role="UCSRC" roleId="koo2.8357009515672220750" targetNodeId="8357009515672593956" resolveInfo="UCSR0C" />
+      <link role="UDR" roleId="koo2.8357009515672220876" targetNodeId="8357009515672594419" resolveInfo="UDR0" />
+      <link role="UBRRL" roleId="koo2.8357009515672595296" targetNodeId="8357009515672927864" resolveInfo="UBRR0L" />
+      <link role="UBRRH" roleId="koo2.8357009515672221004" targetNodeId="8357009515672927482" resolveInfo="UBRR0H" />
     </node>
   </root>
 </model>
