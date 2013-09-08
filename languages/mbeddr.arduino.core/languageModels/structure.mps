@@ -409,13 +409,11 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="reporting via UART" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="serial" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="k146.4459718605982051978" resolveInfo="ReportingStrategy" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6749790727191518945" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="baud" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6749790727191518950" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="opt" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="6749790727191518947" resolveInfo="Optimization" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8357009515673800408" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="serialConfig" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3762453592947515494" resolveInfo="SerialConfiguration" />
     </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="6749790727191518947" nodeInfo="ng">
