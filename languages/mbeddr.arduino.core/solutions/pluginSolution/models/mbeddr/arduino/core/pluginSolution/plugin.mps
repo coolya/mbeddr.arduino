@@ -37,7 +37,7 @@
   <root type="uhxm.RunConfigurationKind" typeId="uhxm.2401501559171345994" id="4801491939901071376" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Arduino Binary" />
     <node role="icon" roleId="uhxm.7966814097310618131" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="4801491939901071377" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="/Users/kdummann/source/mbeddr.arduino/icons/arduino-icon-small.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${mbeddr.arduino}/icons/arduino-icon-small.png" />
     </node>
   </root>
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="3102510875961425252" nodeInfo="ng" />
