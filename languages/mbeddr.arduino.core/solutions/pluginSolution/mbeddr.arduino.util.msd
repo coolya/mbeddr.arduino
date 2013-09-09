@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mbeddr.arduino.core.pluginSolution" uuid="8e15ed0b-eb5e-477c-a001-d8e231c8fba9" compileInMPS="true">
+<solution name="mbeddr.arduino.core.pluginSolution" uuid="8e15ed0b-eb5e-477c-a001-d8e231c8fba9" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="tests" />
+    <facet type="java" />
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
