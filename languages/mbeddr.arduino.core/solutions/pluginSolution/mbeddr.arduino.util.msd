@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mbeddr.arduino.core.pluginSolution" uuid="8e15ed0b-eb5e-477c-a001-d8e231c8fba9" compileInMPS="true">
+<solution name="mbeddr.arduino.core.pluginSolution" uuid="8e15ed0b-eb5e-477c-a001-d8e231c8fba9" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
