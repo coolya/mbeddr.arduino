@@ -271,7 +271,7 @@
       <property name="vector" nameId="koo2.5996559263525145878" value="15" />
     </node>
     <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548452" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Couner0 Overflow" />
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Coutner0 Overflow" />
       <property name="vector" nameId="koo2.5996559263525145878" value="16" />
     </node>
     <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548453" nodeInfo="ng">
@@ -494,9 +494,6 @@
         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
         <property name="value" nameId="mj1l.1054289341113450445" value="c4" />
       </node>
-    </node>
-    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.Register" typeId="koo2.5466295800791659577" id="8357009515672927416" nodeInfo="ng">
-      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="8357009515672927417" nodeInfo="ng" />
     </node>
     <node role="serialPorts" roleId="koo2.8357009515671906835" type="koo2.SerialPort" typeId="koo2.3762453592947589650" id="8357009515672189717" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Port A" />
