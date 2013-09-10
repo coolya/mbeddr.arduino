@@ -13,7 +13,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3239222353349758187" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="3239222353349764673" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="3239222353349764685" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="void __vector_ " />
+            <property name="value" nameId="2omo.1237305576108" value="ISR(_VECTOR(" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="3239222353349764764" nodeInfo="ng">
             <node role="value" roleId="2omo.1237305790512" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3239222353349829425" nodeInfo="nn">
@@ -33,29 +33,8 @@
               </node>
             </node>
           </node>
-          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="3239222353349764723" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="(void) __attribute__ ((signal,used, externally_visible)) ; void __vector_" />
-          </node>
-          <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="3239222353349835022" nodeInfo="ng">
-            <node role="value" roleId="2omo.1237305790512" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3239222353349835023" nodeInfo="nn">
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3239222353349835024" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="" />
-              </node>
-              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3239222353349835025" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3239222353349835026" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="3239222353349835027" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3239222353349835028" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="koo2.3239222353347769057" />
-                  </node>
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3239222353349835029" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="koo2.5996559263525145878" resolveInfo="vector" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="3239222353349851856" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value=" (void)" />
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6923996477550090483" nodeInfo="ng">
+            <property name="value" nameId="2omo.1237305576108" value="))" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="3239222353349862946" nodeInfo="ng">
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3239222353349870753" nodeInfo="nn">
