@@ -336,6 +336,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5466295800791659577" resolveInfo="Register" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6923996477552233498" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.4811430974075023012" resolveInfo="IRequiresHeaderImport" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2426951403070495999" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DelayExpression" />
@@ -619,6 +622,13 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="529332856714479018" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6923996477550665851" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="WordRegister" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="register" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a word register" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="register16" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5466295800791659577" resolveInfo="Register" />
   </root>
 </model>
 

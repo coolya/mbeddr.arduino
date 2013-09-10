@@ -271,7 +271,7 @@
       <property name="vector" nameId="koo2.5996559263525145878" value="15" />
     </node>
     <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548452" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Coutner0 Overflow" />
+      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter0 Overflow" />
       <property name="vector" nameId="koo2.5996559263525145878" value="16" />
     </node>
     <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548453" nodeInfo="ng">
@@ -493,6 +493,34 @@
       <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="8357009515672928073" nodeInfo="ng">
         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
         <property name="value" nameId="mj1l.1054289341113450445" value="c4" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="6923996477550648027" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TCCR1A" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="6923996477550648028" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="80" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="6923996477550648494" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TCCR1B" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="6923996477550648495" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="81" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="6923996477552029561" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMSK1" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="6923996477552029562" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="6F" />
+      </node>
+    </node>
+    <node role="registers" roleId="koo2.5466295800791763893" type="koo2.WordRegister" typeId="koo2.6923996477550665851" id="6923996477551039629" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="OCR1A" />
+      <node role="address" roleId="koo2.5996559263524930014" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="6923996477551039828" nodeInfo="ng">
+        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+        <property name="value" nameId="mj1l.1054289341113450445" value="88" />
       </node>
     </node>
     <node role="serialPorts" roleId="koo2.8357009515671906835" type="koo2.SerialPort" typeId="koo2.3762453592947589650" id="8357009515672189717" nodeInfo="ng">
