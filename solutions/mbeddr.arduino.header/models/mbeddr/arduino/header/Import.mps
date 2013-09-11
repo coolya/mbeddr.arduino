@@ -273,14 +273,14 @@
     <property name="name" nameId="tpck.1169194664001" value="avr_io" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="avr." />
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="1125629915293422014" nodeInfo="ng">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;avr/io.h&quot;" />
+      <property name="path" nameId="x27k.6116558314501417936" value="&lt;avr/io.h&gt;" />
     </node>
   </root>
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="1125629915293422015" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="avr_interrupt" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="avr." />
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="1125629915293422016" nodeInfo="ng">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;avr/interrupt.h&quot;" />
+      <property name="path" nameId="x27k.6116558314501417936" value="&lt;avr/interrupt.h&gt;" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1125629915293422017" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1125629915293422013" resolveInfo="avr_io" />
