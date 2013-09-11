@@ -10,9 +10,10 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="15" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8357009515683983939" nodeInfo="ng">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8357009515683984496" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="serial" />
@@ -120,7 +121,7 @@
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.SerialConfiguration" typeId="koo2.3762453592947515494" id="8357009515671897558" nodeInfo="ng">
-      <property name="baud" nameId="koo2.4546342499720444441" value="9600" />
+      <property name="baud" nameId="koo2.4546342499720444441" value="57600" />
       <property name="databits" nameId="koo2.4546342499720444462" value="8" />
       <property name="stopbits" nameId="koo2.4546342499720444453" value="1" />
       <link role="port" roleId="koo2.3762453592947594868" targetNodeId="1o4w.8357009515672189717" resolveInfo="Port A" />
@@ -144,6 +145,7 @@
         <property name="name" nameId="tpck.1169194664001" value="hello" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="text" nameId="k146.2688792604367903089" value="hello world!" />
+        <property name="count" nameId="k146.6209278014151014065" value="true" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8357009515683984509" nodeInfo="ng">
@@ -180,6 +182,20 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="koo2.InitializePinsAnnotation" typeId="koo2.5379590057552996070" id="8357009515684010535" nodeInfo="ng" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8357009515684685870" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1378717335229_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8357009515684686505" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="dsf" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8357009515684686506" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8357009515684686508" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8357009515684692567" nodeInfo="ng" />
+      </node>
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8357009515684004394" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="aelz.1125629915293421994" resolveInfo="util_delay" />
