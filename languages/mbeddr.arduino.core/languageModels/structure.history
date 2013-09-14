@@ -150,5 +150,11 @@
     </dependencies>
     <rename id="koo2.8357009515672221004" type="REFERENCE" from="UBRR" to="UBRRH" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="24" />
+    </dependencies>
+    <rename id="koo2.8357009515669319625" type="CONCEPT" from="ForEverStatement" to="MainLoopStatement" />
+  </StructureModification>
 </history>
 

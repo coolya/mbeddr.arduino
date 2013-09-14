@@ -2,10 +2,14 @@
 <model modelUID="r:8e04b281-9a9f-4392-893c-80a9ffab1a42(arduino.samples.Serial)">
   <persistence version="8" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
+  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
+  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
   <devkit namespace="6845f348-7ea5-449c-ae3b-3d600bc3b73d(mbeddr.arduino)" />
   <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="24" implicit="yes" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="25" implicit="yes" />
   <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
@@ -164,7 +168,7 @@
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8357009515683984511" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="koo2.ForEverStatement" typeId="koo2.8357009515669319625" id="8357009515683992894" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="koo2.MainLoopStatement" typeId="koo2.8357009515669319625" id="8357009515683992894" nodeInfo="ng">
           <node role="statements" roleId="koo2.8357009515669353921" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8357009515683992896" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="8357009515683998827" nodeInfo="ng">
               <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="8357009515683998829" nodeInfo="ng">
