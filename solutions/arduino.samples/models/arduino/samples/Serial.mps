@@ -198,6 +198,19 @@
                 </node>
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="koo2.WriteStatement" typeId="koo2.5521277500683504384" id="5521277500683970582" nodeInfo="ng">
+              <link role="target" roleId="koo2.5521277500683504385" targetNodeId="1o4w.8357009515672189717" resolveInfo="Port A" />
+              <node role="expression" roleId="koo2.5521277500683504387" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5521277500684030220" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5521277500684030223" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5521277500684024982" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8357009515683984519" nodeInfo="ng">

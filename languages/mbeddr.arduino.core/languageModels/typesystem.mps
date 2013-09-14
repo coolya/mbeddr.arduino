@@ -416,5 +416,24 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="koo2.6923996477550665851" resolveInfo="WordRegister" />
     </node>
   </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="5521277500701168943" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="check_WriteStatement" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5521277500701168944" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5521277500701169254" nodeInfo="nn">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5521277500701169986" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5521277500701169253" nodeInfo="nn">
+            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5521277500701168946" resolveInfo="ws" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5521277500701185972" nodeInfo="nn">
+            <link role="link" roleId="tp25.1138056516764" targetNodeId="koo2.5521277500683504387" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5521277500701168946" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="ws" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="koo2.5521277500683504384" resolveInfo="WriteStatement" />
+    </node>
+  </root>
 </model>
 
