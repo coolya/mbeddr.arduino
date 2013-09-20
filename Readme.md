@@ -13,7 +13,7 @@ Currently this project nothing but a playground if offers some really limited su
 Obviously you will need a working MPS and mbeddr installation. You will need at least [version 0.5-EAP](https://github.com/mbeddr/mbeddr.core/releases/tag/0.5-EAP1).
 
 
-If you want to work with the master branch you will also need [version 3.0](http://www.jetbrains.com/mps/download/) of MPS. I
+If you want to work with the master branch you will also need [version 3.0](http://www.jetbrains.com/mps/download/) of MPS. 
 
 ### Setup
 
