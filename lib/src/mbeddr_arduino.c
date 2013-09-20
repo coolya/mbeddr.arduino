@@ -49,23 +49,6 @@ void uart_write_byte(uint8_t d)
        UDR0 = d;
 
 }
-inline void uart_write_word(uint16_t d)
-{
-       while(!(UCSR0A & (1<<UDRE0)));
-       UDR0 = (uint8_t)d;
-       while(!(UCSR0A & (1<<UDRE0)));
-       UDR0 = (uint8_t) (d >>8);
-}
-inline void uart_write_dword(uint32_t d)
-{
-        uart_write_word((uint16_t) d);
-        uart_write_word((uint16_t) (d >> 16));
-}
-void uart_write_qword(uint64_t d)
-{
-        uart_write_dword((uint32_t)d);
-        uart_write_dword((uint32_t)(d >> 32));
-}
 
 unsigned char uart_receive(void){
  
