@@ -8,6 +8,7 @@
   <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
   <devkit namespace="6845f348-7ea5-449c-ae3b-3d600bc3b73d(mbeddr.arduino)" />
   <devkit namespace="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
+  <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -475,6 +476,15 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587301672" resolveInfo="r_act" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3705638916589542207" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3705638916589542208" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3705638916589542209" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3705638916589542210" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="calculate the resistance of the NTC and introduce the OHM unit to it" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3705638916587315827" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3705638916588019925" nodeInfo="ng">
@@ -491,6 +501,15 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587559707" resolveInfo="tempK" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3705638916589549401" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3705638916589549402" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3705638916589549403" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3705638916589549404" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="convert OHM to \u00B0K by using the unit system" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3705638916587340117" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3705638916587340232" nodeInfo="ng">
@@ -505,6 +524,15 @@
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3705638916587340116" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587304192" resolveInfo="temp" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3705638916589556480" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3705638916589556481" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3705638916589556482" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3705638916589556483" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="and finally convert \u00B0K to \u00B0C" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -539,6 +567,12 @@
             <node role="propVals" roleId="k146.767515563077221084" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3705638916587397618" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587370645" resolveInfo="tempInt" />
             </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="koo2.WriteStatement" typeId="koo2.5521277500683504384" id="3705638916589707909" nodeInfo="ng">
+          <link role="target" roleId="koo2.5521277500683504385" targetNodeId="1o4w.8357009515672189717" resolveInfo="Port A" />
+          <node role="expression" roleId="koo2.5521277500683504387" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3705638916589708087" nodeInfo="ng">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587370645" resolveInfo="tempInt" />
           </node>
         </node>
       </node>
@@ -762,6 +796,15 @@
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3705638916587324864" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3705638916589535527" nodeInfo="ng">
+        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3705638916589535528" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3705638916589535529" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3705638916589535530" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Dummy header to import a used function from math.h" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
