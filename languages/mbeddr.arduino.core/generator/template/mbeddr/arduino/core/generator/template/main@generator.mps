@@ -556,6 +556,9 @@
                 </node>
               </node>
             </node>
+            <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="3705638916588506840" nodeInfo="ng">
+              <property name="text" nameId="i2y7.3373914745211590948" value="-lm" />
+            </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7717755763392622501" nodeInfo="nn">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="label" />
