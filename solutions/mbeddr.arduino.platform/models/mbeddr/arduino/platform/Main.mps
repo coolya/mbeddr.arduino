@@ -3,10 +3,19 @@
   <persistence version="8" />
   <language namespace="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="fb853ce7-1235-4635-99f2-8ca7447fa202(com.mbeddr.ext.physicalunits)" />
+  <language namespace="d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+  <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
+  <import index="ntac" modelUID="r:61ae4672-db88-4303-98ca-fe825ef7d0f7(arduino.samples.weather)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="25" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
+  <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" implicit="yes" />
+  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
   <root type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="2399978797584514209" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="uno" />
     <property name="cpuSpeed" nameId="koo2.5466295800791827904" value="16" />
@@ -531,6 +540,114 @@
       <link role="UDR" roleId="koo2.8357009515672220876" targetNodeId="8357009515672594419" resolveInfo="UDR0" />
       <link role="UBRRL" roleId="koo2.8357009515672595296" targetNodeId="8357009515672927864" resolveInfo="UBRR0L" />
       <link role="UBRRH" roleId="koo2.8357009515672221004" targetNodeId="8357009515672927482" resolveInfo="UBRR0H" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8535131618862778469" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Units" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="3705638916587554194" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="3705638916587554193" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="°C" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="3705638916587554569" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="3705638916587554567" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="°K" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8535131618862790008" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1379850306748_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="3705638916587554765" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="3705638916587554856" nodeInfo="ng">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587554889" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="273.15" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.StripUnitExpression" typeId="3c6d.4006257212296783260" id="3705638916587558347" nodeInfo="ng">
+          <node role="expr" roleId="3c6d.4006257212296783261" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="3705638916587554787" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="3705638916587554783" nodeInfo="ng">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="3705638916587554567" resolveInfo="°K" />
+      </node>
+      <node role="to" roleId="ym4j.2078797996880475938" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="3705638916587554785" nodeInfo="ng">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="3705638916587554193" resolveInfo="°C" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="8535131618862790870" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8535131618862791074" nodeInfo="ng">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8535131618862791111" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="273.15" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.StripUnitExpression" typeId="3c6d.4006257212296783260" id="8535131618862794815" nodeInfo="ng">
+          <node role="expr" roleId="3c6d.4006257212296783261" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="8535131618862790916" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8535131618862790910" nodeInfo="ng">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="3705638916587554193" resolveInfo="°C" />
+      </node>
+      <node role="to" roleId="ym4j.2078797996880475938" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8535131618862790913" nodeInfo="ng">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="3705638916587554567" resolveInfo="°K" />
+      </node>
+    </node>
+  </root>
+  <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="3471891103926634953" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Arduino" />
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="3471891103926636118" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Arduino" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3471891103926636127" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Board" />
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="3471891103926636466" nodeInfo="ng" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3471891103926636492" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="CPU8Bit" />
+          <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.ConflictsConstraint" typeId="qqyh.8433257123783652305" id="3471891103926636498" nodeInfo="ng">
+            <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="3471891103926636495" resolveInfo="CPU32Bit" />
+          </node>
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3471891103926636495" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="CPU32Bit" />
+          <node role="crossConstraints" roleId="qqyh.8433257123783652307" type="qqyh.ConflictsConstraint" typeId="qqyh.8433257123783652305" id="3471891103926636500" nodeInfo="ng">
+            <link role="feature" roleId="qqyh.8433257123783652292" targetNodeId="3471891103926636492" resolveInfo="CPU8Bit" />
+          </node>
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3471891103926636502" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="UART1" />
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3471891103926636508" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="UART2" />
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3471891103926636515" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="UART3" />
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3471891103926636523" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="UART4" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3471891103983674159" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Regs" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="koo2.RegisterElemensDefinition" typeId="koo2.3471891103984065985" id="6638578106139680984" nodeInfo="ng">
+      <node role="elements" roleId="koo2.3471891103984074209" type="koo2.BitElement" typeId="koo2.3471891103985798431" id="6638578106139680996" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PD1" />
+      </node>
+      <node role="elements" roleId="koo2.3471891103984074209" type="koo2.RegisterElement" typeId="koo2.3471891103984074220" id="6638578106139680999" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PD2" />
+      </node>
+      <node role="elements" roleId="koo2.3471891103984074209" type="koo2.RegisterElement" typeId="koo2.3471891103984074220" id="6638578106139681002" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PD3" />
+      </node>
+      <node role="register" roleId="koo2.7181129395261721140" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="6638578106139680928" nodeInfo="ng">
+        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="PIND" />
+      </node>
     </node>
   </root>
 </model>

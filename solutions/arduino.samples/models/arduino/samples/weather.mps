@@ -17,7 +17,7 @@
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="25" implicit="yes" />
   <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" implicit="yes" />
@@ -50,13 +50,13 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="3705638916587281676" nodeInfo="ng">
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860201" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="doorLock" />
+        <property name="name" nameId="tpck.1169194664001" value="fdf" />
         <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553598" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860202" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="lazerBeam" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
+        <property name="name" nameId="tpck.1169194664001" value="led" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="output" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553599" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860203" nodeInfo="ng">
@@ -131,20 +131,24 @@
       <link role="port" roleId="koo2.3762453592947594868" targetNodeId="1o4w.8357009515672189717" resolveInfo="Port A" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="3705638916587295444" nodeInfo="ng">
-      <node role="strategy" roleId="k146.4459718605982051999" type="koo2.SerialReportingStrategy" typeId="koo2.6749790727191518940" id="3705638916587295466" nodeInfo="ng">
-        <link role="serialConfig" roleId="koo2.8357009515673800408" targetNodeId="3705638916587295406" />
-      </node>
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.DoNothingReportingStrategy" typeId="k146.4459718605982051985" id="6638578106139680570" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="3705638916587767039" nodeInfo="ng" />
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3705638916587295523" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3705638916587295524" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="main" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3705638916587295526" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="3705638916587297032" nodeInfo="ng">
-          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="3705638916587297034" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8535131618862862043" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1379850475208_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="koo2.SetUpVoid" typeId="koo2.3705638916589737460" id="8535131618862863757" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="setupvoid" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8535131618862863758" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="koo2.3705638916589737716" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8535131618862863759" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="8535131618862881189" nodeInfo="ng">
+          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="8535131618862881191" nodeInfo="ng">
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="3705638916587296815" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="3705638916587296969" resolveInfo="hello" />
           </node>
@@ -303,38 +307,33 @@
             <link role="constant" roleId="x27k.6021475212426147388" targetNodeId="aelz.1125629915293422024" resolveInfo="sei" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3705638916588087542" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="koo2.MainLoopStatement" typeId="koo2.8357009515669319625" id="3705638916587297184" nodeInfo="ng">
-          <node role="statements" roleId="koo2.8357009515669353921" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3705638916587297186" nodeInfo="ng">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3705638916587297343" nodeInfo="ng">
-              <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.DelayExpression" typeId="koo2.2426951403070495999" id="3705638916587297339" nodeInfo="ng">
-                <node role="expression" roleId="koo2.2426951403070520654" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587297368" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.8860443239512128104" value="3000" />
-                </node>
-              </node>
-            </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="3705638916588081503" nodeInfo="ng">
-              <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="3705638916588081505" nodeInfo="ng">
-                <link role="table" roleId="k146.2688792604367964824" targetNodeId="3705638916587296815" resolveInfo="messages" />
-                <link role="msg" roleId="k146.2688792604367964825" targetNodeId="3705638916588081058" resolveInfo="ping" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3705638916587296514" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="3705638916587295534" nodeInfo="ng">
-          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587295535" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-          </node>
-        </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3705638916587295528" nodeInfo="ng">
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8535131618862879985" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1379850518869_7" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="koo2.MainLoop" typeId="koo2.3705638916592120389" id="8535131618862879570" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="mainloop" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8535131618862879571" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="koo2.InitializePinsAnnotation" typeId="koo2.5379590057552996070" id="3705638916587296085" nodeInfo="ng" />
+      <node role="body" roleId="koo2.3705638916592125422" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8535131618862879572" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6638578106138667407" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.DelayExpression" typeId="koo2.2426951403070495999" id="6638578106138667403" nodeInfo="ng">
+            <node role="expression" roleId="koo2.2426951403070520654" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6638578106138667439" nodeInfo="ng">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="10000" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="8535131618862880982" nodeInfo="ng">
+          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="8535131618862880984" nodeInfo="ng">
+            <link role="table" roleId="k146.2688792604367964824" targetNodeId="3705638916587296815" resolveInfo="messages" />
+            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="3705638916588081058" resolveInfo="ping" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3705638916588081512" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1379703367167_14" />
@@ -352,6 +351,12 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6638578106139539247" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1380191721122_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6638578106139539421" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1380191721278_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3705638916587300010" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="measure" />
@@ -569,17 +574,39 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="koo2.WriteStatement" typeId="koo2.5521277500683504384" id="3705638916589707909" nodeInfo="ng">
-          <link role="target" roleId="koo2.5521277500683504385" targetNodeId="1o4w.8357009515672189717" resolveInfo="Port A" />
-          <node role="expression" roleId="koo2.5521277500683504387" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3705638916589708087" nodeInfo="ng">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587370645" resolveInfo="tempInt" />
-          </node>
-        </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3705638916587299747" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6638578106139635842" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1380192654817_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="koo2.ISR" typeId="koo2.3239222353347751062" id="6638578106139636267" nodeInfo="ng">
+      <link role="interrupt" roleId="koo2.3239222353347769057" targetNodeId="1o4w.2399978797584548439" resolveInfo="Pin Change Interrupt Request 0" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6638578106139636268" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="koo2.529332856714479015" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6638578106139636270" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6638578106139680327" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6638578106139680431" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="6638578106139680444" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6638578106139680467" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="koo2.DigitalPinRefExpression" typeId="koo2.5379590057553076723" id="6638578106139680497" nodeInfo="ng">
+                <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="1630441749093860202" resolveInfo="led" />
+              </node>
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="koo2.DigitalPinRefExpression" typeId="koo2.5379590057553076723" id="6638578106139680430" nodeInfo="ng">
+              <link role="pinConfig" roleId="koo2.5379590057553076724" targetNodeId="1630441749093860202" resolveInfo="led" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6638578106139637131" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1380192740448_5" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="3705638916587296815" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="messages" />
@@ -608,6 +635,19 @@
         <property name="name" nameId="tpck.1169194664001" value="ping" />
         <property name="text" nameId="k146.2688792604367903089" value="ping" />
       </node>
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6638578106138609347" nodeInfo="ng">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="kind" nameId="k146.2688792604367903094" value="1" />
+        <property name="name" nameId="tpck.1169194664001" value="raw_begin" />
+        <property name="text" nameId="k146.2688792604367903089" value="raw temp begin:" />
+      </node>
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6638578106138609523" nodeInfo="ng">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="kind" nameId="k146.2688792604367903094" value="1" />
+        <property name="name" nameId="tpck.1169194664001" value="raw_end" />
+        <property name="text" nameId="k146.2688792604367903089" value=" " />
+      </node>
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.EmptyMessageDefinition" typeId="k146.7085783497126752833" id="6638578106138609433" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3705638916587322922" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1379701383790_4" />
@@ -816,6 +856,7 @@
     <property name="name" nameId="tpck.1169194664001" value="units" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3705638916587814204" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="TN" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3705638916587814248" nodeInfo="ng">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587814249" nodeInfo="ng">
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -829,6 +870,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3705638916587815672" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="R" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587815805" nodeInfo="ng">
         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
         <property name="value" nameId="mj1l.8860443239512128104" value="4700" />
@@ -836,6 +878,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3705638916587816028" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="B" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587816069" nodeInfo="ng">
         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
         <property name="value" nameId="mj1l.8860443239512128104" value="3950" />

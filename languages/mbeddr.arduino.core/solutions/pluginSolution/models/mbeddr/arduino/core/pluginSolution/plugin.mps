@@ -798,17 +798,13 @@
     </node>
     <node role="beforeTask" roleId="uhxm.6550182048787537895" type="uhxm.BeforeTaskCall" typeId="uhxm.6550182048787537880" id="1885912986662339403" nodeInfo="ng">
       <link role="beforeTask" roleId="uhxm.6550182048787537881" targetNodeId="x3yd.1072345776550050141" resolveInfo="generate and make" />
-      <node role="parameter" roleId="uhxm.5475888311765521408" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="3630275489920360839" nodeInfo="nn">
-        <link role="concept" roleId="tp25.1140138128738" targetNodeId="51wr.5046689135693761556" resolveInfo="Binary" />
-        <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3630275489920358088" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3630275489920358070" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="uhxm.ConfigurationFromExecutorReference" typeId="uhxm.7806358006983738927" id="1885912986662339404" nodeInfo="nn" />
-            <node role="operation" roleId="tpee.1197027833540" type="fb9u.PersistentPropertyReferenceOperation" typeId="fb9u.946964771156066574" id="3630275489920358076" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="fb9u.946964771156066575" targetNodeId="1611636138415081178" resolveInfo="myBinary" />
-            </node>
-          </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="3630275489920360833" nodeInfo="nn">
-            <link role="member" roleId="tp4f.1205756909548" targetNodeId="awpe.8278380780105768315" resolveInfo="getNode" />
+      <node role="parameter" roleId="uhxm.5475888311765521408" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6638578106142238755" nodeInfo="nn">
+        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x3yd.8363378884435057529" resolveInfo="castToBinary" />
+        <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.8363378884435056210" resolveInfo="RunConfigurationUtil" />
+        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3630275489920358070" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="uhxm.ConfigurationFromExecutorReference" typeId="uhxm.7806358006983738927" id="1885912986662339404" nodeInfo="nn" />
+          <node role="operation" roleId="tpee.1197027833540" type="fb9u.PersistentPropertyReferenceOperation" typeId="fb9u.946964771156066574" id="3630275489920358076" nodeInfo="nn">
+            <link role="variableDeclaration" roleId="fb9u.946964771156066575" targetNodeId="1611636138415081178" resolveInfo="myBinary" />
           </node>
         </node>
       </node>
