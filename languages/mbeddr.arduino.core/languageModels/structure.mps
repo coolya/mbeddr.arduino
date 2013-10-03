@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="25">
+<model modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="27">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="25" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="27" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
@@ -12,9 +12,9 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" />
+  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2350648883898812438" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ArduinoPlatform" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="platform" />
@@ -692,6 +692,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3471891103984065985" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RegisterElemensDefinition" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="registerElement" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.mbeddr" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3471891103984074209" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -713,9 +714,10 @@
     <property name="name" nameId="tpck.1169194664001" value="RegisterElement" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.mbeddr" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3471891103984074221" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="bit" />
+      <property name="name" nameId="tpck.1169194664001" value="startBit" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3471891103985798569" nodeInfo="ig">
@@ -730,7 +732,34 @@
     <property name="name" nameId="tpck.1169194664001" value="BitElement" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="bit" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a single bit in the register" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.mbeddr" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3471891103984074220" resolveInfo="RegisterElement" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6464792242258511474" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.mbeddr" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="name" nameId="tpck.1169194664001" value="RegisterAction" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3471891103984074220" resolveInfo="RegisterElement" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6464792242258511786" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.mbeddr" />
+    <property name="name" nameId="tpck.1169194664001" value="KickAction" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="kick" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6464792242258511474" resolveInfo="RegisterAction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6464792242258511787" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.mbeddr" />
+    <property name="name" nameId="tpck.1169194664001" value="ResetAction" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="reset" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="nulls all bits of the register" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6464792242258511474" resolveInfo="RegisterAction" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6464792242258513405" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6464792242258513376" resolveInfo="IApplicableToAllRegisters" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6464792242258513376" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.mbeddr" />
+    <property name="name" nameId="tpck.1169194664001" value="IApplicableToAllRegisters" />
   </root>
 </model>
 
