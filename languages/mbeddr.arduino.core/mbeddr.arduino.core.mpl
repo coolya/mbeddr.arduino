@@ -10,10 +10,6 @@
     <facet type="java" />
     <facet type="tests" />
     <facet type="java" />
-    <facet type="tests" />
-    <facet type="java" />
-    <facet type="tests" />
-    <facet type="java" />
   </facets>
   <accessoryModels>
     <model modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" />
