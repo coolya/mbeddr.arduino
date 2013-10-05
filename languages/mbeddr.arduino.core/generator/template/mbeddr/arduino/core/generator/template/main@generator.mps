@@ -3749,6 +3749,12 @@
         </node>
       </node>
     </node>
+    <node role="targets" roleId="i2y7.5950410542643587173" type="i2y7.Target" typeId="i2y7.5950410542643587165" id="7926183820223960334" nodeInfo="ng">
+      <property name="label" nameId="i2y7.5950410542643587166" value="debug" />
+      <node role="dependencies" roleId="i2y7.5950410542643587171" type="i2y7.TargetDependency" typeId="i2y7.745648737914657273" id="7926183820224062373" nodeInfo="ng">
+        <link role="target" roleId="i2y7.745648737914657274" targetNodeId="7717755763392632955" />
+      </node>
+    </node>
     <node role="targets" roleId="i2y7.5950410542643587173" type="i2y7.Target" typeId="i2y7.5950410542643587165" id="7717755763392632364" nodeInfo="ng">
       <property name="label" nameId="i2y7.5950410542643587166" value=".PHONY" />
       <node role="dependencies" roleId="i2y7.5950410542643587171" type="i2y7.TargetDependency" typeId="i2y7.745648737914657273" id="5048824311957635024" nodeInfo="ng">
