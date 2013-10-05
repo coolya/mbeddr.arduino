@@ -782,5 +782,54 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5763383285156461605" resolveInfo="IMemberReference" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7926183820225218342" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="SleepMode" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sleep mode" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7926183820225229718" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="SleepStatement" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sleep" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7926183820225229719" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="mode" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7926183820225218342" resolveInfo="SleepMode" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7926183820225234532" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="SleepModeIdle" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Idle Mode" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7926183820225218342" resolveInfo="SleepMode" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7926183820225238186" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
+    <property name="name" nameId="tpck.1169194664001" value="SleepModeADC" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ADC Noise Reduction Mode" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7926183820225218342" resolveInfo="SleepMode" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7926183820225239394" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
+    <property name="name" nameId="tpck.1169194664001" value="SleepModePwrDown" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Power-Down Mode" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7926183820225218342" resolveInfo="SleepMode" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7926183820225239395" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
+    <property name="name" nameId="tpck.1169194664001" value="SleepModePwrSave" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Power-Save-Mode" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7926183820225218342" resolveInfo="SleepMode" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7926183820225239738" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
+    <property name="name" nameId="tpck.1169194664001" value="SleepModeStdBy" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Standby-Mode" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7926183820225218342" resolveInfo="SleepMode" />
+  </root>
 </model>
 
