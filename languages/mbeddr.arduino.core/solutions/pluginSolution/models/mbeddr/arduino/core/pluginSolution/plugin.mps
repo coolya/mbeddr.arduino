@@ -938,13 +938,8 @@
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1611636138415081402" resolveInfo="result" />
                               </node>
                               <node role="rValue" roleId="tpee.1068498886297" type="rzqf.NewProcessBuilderExpression" typeId="rzqf.2343546112398330898" id="1611636138415081432" nodeInfo="nn">
-                                <node role="commandPart" roleId="rzqf.2343546112398330901" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1611636138415081433" nodeInfo="nn">
-                                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1611636138415081434" nodeInfo="nn">
-                                    <property name="value" nameId="tpee.1070475926801" value="./" />
-                                  </node>
-                                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3102510875954676028" nodeInfo="nn">
-                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3630275489920370966" resolveInfo="command" />
-                                  </node>
+                                <node role="commandPart" roleId="rzqf.2343546112398330901" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3102510875954676028" nodeInfo="nn">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3630275489920370966" resolveInfo="command" />
                                 </node>
                                 <node role="workingDirectory" roleId="rzqf.2343546112398330902" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="733913029903499916" nodeInfo="nn">
                                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="x3yd.1611636138415080954" resolveInfo="PlatformUtil" />
