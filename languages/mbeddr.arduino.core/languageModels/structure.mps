@@ -391,17 +391,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5996559263525145875" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Interrupt" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5996559263525145878" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="vector" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5996559263525145877" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1885912986662341396" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ArduinoExecutale" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="an arduino executable binary" />
@@ -579,32 +568,6 @@
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4546342499720444324" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="Odd" />
       <property name="internalValue" nameId="tpce.1083923523171" value="Odd" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3239222353347751062" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ISR" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ISR" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="529332856714479015" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3239222353347769057" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <property name="role" nameId="tpce.1071599776563" value="interrupt" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5996559263525145875" resolveInfo="Interrupt" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="529332856714479016" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="529332856714479017" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="529332856714479018" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6923996477550665851" nodeInfo="ig">

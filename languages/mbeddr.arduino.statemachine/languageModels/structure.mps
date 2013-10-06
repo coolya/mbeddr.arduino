@@ -10,6 +10,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="ttha" modelUID="r:ad7103c9-f253-4cba-81d0-baadf2d307a0(mbeddr.arduino.statemachine.structure)" version="-1" implicit="yes" />
+  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3239222353343486887" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="InterruptInEventTrigger" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="arduino interrupt" />
@@ -37,7 +38,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="interrupt" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="koo2.5996559263525145875" resolveInfo="Interrupt" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="nbyu.1017957699896642358" resolveInfo="InterruptDeclaration" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3239222353345226176" nodeInfo="ig">
