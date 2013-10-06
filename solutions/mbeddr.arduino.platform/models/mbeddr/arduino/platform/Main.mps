@@ -11,6 +11,8 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="28" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
   <root type="koo2.ArduinoDescription" typeId="koo2.5466295800791659568" id="2399978797584514209" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="uno" />
     <property name="cpuSpeed" nameId="koo2.5466295800791827904" value="16" />
@@ -214,105 +216,105 @@
       <link role="dataDirectionReg" roleId="koo2.5466295800791763774" targetNodeId="2399978797584528153" resolveInfo="DDRB" />
       <link role="outputReg" roleId="koo2.2709324298540848187" targetNodeId="2399978797584528157" resolveInfo="PORTB" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548437" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="External Interrupt Request 0" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="1" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548437" nodeInfo="ng">
+      <property name="name" value="External Interrupt Request 0" />
+      <property name="vector" value="1" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548438" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="External Interrupt Request 1" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="2" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548438" nodeInfo="ng">
+      <property name="name" value="External Interrupt Request 1" />
+      <property name="vector" value="2" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548439" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Pin Change Interrupt Request 0" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="3" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548439" nodeInfo="ng">
+      <property name="name" value="Pin Change Interrupt Request 0" />
+      <property name="vector" value="3" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548440" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Pin Change Interrupt Request 0 (4)" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="4" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548440" nodeInfo="ng">
+      <property name="name" value="Pin Change Interrupt Request 0 (4)" />
+      <property name="vector" value="4" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548441" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Pin Change Interrupt Request 1" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="5" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548441" nodeInfo="ng">
+      <property name="name" value="Pin Change Interrupt Request 1" />
+      <property name="vector" value="5" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548442" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Watchdog Time-out Interrupt" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="6" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548442" nodeInfo="ng">
+      <property name="name" value="Watchdog Time-out Interrupt" />
+      <property name="vector" value="6" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548443" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter2 Compare Match A" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="7" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548443" nodeInfo="ng">
+      <property name="name" value="Timer/Counter2 Compare Match A" />
+      <property name="vector" value="7" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548444" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter2 Compare Match B" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="8" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548444" nodeInfo="ng">
+      <property name="name" value="Timer/Counter2 Compare Match B" />
+      <property name="vector" value="8" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548445" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter2 Overflow " />
-      <property name="vector" nameId="koo2.5996559263525145878" value="9" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548445" nodeInfo="ng">
+      <property name="name" value="Timer/Counter2 Overflow " />
+      <property name="vector" value="9" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548446" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Capture Event" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="10" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548446" nodeInfo="ng">
+      <property name="name" value="Timer/Counter1 Capture Event" />
+      <property name="vector" value="10" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548447" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Compare Match A" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="11" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548447" nodeInfo="ng">
+      <property name="name" value="Timer/Counter1 Compare Match A" />
+      <property name="vector" value="11" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548448" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Compare Match B" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="12" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548448" nodeInfo="ng">
+      <property name="name" value="Timer/Counter1 Compare Match B" />
+      <property name="vector" value="12" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548449" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter1 Overflow" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="13" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548449" nodeInfo="ng">
+      <property name="name" value="Timer/Counter1 Overflow" />
+      <property name="vector" value="13" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548450" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="TimerCounter0 Compare Match A " />
-      <property name="vector" nameId="koo2.5996559263525145878" value="14" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548450" nodeInfo="ng">
+      <property name="name" value="TimerCounter0 Compare Match A " />
+      <property name="vector" value="14" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548451" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="TimerCounter0 Compare Match B" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="15" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548451" nodeInfo="ng">
+      <property name="name" value="TimerCounter0 Compare Match B" />
+      <property name="vector" value="15" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548452" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Timer/Counter0 Overflow" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="16" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548452" nodeInfo="ng">
+      <property name="name" value="Timer/Counter0 Overflow" />
+      <property name="vector" value="16" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548453" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="SPI Serial Transfer Complete" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="17" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548453" nodeInfo="ng">
+      <property name="name" value="SPI Serial Transfer Complete" />
+      <property name="vector" value="17" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548454" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="USART Rx Complete " />
-      <property name="vector" nameId="koo2.5996559263525145878" value="18" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548454" nodeInfo="ng">
+      <property name="name" value="USART Rx Complete " />
+      <property name="vector" value="18" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548455" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="USART, Data Register Empty" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="19" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548455" nodeInfo="ng">
+      <property name="name" value="USART, Data Register Empty" />
+      <property name="vector" value="19" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548456" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="USART Tx Complete" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="20" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548456" nodeInfo="ng">
+      <property name="name" value="USART Tx Complete" />
+      <property name="vector" value="20" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548457" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ADC Conversion Complete " />
-      <property name="vector" nameId="koo2.5996559263525145878" value="21" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548457" nodeInfo="ng">
+      <property name="name" value="ADC Conversion Complete " />
+      <property name="vector" value="21" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548458" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="EEPROM Ready" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="22" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548458" nodeInfo="ng">
+      <property name="name" value="EEPROM Ready" />
+      <property name="vector" value="22" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548459" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Analog Comparator" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="23" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548459" nodeInfo="ng">
+      <property name="name" value="Analog Comparator" />
+      <property name="vector" value="23" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548460" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Two-wire Serial Interface " />
-      <property name="vector" nameId="koo2.5996559263525145878" value="24" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548460" nodeInfo="ng">
+      <property name="name" value="Two-wire Serial Interface " />
+      <property name="vector" value="24" />
     </node>
-    <node role="interrupts" roleId="koo2.5996559263525145909" type="koo2.Interrupt" typeId="koo2.5996559263525145875" id="2399978797584548461" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Store Program Memory Read" />
-      <property name="vector" nameId="koo2.5996559263525145878" value="25" />
+    <node role="interrupts" roleId="koo2.5996559263525145909" type=".mbeddr.arduino.core.structure.Interrupt" id="2399978797584548461" nodeInfo="ng">
+      <property name="name" value="Store Program Memory Read" />
+      <property name="vector" value="25" />
     </node>
     <node role="registers" roleId="koo2.5466295800791763893" type="koo2.ByteRegister" typeId="koo2.5466295800791745449" id="2399978797584528139" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="SREG" />
@@ -535,6 +537,236 @@
       <link role="UDR" roleId="koo2.8357009515672220876" targetNodeId="8357009515672594419" resolveInfo="UDR0" />
       <link role="UBRRL" roleId="koo2.8357009515672595296" targetNodeId="8357009515672927864" resolveInfo="UBRR0L" />
       <link role="UBRRH" roleId="koo2.8357009515672221004" targetNodeId="8357009515672927482" resolveInfo="UBRR0H" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7926183820234495538" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="uno" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495539" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="SREG" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495540" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ADMUX" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495541" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ADCSRA" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495542" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ADCL" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495543" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ADCH" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495544" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PINB" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495545" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="DDRB" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495546" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PORTB" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495547" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PINC" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495548" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="DDRC" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495549" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PORTC" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495550" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PIND" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495551" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="DDRD" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495552" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PORTD" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495553" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="UCSR0A" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495554" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="UCSR0B" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495555" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="UCSR0C" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495556" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="UDR0" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495557" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="UBRR0H" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495558" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="UBRR0L" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495559" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="TCCR1A" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495560" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="TCCR1B" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register8" typeId="nbyu.6847490852669209720" id="7926183820234495561" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="TIMSK1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.Register16" typeId="nbyu.6847490852669177902" id="7926183820234495564" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="allowCharAccess" nameId="nbyu.6847490852669177907" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="OCR1A" />
+      <property name="lowSuffix" nameId="nbyu.6847490852669177906" value="L" />
+      <property name="highSuffix" nameId="nbyu.6847490852669177905" value="H" />
+      <node role="setterExpression" roleId="nbyu.6847490852669163176" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="7926183820234495565" nodeInfo="ng" />
+      <node role="lowSetterExpr" roleId="nbyu.6847490852669177903" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="7926183820234495562" nodeInfo="ng" />
+      <node role="highSetterExpr" roleId="nbyu.6847490852669177904" type="nbyu.RegisterValueExpression" typeId="nbyu.6847490852669234137" id="7926183820234495563" nodeInfo="ng" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495568" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="INT0_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="External Interrupt Request 0" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495569" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="INT1_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="External Interrupt Request 1" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495570" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="PCINT0_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Pin Change Interrupt Request 0" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495571" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="PCINT1_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Pin Change Interrupt Request 0 (4)" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495572" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="PCINT2_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Pin Change Interrupt Request 1" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495573" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="WDT_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Watchdog Time-out Interrupt" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495574" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER2_COMPA_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter2 Compare Match A" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495575" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER2_COMPB_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter2 Compare Match B" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495576" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER2_OVF_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter2 Overflow " />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495577" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER1_CAPT_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter1 Capture Event" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495578" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER1_COMPA_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter1 Compare Match A" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495579" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER1_COMPB_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter1 Compare Match B" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495580" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER1_OVF_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter1 Overflow" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495581" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER0_COMPA_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="TimerCounter0 Compare Match A " />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495582" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER0_COMPB_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="TimerCounter0 Compare Match B" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495583" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TIMER0_OVF_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Timer/Counter0 Overflow" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495584" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="SPI_STC_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="SPI Serial Transfer Complete" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495585" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="USART_RX_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="USART Rx Complete " />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495586" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="USART_UDRE_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="USART, Data Register Empty" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495587" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="USART_TX_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="USART Tx Complete" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495588" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ADC_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="ADC Conversion Complete " />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495589" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="EE_READY_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="EEPROM Ready" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495590" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ANALOG_COMP_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Analog Comparator" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495591" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="TWI_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Two-wire Serial Interface " />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="nbyu.InterruptDeclaration" typeId="nbyu.1017957699896642358" id="7926183820234495592" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="SPM_READY_vect" />
+      <property name="humanReadableName" nameId="nbyu.7645370726688064583" value="Store Program Memory Read" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
     </node>
   </root>
 </model>
