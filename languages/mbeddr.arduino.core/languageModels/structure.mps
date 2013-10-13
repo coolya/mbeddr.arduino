@@ -866,7 +866,69 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163480076440" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Task" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="scheduling" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="task" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2002706163480459695" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="proi" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2002706163480372498" resolveInfo="TaskPriority" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2002706163480076988" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="body" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2002706163480076757" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2002706163480362795" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.6871437683401850611" resolveInfo="IStatmentListContainer" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2002706163480362802" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
+    </node>
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2002706163480372498" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="scheduling" />
+    <property name="name" nameId="tpck.1169194664001" value="TaskPriority" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="2002706163480372500" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372499" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="Low" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="10" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372500" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="20" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="Default" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372503" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="30" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="High" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372507" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="100" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="Max" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163482269088" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="scheduling" />
+    <property name="name" nameId="tpck.1169194664001" value="ScheduleStatement" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="schdule" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="schedule a task" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2002706163482269091" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="when" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2964917243559443325" resolveInfo="Time" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2002706163482269089" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="task" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2002706163480076440" resolveInfo="Task" />
+    </node>
   </root>
 </model>
 

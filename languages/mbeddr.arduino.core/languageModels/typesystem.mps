@@ -814,5 +814,14 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="c4fa.6275792049641600983" resolveInfo="IfStatement" />
     </node>
   </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2002706163481325870" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_Task" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="scheduling" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2002706163481325871" nodeInfo="sn" />
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2002706163481325873" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="task" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="koo2.2002706163480076440" resolveInfo="Task" />
+    </node>
+  </root>
 </model>
 
