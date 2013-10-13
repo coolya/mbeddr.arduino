@@ -188,6 +188,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="sleep" />
     <property name="name" nameId="tpck.1169194664001" value="convertToConditionalSleep" />
     <property name="isErrorIntention" nameId="tp3j.2522969319638091385" value="true" />
+    <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="koo2.7926183820225229718" resolveInfo="SleepStatement" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7926183820233532847" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7926183820233532848" nodeInfo="sn">
