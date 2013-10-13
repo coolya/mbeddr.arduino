@@ -806,5 +806,67 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2964917243559443325" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Time" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2964917243559444546" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="amount" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2964917243559447951" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConfiguration" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2964917243559447972" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2964917243559448020" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="ITimeConfiguration" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163479284645" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="NanoSecond" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ns" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2964917243559443325" resolveInfo="Time" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163479339446" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="MicroSecond" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="µs" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2964917243559443325" resolveInfo="Time" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163479339793" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="MilliSecond" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ms" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2964917243559443325" resolveInfo="Time" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163479340142" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="Second" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="s" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2964917243559443325" resolveInfo="Time" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163479340143" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="Minute" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="m" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2964917243559443325" resolveInfo="Time" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163479340144" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="time" />
+    <property name="name" nameId="tpck.1169194664001" value="Hour" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="h" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2964917243559443325" resolveInfo="Time" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163480076440" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="Task" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
 </model>
 
