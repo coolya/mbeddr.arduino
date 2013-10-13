@@ -892,23 +892,24 @@
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2002706163480372498" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="scheduling" />
     <property name="name" nameId="tpck.1169194664001" value="TaskPriority" />
+    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="derive_from_presentation" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="2002706163480372500" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372499" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="Low" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="low" />
       <property name="internalValue" nameId="tpce.1083923523171" value="10" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372500" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="20" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="Default" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="normal" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372503" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="30" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="High" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="high" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2002706163480372507" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="100" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="Max" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="max" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002706163482269088" nodeInfo="ig">

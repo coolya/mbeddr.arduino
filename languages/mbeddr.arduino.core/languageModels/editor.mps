@@ -1725,6 +1725,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2002706163480460200" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.2002706163480459695" resolveInfo="proi" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="cl6c.6708182213627628937" resolveInfo="transformationHint" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2002706163480460241" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="koo2.2002706163480076988" />
