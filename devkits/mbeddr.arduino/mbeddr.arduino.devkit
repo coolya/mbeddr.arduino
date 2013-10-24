@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="mbeddr.arduino" uuid="6845f348-7ea5-449c-ae3b-3d600bc3b73d">
+  <exported-language name="e562f51e-6403-4857-b773-44632077c67d(mbeddr.arduino.interrupts)" />
   <exported-language name="3828799d-97c8-48d0-af8b-39b903457e1e(mbeddr.arduino.registers)" />
   <exported-language name="3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)" />
   <extendedDevKits>

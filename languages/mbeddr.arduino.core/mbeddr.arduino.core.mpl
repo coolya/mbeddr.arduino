@@ -35,6 +35,8 @@
         <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
         <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
         <dependency reexport="false">336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</dependency>
+        <dependency reexport="false">e562f51e-6403-4857-b773-44632077c67d(mbeddr.arduino.interrupts)</dependency>
+        <dependency reexport="false">3bba6cee-44fc-4378-bb35-082abd0dafc4(mbeddr.arduino.interrupts#5152824560131035305)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
@@ -79,6 +81,7 @@
     <dependency reexport="false">63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</dependency>
     <dependency reexport="false">dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)</dependency>
     <dependency reexport="true">336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</dependency>
+    <dependency reexport="false">e562f51e-6403-4857-b773-44632077c67d(mbeddr.arduino.interrupts)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>

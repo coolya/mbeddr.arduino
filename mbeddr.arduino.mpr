@@ -19,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/mbeddr.arduino/mbeddr.arduino.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr.arduino.core/mbeddr.arduino.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr.arduino.core/solutions/pluginSolution/mbeddr.arduino.util.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr.arduino.interrupts/mbeddr.arduino.interrupts.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr.arduino.registers/mbeddr.arduino.registers.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr.arduino.statemachine/mbeddr.arduino.statemachine.mpl" folder="ext" />
       <modulePath path="$PROJECT_DIR$/solutions/arduino.samples/arduino.samples.msd" folder="" />

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="8y1r" modelUID="r:d55f0341-9e17-4146-bd31-d6e253c08cba(mbeddr.arduino.interrupts.structure)" version="-1" />
+      <model index="riwj" modelUID="r:4a27babf-be94-4282-a56d-d77471c2f73a(mbeddr.arduino.interrupts.textGen)" version="-1" />
+      <model index="huvo" modelUID="r:a2cc1f2a-e006-473c-8b85-d8e23d19a160(mbeddr.arduino.core.textGen)" version="-1" />
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="29" />
+    </dependencies>
+    <move id="koo2.1017957699896608816" to="8y1r.5152824560131071995" />
+    <move id="koo2.1017957699896608820" to="8y1r.5152824560131071994" />
+    <move id="koo2.5177337757805681992" to="8y1r.5152824560131071993" />
+    <move id="huvo.5177337757805685772" to="riwj.5152824560131072000" />
+    <move id="huvo.5177337757805685771" to="riwj.5152824560131071999" />
+    <move id="huvo.5177337757805685780" to="riwj.5152824560131072008" />
+    <move id="huvo.5177337757805685779" to="riwj.5152824560131072007" />
+    <move id="huvo.5177337757805685774" to="riwj.5152824560131072002" />
+    <move id="huvo.5177337757805685778" to="riwj.5152824560131072006" />
+    <move id="huvo.5177337757805685776" to="riwj.5152824560131072004" />
+    <move id="huvo.5177337757805685782" to="riwj.5152824560131072010" />
+    <move id="huvo.5177337757805685268" to="riwj.5152824560131071998" />
+    <move id="huvo.5177337757805685775" to="riwj.5152824560131072003" />
+    <move id="huvo.5177337757805689229" to="riwj.5152824560131072011" />
+    <move id="huvo.5177337757805685773" to="riwj.5152824560131072001" />
+    <move id="huvo.5177337757805687649" to="riwj.5152824560131072005" />
+    <move id="huvo.5177337757805685266" to="riwj.5152824560131071996" />
+    <move id="huvo.5177337757805685781" to="riwj.5152824560131072009" />
+    <move id="huvo.5177337757805685267" to="riwj.5152824560131071997" />
+  </StructureModification>
+</history>
+
