@@ -174,5 +174,12 @@
     </dependencies>
     <rename id="koo2.329914446625010665" type="CONCEPT" from="RegsiterAccessDotExpression" to="RegisterAccessDotExpression" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="fv0w" modelUID="r:e648f910-e88b-4609-8aaf-328a8c189343(mbeddr.arduino.registers.structure)" version="-1" />
+      <model index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" version="28" />
+    </dependencies>
+    <move id="koo2.5152824560130490624" to="fv0w.5152824560130951251" />
+  </StructureModification>
 </history>
 
