@@ -20,6 +20,10 @@
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="5152824560131035306" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5152824560131791242" nodeInfo="ng">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="nbyu.1017957699896642358" resolveInfo="InterruptDeclaration" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.AbandonInput_RuleConsequence" typeId="tpf8.1202776937179" id="5152824560131791772" nodeInfo="ng" />
+    </node>
     <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="5152824560131402011" nodeInfo="ng">
       <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="5152824560131267920" resolveInfo="replaceMbeddrIsrWithArduino" />
     </node>
@@ -150,20 +154,25 @@
                 </node>
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5152824560131267951" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5152824560131267952" nodeInfo="nn">
-                    <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5152824560131267953" nodeInfo="nn">
-                      <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="5152824560131267954" nodeInfo="nn">
-                        <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5152824560131267930" resolveInfo="isr" />
+                    <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5152824560131845493" nodeInfo="nn">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5152824560131267953" nodeInfo="nn">
+                        <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="5152824560131267954" nodeInfo="nn">
+                          <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5152824560131267930" resolveInfo="isr" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5152824560131267955" nodeInfo="nn">
+                          <link role="link" roleId="tp25.1138056516764" targetNodeId="nbyu.1017957699896608820" />
+                        </node>
                       </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5152824560131267955" nodeInfo="nn">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="nbyu.1017957699896608820" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5152824560131858964" nodeInfo="nn">
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
                       </node>
                     </node>
                     <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5152824560131267956" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5152824560131267957" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5152824560131267938" resolveInfo="arduinoIsr" />
                       </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5152824560131267958" nodeInfo="nn">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="8y1r.5152824560131071994" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5152824560131831326" nodeInfo="nn">
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="8y1r.5152824560131823093" resolveInfo="isrName" />
                       </node>
                     </node>
                   </node>

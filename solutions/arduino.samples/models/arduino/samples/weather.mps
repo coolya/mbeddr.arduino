@@ -26,6 +26,7 @@
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="2" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" implicit="yes" />
+  <import index="8y1r" modelUID="r:d55f0341-9e17-4146-bd31-d6e253c08cba(mbeddr.arduino.interrupts.structure)" version="0" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3705638916587226110" nodeInfo="ng">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="3705638916587295492" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="weather" />
@@ -46,6 +47,9 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3705638916587521994" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3705638916587295523" resolveInfo="main" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5152824560131765097" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1o4w.7926183820234495538" resolveInfo="uno" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="3705638916587281188" nodeInfo="ng">
@@ -144,7 +148,7 @@
       <node role="kind" roleId="nbyu.6847490852670616471" type="nbyu.EmulatedRegisterKind" typeId="nbyu.6847490852670653132" id="5152824560130911780" nodeInfo="ng" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="nbyu.InterruptConfigItem" typeId="nbyu.9172009453269230746" id="5152824560130916131" nodeInfo="ng">
-      <node role="kind" roleId="nbyu.9172009453269286214" type="nbyu.AbstractInterruptKind" typeId="nbyu.9172009453269286213" id="5152824560130916133" nodeInfo="ng" />
+      <node role="kind" roleId="nbyu.9172009453269286214" type="8y1r.ArduinoInterruptKind" typeId="8y1r.5152824560131535438" id="5152824560131742094" nodeInfo="ng" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3705638916587295523" nodeInfo="ng">
