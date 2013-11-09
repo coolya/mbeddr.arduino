@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:d17b3c02-eb62-4d31-bd40-470ae787a5fc(arduino.samples.heating)" content="root">
+  <persistence version="8" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="555r" modelUID="r:01e7a735-c89c-4c96-8b5e-4c3cef4e77c0(com.mbeddr.cc.requirements.c2doc.structure)" implicit="yes" />
+  <import index="bfq5" modelUID="r:e7c57229-5d47-4e7d-8d68-d13912139230(com.mbeddr.cc.requirements.scenario2doc.structure)" implicit="yes" />
+  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" implicit="yes" />
+  <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="7088535175327714814" nodeInfo="ng">
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="555r.RequirementsC2DocConfigItem" typeId="555r.5785245534400582270" id="5785245534400582588" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="bfq5.Scenarios2DocConfigItem" typeId="bfq5.5785245534400582270" id="5785245534401242437" nodeInfo="ng" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="7088535175329949720" nodeInfo="ng">
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="7088535175329949728" nodeInfo="ng">
+        <property name="configuration" nameId="koo2.3750746866331613775" value="output" />
+        <property name="name" nameId="tpck.1169194664001" value="heating" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553598" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="7088535175329949798" nodeInfo="ng">
+        <property name="configuration" nameId="koo2.3750746866331613775" value="input" />
+        <property name="name" nameId="tpck.1169194664001" value="window_one" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553599" />
+      </node>
+      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="7088535175329949905" nodeInfo="ng">
+        <property name="configuration" nameId="koo2.3750746866331613775" value="input" />
+        <property name="name" nameId="tpck.1169194664001" value="window_two" />
+        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553600" />
+      </node>
+      <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="7088535175329949737" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="ntcSensor" />
+        <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.2399978797584558820" />
+      </node>
+    </node>
+    <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="7088535175327714815" nodeInfo="ng">
+      <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.2399978797584514209" resolveInfo="uno" />
+    </node>
+  </root>
+</model>
+

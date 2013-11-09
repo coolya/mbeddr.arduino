@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:d17b3c02-eb62-4d31-bd40-470ae787a5fc(arduino.samples.heating)" content="root">
+  <persistence version="8" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="yes" />
+  <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" implicit="yes" />
+  <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" implicit="yes" />
+  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" implicit="yes" />
+  <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="yes" />
+  <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" implicit="yes" />
+  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" implicit="yes" />
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7088535175327732848" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Components" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175327818048" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="WindowStateProvider" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175327818052" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="all_windows_closed" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7088535175327818051" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175329274731" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384032171734_14" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175327819398" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="DisplayManager" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175327843957" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="update_heating" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175327843956" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="7088535175328054278" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="on" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7088535175328054277" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175328054327" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="update_temperature" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175328054325" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="7088535175328054591" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="temp" />
+          <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7088535175328054617" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="7088535175328054590" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+            <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175328054654" nodeInfo="ng">
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175329278258" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384032173761_15" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175327844146" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="HeatingPowerManager" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175327844209" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="set_power" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175327844208" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="7088535175327844315" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="on" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7088535175327844314" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175329285355" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384032220945_17" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175329292423" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="TemperatureProvider" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175329295960" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="measure" />
+        <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7088535175329295975" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="7088535175329295959" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175329296012" nodeInfo="ng">
+            <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175329761995" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="HeatingController" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175329765432" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="update" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175329765448" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175329363762" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384032499388_19" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7088535175328310442" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="HYSTERESE" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="value" roleId="x27k.3376775282622233992" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7088535175328308818" nodeInfo="ng">
+        <node role="expr" roleId="3c6d.4006257212296803109" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="7088535175328307503" nodeInfo="ng">
+          <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7088535175327702670" resolveInfo="HYSTERESE" />
+        </node>
+        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175328309877" nodeInfo="ng">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7088535175328324621" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ROOM_TEPERATURE" />
+      <node role="value" roleId="x27k.3376775282622233992" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7088535175328325638" nodeInfo="ng">
+        <node role="expr" roleId="3c6d.4006257212296803109" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="7088535175328325345" nodeInfo="ng">
+          <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7088535175327689569" resolveInfo="ROOM_TEPERATURE" />
+        </node>
+        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175328325959" nodeInfo="ng">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175328324070" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384030163661_11" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7088535175327845507" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="MainController" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7088535175327846060" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="heatingPowerManager" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327844146" resolveInfo="HeatingPowerManager" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7088535175327846073" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="windowStateProvider" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327818048" resolveInfo="WindowStateProvider" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7088535175327846052" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="displayManager" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327819398" resolveInfo="DisplayManager" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7088535175329296927" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="temperatureProvider" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175329292423" resolveInfo="TemperatureProvider" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="7088535175329765812" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="heatingController" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175329761995" resolveInfo="HeatingController" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7088535175329202765" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="8yj6.StatemachineComponentAdapter" typeId="8yj6.8663730687027689188" id="7088535175327994989" nodeInfo="ng">
+        <node role="machine" roleId="8yj6.8663730687027689238" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="7088535175327994991" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="HeatingState" />
+          <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="7088535175328053889" resolveInfo="heating_off" />
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7088535175327995011" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="update" />
+            <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="7088535175327995015" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="temp" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7088535175328053024" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="7088535175327995014" nodeInfo="ng">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                </node>
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175328053090" nodeInfo="ng">
+                  <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+                </node>
+              </node>
+            </node>
+            <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="7088535175329032602" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="window_open" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7088535175329032626" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7088535175328053699" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="reset" />
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7088535175328053727" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="heating_on" />
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="7088535175328053746" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7088535175328053747" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7088535175328058552" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="7088535175328058551" nodeInfo="ng">
+                    <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="7088535175328057559" resolveInfo="set_heating" />
+                    <node role="actuals" roleId="v7ag.5950410542643524495" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7088535175328058750" nodeInfo="ng" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7088535175328945186" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="7088535175328053889" resolveInfo="heating_off" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7088535175328945204" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7088535175327995011" resolveInfo="update" />
+              </node>
+              <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="7088535175329069556" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="7088535175329074017" nodeInfo="ng">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7088535175329074045" nodeInfo="ng">
+                    <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="7088535175329032602" resolveInfo="window_open" />
+                  </node>
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="7088535175328949850" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7088535175328954494" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175328956695" nodeInfo="ng">
+                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175328310442" resolveInfo="HYSTERESE" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175328952007" nodeInfo="ng">
+                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175328324621" resolveInfo="ROOM_TEPERATURE" />
+                    </node>
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7088535175328945207" nodeInfo="ng">
+                    <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="7088535175327995015" resolveInfo="temp" />
+                  </node>
+                </node>
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="7088535175329324347" nodeInfo="ng">
+                <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="7088535175329324348" nodeInfo="ng" />
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="7088535175329327765" nodeInfo="ng">
+                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="7088535175327681781" resolveInfo="Hysterese" />
+                </node>
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="7088535175329327773" nodeInfo="ng">
+                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="7088535175327681720" resolveInfo="Heating" />
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7088535175329082985" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="7088535175328053889" resolveInfo="heating_off" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7088535175329087477" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7088535175327995011" resolveInfo="update" />
+              </node>
+              <node role="guard" roleId="clqz.1270667558200943847" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7088535175329087480" nodeInfo="ng">
+                <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="7088535175329032602" resolveInfo="window_open" />
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="7088535175329358797" nodeInfo="ng">
+                <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="7088535175329358798" nodeInfo="ng" />
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="7088535175329362215" nodeInfo="ng">
+                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="7088535175327681799" resolveInfo="HeatingOff" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7088535175328053889" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="heating_off" />
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="7088535175328053940" nodeInfo="ng">
+              <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7088535175328053941" nodeInfo="ng">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7088535175328058355" nodeInfo="ng">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="7088535175328058354" nodeInfo="ng">
+                    <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="7088535175328057559" resolveInfo="set_heating" />
+                    <node role="actuals" roleId="v7ag.5950410542643524495" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="7088535175328058371" nodeInfo="ng" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7088535175328063097" nodeInfo="ng">
+              <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="7088535175328053727" resolveInfo="heating_on" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="7088535175328063133" nodeInfo="ng">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="7088535175327995011" resolveInfo="update" />
+              </node>
+              <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="7088535175329110889" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="7088535175329115380" nodeInfo="ng">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7088535175329115408" nodeInfo="ng">
+                    <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="7088535175329032602" resolveInfo="window_open" />
+                  </node>
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="7088535175328946754" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7088535175328946756" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175328946757" nodeInfo="ng">
+                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175328310442" resolveInfo="HYSTERESE" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175328946758" nodeInfo="ng">
+                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175328324621" resolveInfo="ROOM_TEPERATURE" />
+                    </node>
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7088535175328946759" nodeInfo="ng">
+                    <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="7088535175327995015" resolveInfo="temp" />
+                  </node>
+                </node>
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="7088535175329327778" nodeInfo="ng">
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="7088535175329355344" nodeInfo="ng">
+                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="7088535175327681781" resolveInfo="Hysterese" />
+                </node>
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="7088535175329355336" nodeInfo="ng">
+                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="7088535175327681720" resolveInfo="Heating" />
+                </node>
+                <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="7088535175329327779" nodeInfo="ng" />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="7088535175329022509" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7088535175329260760" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="hs" />
+        <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="7088535175329260759" nodeInfo="ng">
+          <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="7088535175327994991" resolveInfo="HeatingState" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7088535175329264249" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7088535175329271161" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="init" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7088535175329271162" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="7088535175329274716" nodeInfo="ng">
+            <node role="statemachine" roleId="clqz.1786180596061208522" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7088535175329274724" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7088535175329260760" resolveInfo="hs" />
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175329274639" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OnInitTrigger" typeId="v7ag.4643433264761566506" id="7088535175329274703" nodeInfo="ng" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7088535175329320157" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7088535175327847674" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="heatingController_update" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7088535175327847675" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7088535175329300401" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="current_temp" />
+            <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7088535175329300419" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="7088535175329300399" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+              <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175329300464" nodeInfo="ng">
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+              </node>
+            </node>
+            <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="7088535175329302847" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="7088535175329295960" resolveInfo="measure" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="7088535175329302564" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="7088535175329296927" resolveInfo="temperatureProvider" />
+              </node>
+            </node>
+          </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7088535175329306453" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="all_windows_open" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7088535175329306451" nodeInfo="ng">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+            <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="7088535175329307674" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="7088535175327818052" resolveInfo="all_windows_closed" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="7088535175329307579" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="7088535175327846073" resolveInfo="windowStateProvider" />
+              </node>
+            </node>
+          </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="7088535175329303897" nodeInfo="ng">
+            <link role="event" roleId="clqz.1786180596061231919" targetNodeId="7088535175327995011" resolveInfo="update" />
+            <node role="statemachine" roleId="clqz.7851711690674279260" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7088535175329305595" nodeInfo="ng">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="7088535175329260760" resolveInfo="hs" />
+            </node>
+            <node role="args" roleId="clqz.2558982571829095260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7088535175329305635" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7088535175329300401" resolveInfo="current_temp" />
+            </node>
+            <node role="args" roleId="clqz.2558982571829095260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7088535175329312009" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7088535175329306453" resolveInfo="all_windows_open" />
+            </node>
+          </node>
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7088535175329766033" nodeInfo="ng">
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7088535175329765812" resolveInfo="heatingController" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="7088535175329765432" resolveInfo="update" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175329766085" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7088535175329315969" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7088535175328057559" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="set_heating" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7088535175328057560" nodeInfo="ng">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7088535175328057955" nodeInfo="ng">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="7088535175328057966" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="7088535175327844209" resolveInfo="set_power" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="7088535175328057954" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="7088535175327846060" resolveInfo="heatingPowerManager" />
+              </node>
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7088535175328057998" nodeInfo="ng">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7088535175328057908" resolveInfo="on" />
+              </node>
+            </node>
+          </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7088535175328058060" nodeInfo="ng">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="7088535175328058102" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="7088535175327843957" resolveInfo="update_heating" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="7088535175328058059" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="7088535175327846052" resolveInfo="displayManager" />
+              </node>
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7088535175328058137" nodeInfo="ng">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="7088535175328057908" resolveInfo="on" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175328057703" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="7088535175328057908" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="on" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="7088535175328057907" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7977993180520218053" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1352791791745_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175327938258" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384028354947_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175327889891" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384028302150_5" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7088535175328053061" nodeInfo="ng">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7088535175328047297" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="7088535175328249612" nodeInfo="ng">
+      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
+      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7088535175328249665" nodeInfo="ng">
+        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="7088535175327369197" resolveInfo="Heizungssteuerung" />
+      </node>
+    </node>
+  </root>
+</model>
+

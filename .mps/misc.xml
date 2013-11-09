@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="MPSFavoritesManager">
+    <favorites_list name="Heise">
+      <favorite_root model_ref="r:d17b3c02-eb62-4d31-bd40-470ae787a5fc(arduino.samples.heating)" />
+    </favorites_list>
+  </component>
   <component name="ProjectRootManager" version="2" />
 </project>
 
