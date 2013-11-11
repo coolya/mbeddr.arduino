@@ -57,8 +57,8 @@
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
-            <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175328054654" nodeInfo="ng">
-              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175330642569" resolveInfo="C" />
+            <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8479096508065280994" nodeInfo="ng">
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8479096508065218351" resolveInfo="C.00" />
             </node>
           </node>
         </node>
@@ -91,6 +91,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.SenderReceiverInterface" typeId="v7ag.998890089994729412" id="7088535175330394032" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="TemperatureProvider" />
+      <property name="strict" nameId="v7ag.3853922503293368919" value="true" />
       <node role="elements" roleId="v7ag.998890089994729432" type="v7ag.DataElement" typeId="v7ag.998890089994729418" id="7088535175330398413" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="temperature" />
         <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7088535175330398428" nodeInfo="ng">
@@ -100,11 +101,25 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175330398465" nodeInfo="ng">
-            <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175330642569" resolveInfo="C" />
+          <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8479096508065281098" nodeInfo="ng">
+            <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8479096508065218351" resolveInfo="C.00" />
           </node>
         </node>
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="102882296073293859" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="TimeTriggered" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="102882296073293899" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="tick" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="102882296073293898" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="102882296073288478" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384171329850_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175329761995" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />

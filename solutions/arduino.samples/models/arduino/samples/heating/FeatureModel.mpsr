@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:d17b3c02-eb62-4d31-bd40-470ae787a5fc(arduino.samples.heating)" content="root">
+  <persistence version="8" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="7088535175331448507" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="FeatureModel" />
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="102882296073587907" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="fm" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="102882296073587908" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="heating" />
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="102882296073587911" nodeInfo="ng" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="102882296073587915" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="GrosseWohnung" />
+        </node>
+      </node>
+    </node>
+  </root>
+</model>
+

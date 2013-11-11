@@ -3,16 +3,16 @@
   <persistence version="8" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" implicit="yes" />
+  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" implicit="yes" />
+  <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="yes" />
-  <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" implicit="yes" />
-  <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" implicit="yes" />
-  <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7088535175330367566" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Components" />
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7088535175330367567" nodeInfo="ng">
@@ -21,6 +21,32 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7088535175330382546" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7088535175328047297" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7088535175330368929" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="HYSTERESE" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="value" roleId="x27k.3376775282622233992" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7088535175330368930" nodeInfo="ng">
+        <node role="expr" roleId="3c6d.4006257212296803109" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="7088535175330383936" nodeInfo="ng">
+          <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7088535175327702670" resolveInfo="HYSTERESE" />
+        </node>
+        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175330368932" nodeInfo="ng">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175330642569" resolveInfo="C" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7088535175330368933" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ROOM_TEPERATURE" />
+      <node role="value" roleId="x27k.3376775282622233992" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7088535175330368934" nodeInfo="ng">
+        <node role="expr" roleId="3c6d.4006257212296803109" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="7088535175330368935" nodeInfo="ng">
+          <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7088535175327689569" resolveInfo="ROOM_TEPERATURE" />
+        </node>
+        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175330368936" nodeInfo="ng">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175330642569" resolveInfo="C" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175331429581" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384087765607_30" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7088535175330367581" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -61,8 +87,8 @@
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
-                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175330367594" nodeInfo="ng">
-                  <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="102882296073159248" nodeInfo="ng">
+                  <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8479096508065218351" resolveInfo="C.00" />
                 </node>
               </node>
             </node>
@@ -73,9 +99,6 @@
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
-          </node>
-          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7088535175330367597" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="reset" />
           </node>
           <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7088535175330367598" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="heating_on" />
@@ -101,12 +124,18 @@
                   </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="7088535175330367609" nodeInfo="ng">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7088535175330367610" nodeInfo="ng">
-                    <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330376807" nodeInfo="ng">
-                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368929" resolveInfo="HYSTERESE" />
+                  <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="102882296073186534" nodeInfo="ng">
+                    <link role="conversionRule" roleId="3c6d.1404876124512216000" targetNodeId="8479096508065234942" resolveInfo="C -&gt; C.00" />
+                    <node role="expr" roleId="3c6d.2078797996880607660" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7088535175330367610" nodeInfo="ng">
+                      <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330376807" nodeInfo="ng">
+                        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368929" resolveInfo="HYSTERESE" />
+                      </node>
+                      <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330373468" nodeInfo="ng">
+                        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368933" resolveInfo="ROOM_TEPERATURE" />
+                      </node>
                     </node>
-                    <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330373468" nodeInfo="ng">
-                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368933" resolveInfo="ROOM_TEPERATURE" />
+                    <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="102882296073202200" nodeInfo="ng">
+                      <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8479096508065218351" resolveInfo="C.00" />
                     </node>
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7088535175330367613" nodeInfo="ng">
@@ -164,12 +193,18 @@
                   </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="7088535175330367635" nodeInfo="ng">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7088535175330367636" nodeInfo="ng">
-                    <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330367637" nodeInfo="ng">
-                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368929" resolveInfo="HYSTERESE" />
+                  <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="102882296073229852" nodeInfo="ng">
+                    <link role="conversionRule" roleId="3c6d.1404876124512216000" targetNodeId="8479096508065234942" resolveInfo="C -&gt; C.00" />
+                    <node role="expr" roleId="3c6d.2078797996880607660" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7088535175330367636" nodeInfo="ng">
+                      <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330367637" nodeInfo="ng">
+                        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368929" resolveInfo="HYSTERESE" />
+                      </node>
+                      <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330367638" nodeInfo="ng">
+                        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368933" resolveInfo="ROOM_TEPERATURE" />
+                      </node>
                     </node>
-                    <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330367638" nodeInfo="ng">
-                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368933" resolveInfo="ROOM_TEPERATURE" />
+                    <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="102882296073240236" nodeInfo="ng">
+                      <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8479096508065218351" resolveInfo="C.00" />
                     </node>
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7088535175330367639" nodeInfo="ng">
@@ -227,8 +262,8 @@
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
-              <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175330367660" nodeInfo="ng">
-                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
+              <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="102882296073156128" nodeInfo="ng">
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8479096508065218351" resolveInfo="C.00" />
               </node>
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.DataElementRefExpr" typeId="v7ag.998890089995051771" id="7088535175330404080" nodeInfo="ng">
@@ -310,29 +345,6 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7088535175330368929" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="HYSTERESE" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <node role="value" roleId="x27k.3376775282622233992" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7088535175330368930" nodeInfo="ng">
-        <node role="expr" roleId="3c6d.4006257212296803109" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="7088535175330383936" nodeInfo="ng">
-          <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7088535175327702670" resolveInfo="HYSTERESE" />
-        </node>
-        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175330368932" nodeInfo="ng">
-          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7088535175330368933" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ROOM_TEPERATURE" />
-      <node role="value" roleId="x27k.3376775282622233992" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7088535175330368934" nodeInfo="ng">
-        <node role="expr" roleId="3c6d.4006257212296803109" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="7088535175330368935" nodeInfo="ng">
-          <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7088535175327689569" resolveInfo="ROOM_TEPERATURE" />
-        </node>
-        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7088535175330368936" nodeInfo="ng">
-          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7088535175328047313" resolveInfo="C" />
         </node>
       </node>
     </node>
