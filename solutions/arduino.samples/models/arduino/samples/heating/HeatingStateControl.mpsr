@@ -14,7 +14,7 @@
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7088535175330367566" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Components" />
+    <property name="name" nameId="tpck.1169194664001" value="HeatingStateControl" />
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7088535175330367567" nodeInfo="ng">
       <property name="reexport" nameId="x27k.7475861851226119808" value="true" />
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7088535175327732848" resolveInfo="Interfaces" />
@@ -50,7 +50,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7088535175330367581" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="MainController" />
+      <property name="name" nameId="tpck.1169194664001" value="HeatingStateController" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7088535175330367582" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="heatingPowerManager" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327844146" resolveInfo="HeatingPowerManager" />
@@ -68,8 +68,8 @@
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175330394032" resolveInfo="TemperatureProvider" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="7088535175330367586" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="heatingController" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175329761995" resolveInfo="HeatingController" />
+        <property name="name" nameId="tpck.1169194664001" value="externalTrigger" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="102882296073293859" resolveInfo="TimeTriggered" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7088535175330367587" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="8yj6.StatemachineComponentAdapter" typeId="8yj6.8663730687027689188" id="7088535175330367588" nodeInfo="ng">
@@ -195,13 +195,8 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="7088535175330367635" nodeInfo="ng">
                   <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="102882296073229852" nodeInfo="ng">
                     <link role="conversionRule" roleId="3c6d.1404876124512216000" targetNodeId="8479096508065234942" resolveInfo="C -&gt; C.00" />
-                    <node role="expr" roleId="3c6d.2078797996880607660" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7088535175330367636" nodeInfo="ng">
-                      <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330367637" nodeInfo="ng">
-                        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368929" resolveInfo="HYSTERESE" />
-                      </node>
-                      <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330367638" nodeInfo="ng">
-                        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368933" resolveInfo="ROOM_TEPERATURE" />
-                      </node>
+                    <node role="expr" roleId="3c6d.2078797996880607660" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7088535175330367638" nodeInfo="ng">
+                      <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7088535175330368933" resolveInfo="ROOM_TEPERATURE" />
                     </node>
                     <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="102882296073240236" nodeInfo="ng">
                       <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8479096508065218351" resolveInfo="C.00" />
@@ -251,7 +246,7 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7088535175330367654" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7088535175330367655" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="heatingController_update" />
+        <property name="name" nameId="tpck.1169194664001" value="externalTrigger_tick" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7088535175330367656" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7088535175330367657" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="current_temp" />
@@ -300,10 +295,10 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="7088535175330367671" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7088535175330367586" resolveInfo="heatingController" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="7088535175329765432" resolveInfo="update" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="7088535175330367586" resolveInfo="externalTrigger" />
+          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="102882296073293899" resolveInfo="tick" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175330367672" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="763409963685989644" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>

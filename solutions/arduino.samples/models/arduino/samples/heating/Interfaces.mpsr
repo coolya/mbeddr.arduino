@@ -7,6 +7,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7088535175327732848" nodeInfo="ng">
@@ -64,12 +65,37 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175329278258" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1384032173761_15" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.util.structure.MessageList" id="763409963685966425" nodeInfo="ng">
+      <property name="name" value="contracts_messages" />
+      <property name="exported" value="true" />
+      <node role="messages" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="763409963685966480" nodeInfo="ng">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="power_state_failed" />
+        <property name="text" nameId="k146.2688792604367903089" value="power state has not the desired value" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="763409963685975885" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="op_id" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="763409963685975886" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="763409963685975899" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="port_id" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="763409963685975900" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2336695869427394984" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1384193689685_4" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175327844146" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="HeatingPowerManager" />
+      <link role="ppcErrorMsgTable" roleId="v7ag.2546541902879119266" targetNodeId="763409963685966425" resolveInfo="contracts_messages" />
+      <link role="ppcErrorMsgDef" roleId="v7ag.2546541902879119265" targetNodeId="763409963685966480" resolveInfo="power_state_failed" />
       <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175327844209" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="set_power" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175327844208" nodeInfo="ng">
@@ -82,6 +108,25 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
+        </node>
+        <node role="conditions" roleId="v7ag.6591434695300694134" type="v7ag.PostCondition" typeId="v7ag.6591434695300950445" id="2336695869427390713" nodeInfo="ng">
+          <node role="expr" roleId="v7ag.6591434695300694136" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2336695869427392388" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="v7ag.PPCParamRef" typeId="v7ag.6591434695300703522" id="2336695869427394898" nodeInfo="ng">
+              <link role="param" roleId="v7ag.6591434695300703523" targetNodeId="7088535175327844315" resolveInfo="on" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.QueryOpCall" typeId="v7ag.6591434695301820497" id="2336695869427392091" nodeInfo="ng">
+              <link role="op" roleId="v7ag.6591434695301820510" targetNodeId="2336695869427390506" resolveInfo="get_power_state" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.EmptyInterfaceContents" typeId="v7ag.6870096341748053862" id="2336695869427394972" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="2336695869427390506" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="get_power_state" />
+        <property name="isQuery" nameId="v7ag.6591434695301777601" value="true" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="2336695869427390504" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
     </node>
@@ -120,17 +165,6 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="102882296073288478" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1384171329850_1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7088535175329761995" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="HeatingController" />
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="7088535175329765432" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="update" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7088535175329765448" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175329363762" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1384032499388_19" />
