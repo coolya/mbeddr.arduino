@@ -16,6 +16,8 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" implicit="yes" />
+  <import index="krak" modelUID="r:a8fd67ab-11a9-4dbd-9b99-eea007545a9a(com.mbeddr.cc.trace.c.structure)" implicit="yes" />
+  <import index="vxuc" modelUID="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7088535175329527311" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Arduino" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="102882296073307076" nodeInfo="ng">
@@ -24,12 +26,14 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="102882296073318120" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="arduino_uno_heating" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442359358" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="102882296073330292" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="heatingPowerManager" />
+        <property name="name" nameId="tpck.1169194664001" value="hpm" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327844146" resolveInfo="HeatingPowerManager" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442358960" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="102882296073330822" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="heatingPowerManager_set_power" />
+        <property name="name" nameId="tpck.1169194664001" value="hpm_set_power" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="102882296073330823" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7088535175330144569" nodeInfo="ng">
             <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7088535175330144772" nodeInfo="ng">
@@ -38,7 +42,7 @@
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="102882296073625291" nodeInfo="ng">
                   <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="102882296073625292" nodeInfo="ng">
                     <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="102882296073625376" nodeInfo="ng">
-                      <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="102882296073587915" resolveInfo="GrosseWohnung" />
+                      <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="102882296073587915" resolveInfo="BigRoom" />
                     </node>
                   </node>
                   <node role="replacement" roleId="qdv7.2613872510229260000" type="koo2.DigitalPinRefExpression" typeId="koo2.5379590057553076723" id="102882296073625390" nodeInfo="ng">
@@ -50,30 +54,31 @@
                 <node role="thenExpr" roleId="mj1l.8729447926330528688" type="koo2.HighLiteral" typeId="koo2.5140268293012326489" id="7088535175330144642" nodeInfo="ng" />
                 <node role="elseExpr" roleId="mj1l.8729447926330528689" type="koo2.LowLiteral" typeId="koo2.5140268293012377429" id="7088535175330144706" nodeInfo="ng" />
                 <node role="condition" roleId="mj1l.8729447926330528687" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7088535175330144568" nodeInfo="ng">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="102882296073330827" resolveInfo="on" />
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="4953191171442453927" resolveInfo="on" />
                 </node>
               </node>
             </node>
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="102882296073330825" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="102882296073330292" resolveInfo="heatingPowerManager" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="102882296073330292" resolveInfo="hpm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="7088535175327844209" resolveInfo="set_power" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="102882296073330826" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4953191171442453926" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="102882296073330827" nodeInfo="ng">
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4953191171442453927" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="on" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="102882296073330828" nodeInfo="ng">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4953191171442453928" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442358167" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="763409963686009166" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="heatingPowerManager_get_power_state" />
+        <property name="name" nameId="tpck.1169194664001" value="hpm_get_power_state" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="763409963686009167" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="763409963686009171" nodeInfo="ng">
             <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="763409963686837711" nodeInfo="ng">
@@ -83,7 +88,7 @@
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="763409963686837795" nodeInfo="ng">
                   <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="763409963686837796" nodeInfo="ng">
                     <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="763409963686837848" nodeInfo="ng">
-                      <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="102882296073587915" resolveInfo="GrosseWohnung" />
+                      <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="102882296073587915" resolveInfo="BigRoom" />
                     </node>
                   </node>
                   <node role="replacement" roleId="qdv7.2613872510229260000" type="koo2.DigitalPinRefExpression" typeId="koo2.5379590057553076723" id="763409963686837862" nodeInfo="ng">
@@ -95,22 +100,38 @@
           </node>
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="763409963686009169" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="102882296073330292" resolveInfo="heatingPowerManager" />
+          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="102882296073330292" resolveInfo="hpm" />
           <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="2336695869427390506" resolveInfo="get_power_state" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="763409963686009170" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4953191171442453924" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442360960" nodeInfo="ng" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4953191171442416274" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1386023821199_4" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4953191171442419957" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1386023821400_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4953191171442423609" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1386023821546_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4953191171442427262" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1386023821734_7" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="102882296073391027" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="arduino_uno_display" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442379180" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="102882296073402083" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="displayManager" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327819398" resolveInfo="DisplayManager" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442379525" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442378836" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="102882296073402613" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="displayManager_update_heating" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="102882296073402614" nodeInfo="ng">
@@ -132,6 +153,7 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442361363" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="102882296073402620" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="displayManager_update_temperature" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="102882296073402621" nodeInfo="ng">
@@ -168,6 +190,7 @@
         <property name="name" nameId="tpck.1169194664001" value="windowStateProvider" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327818048" resolveInfo="WindowStateProvider" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442362235" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="102882296073422941" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="windowStateProvider_all_windows_closed" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="102882296073422942" nodeInfo="ng">
@@ -222,7 +245,7 @@
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="102882296073621905" nodeInfo="ng">
               <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="102882296073621906" nodeInfo="ng">
                 <node role="expr" roleId="qdv7.2613872510229282926" type="qqyh.FeatureRef" typeId="qqyh.7642065485959505457" id="102882296073622059" nodeInfo="ng">
-                  <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="102882296073587915" resolveInfo="GrosseWohnung" />
+                  <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="102882296073587915" resolveInfo="BigRoom" />
                 </node>
               </node>
             </node>
@@ -242,6 +265,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442361706" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7088535175329527435" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1384033863603_25" />
@@ -262,6 +286,7 @@
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="102882296073293859" resolveInfo="TimeTriggered" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7088535175329814294" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442390136" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7088535175329529592" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="externalTrigger_tick" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7088535175329529593" nodeInfo="ng">
@@ -500,6 +525,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2336695869427142830" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1384176804809_1" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4953191171442390551" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1386023530443_3" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2336695869427146669" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1384176805060_2" />
     </node>
@@ -556,7 +584,7 @@
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="102882296073436251" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="102882296073435353" resolveInfo="uno_heating" />
-          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="102882296073330292" resolveInfo="heatingPowerManager" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="102882296073330292" resolveInfo="hpm" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="102882296073448580" nodeInfo="ng">
@@ -628,9 +656,9 @@
         </node>
       </node>
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="7088535175330146482" nodeInfo="ng">
-      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7088535175330153249" nodeInfo="ng">
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="7088535175330146482" nodeInfo="ng">
+      <property name="showTraces" value="true" />
+      <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7088535175330153249" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="7088535175327369197" resolveInfo="Heizungssteuerung" />
       </node>
     </node>
@@ -643,6 +671,12 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="102882296073568383" nodeInfo="ng">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7088535175328047297" resolveInfo="UnitDeclarations" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="krak.CModuleReqDependency" typeId="krak.9136994893369227797" id="4953191171442319246" nodeInfo="ng">
+      <link role="reqModule" roleId="krak.9136994893369235284" targetNodeId="7088535175327369197" resolveInfo="Heizungssteuerung" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="4953191171442333561" nodeInfo="ng">
+      <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="7088535175331448507" resolveInfo="FeatureModel" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="102882296073598096" nodeInfo="ng">
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="102882296073587907" resolveInfo="fm" />

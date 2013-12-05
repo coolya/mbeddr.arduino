@@ -11,7 +11,7 @@
         <property name="name" nameId="tpck.1169194664001" value="Heizung" />
         <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="102882296073587911" nodeInfo="ng" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="102882296073587915" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="GrosseWohnung" />
+          <property name="name" nameId="tpck.1169194664001" value="BigRoom" />
         </node>
       </node>
     </node>
