@@ -466,15 +466,15 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6638578106139635842" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1380192654817_3" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="3705638916587296815" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="messages" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="3705638916587296969" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.util.structure.MessageList" id="3705638916587296815" nodeInfo="ng">
+      <property name="name" value="messages" />
+      <node role="messages" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="3705638916587296969" nodeInfo="ng">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="hello" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="text" nameId="k146.2688792604367903089" value="booting up" />
       </node>
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="3705638916587296974" nodeInfo="ng">
+      <node role="messages" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="3705638916587296974" nodeInfo="ng">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="name" nameId="tpck.1169194664001" value="temp" />
@@ -487,43 +487,48 @@
           </node>
         </node>
       </node>
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="3705638916588081058" nodeInfo="ng">
+      <node role="messages" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="3705638916588081058" nodeInfo="ng">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="name" nameId="tpck.1169194664001" value="ping" />
         <property name="text" nameId="k146.2688792604367903089" value="ping" />
       </node>
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6638578106138609347" nodeInfo="ng">
+      <node role="messages" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6638578106138609347" nodeInfo="ng">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="name" nameId="tpck.1169194664001" value="raw_begin" />
         <property name="text" nameId="k146.2688792604367903089" value="raw temp begin:" />
       </node>
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6638578106138609523" nodeInfo="ng">
+      <node role="messages" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6638578106138609523" nodeInfo="ng">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="name" nameId="tpck.1169194664001" value="raw_end" />
         <property name="text" nameId="k146.2688792604367903089" value=" " />
       </node>
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.EmptyMessageDefinition" typeId="k146.7085783497126752833" id="6638578106138609433" nodeInfo="ng" />
+      <node role="messages" type="k146.EmptyMessageDefinition" typeId="k146.7085783497126752833" id="6638578106138609433" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3705638916587322922" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1379701383790_4" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3705638916587325355" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3705638916587324768" resolveInfo="math" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="53450031610886894" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3705638916587324768" resolveInfo="math" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3705638916587535996" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="aelz.1125629915293421994" resolveInfo="util_delay" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="53450031610908340" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="aelz.1125629915293421994" resolveInfo="util_delay" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3705638916587559485" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3705638916587553842" resolveInfo="units" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="53450031610897476" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3705638916587553842" resolveInfo="units" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3705638916588111144" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="aelz.1125629915293422015" resolveInfo="avr_interrupt" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="53450031610908346" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="aelz.1125629915293422015" resolveInfo="avr_interrupt" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7926183820234517034" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1o4w.7926183820234495538" resolveInfo="uno" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="53450031610886805" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1o4w.7926183820234495538" resolveInfo="uno" />
     </node>
   </root>
 </model>
