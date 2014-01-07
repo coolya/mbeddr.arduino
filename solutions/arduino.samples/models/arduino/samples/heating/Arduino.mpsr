@@ -16,8 +16,6 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" implicit="yes" />
-  <import index="krak" modelUID="r:a8fd67ab-11a9-4dbd-9b99-eea007545a9a(com.mbeddr.cc.trace.c.structure)" implicit="yes" />
-  <import index="vxuc" modelUID="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7088535175329527311" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Arduino" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="102882296073307076" nodeInfo="ng">
@@ -656,27 +654,23 @@
         </node>
       </node>
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="7088535175330146482" nodeInfo="ng">
-      <property name="showTraces" value="true" />
-      <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7088535175330153249" nodeInfo="ng">
-        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="7088535175327369197" resolveInfo="Heizungssteuerung" />
-      </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6758368697681756150" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="true" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7088535175327732848" resolveInfo="Interfaces" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="102882296073536596" nodeInfo="ng">
-      <property name="reexport" nameId="x27k.7475861851226119808" value="true" />
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7088535175327732848" resolveInfo="Interfaces" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6758368697681759809" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7088535175330367566" resolveInfo="HeatingStateControl" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="102882296073554286" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7088535175330367566" resolveInfo="HeatingStateControl" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6758368697681756144" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7088535175328047297" resolveInfo="UnitDeclarations" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="102882296073568383" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7088535175328047297" resolveInfo="UnitDeclarations" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6758368697681782858" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7088535175327369197" resolveInfo="Heizungssteuerung" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="krak.CModuleReqDependency" typeId="krak.9136994893369227797" id="4953191171442319246" nodeInfo="ng">
-      <link role="reqModule" roleId="krak.9136994893369235284" targetNodeId="7088535175327369197" resolveInfo="Heizungssteuerung" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vxuc.VariantModuleDependency" typeId="vxuc.9136994893387078269" id="4953191171442333561" nodeInfo="ng">
-      <link role="variantModule" roleId="vxuc.9136994893387081662" targetNodeId="7088535175331448507" resolveInfo="FeatureModel" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="6758368697681805730" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7088535175331448507" resolveInfo="FeatureModel" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="102882296073598096" nodeInfo="ng">
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="102882296073587907" resolveInfo="fm" />
