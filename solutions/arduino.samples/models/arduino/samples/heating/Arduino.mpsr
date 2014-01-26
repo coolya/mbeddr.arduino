@@ -24,7 +24,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="102882296073318120" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="arduino_uno_heating" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4953191171442359358" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="102882296073330292" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="hpm" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7088535175327844146" resolveInfo="HeatingPowerManager" />
