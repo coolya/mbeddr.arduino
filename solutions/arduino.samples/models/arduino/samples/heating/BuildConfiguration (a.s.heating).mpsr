@@ -43,6 +43,7 @@
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="7088535175327714815" nodeInfo="ng">
+      <property name="libPath" nameId="koo2.5865116309641288761" value="../../../../../../lib" />
       <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.2399978797584514209" resolveInfo="uno" />
     </node>
   </root>

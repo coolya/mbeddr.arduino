@@ -2,15 +2,23 @@
 <model modelUID="r:d2a9abee-4a37-4d54-8867-ae8efd8b1348(arduino.samples.statemachine)" content="root">
   <persistence version="8" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" implicit="yes" />
+  <import index="8y1r" modelUID="r:d55f0341-9e17-4146-bd31-d6e253c08cba(mbeddr.arduino.interrupts.structure)" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
   <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" implicit="yes" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" implicit="yes" />
   <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <import index="ttha" modelUID="r:ad7103c9-f253-4cba-81d0-baadf2d307a0(mbeddr.arduino.statemachine.structure)" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="765565756796664140" nodeInfo="ng">
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="nbyu.RegisterConfigurationItem" typeId="nbyu.6847490852669234129" id="4023332614668377340" nodeInfo="ng">
+      <node role="kind" roleId="nbyu.6847490852670616471" type="nbyu.EmulatedRegisterKind" typeId="nbyu.6847490852670653132" id="4023332614668378496" nodeInfo="ng" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="nbyu.InterruptConfigItem" typeId="nbyu.9172009453269230746" id="5176405396049620382" nodeInfo="ng">
+      <node role="kind" roleId="nbyu.9172009453269286214" type="8y1r.ArduinoInterruptKind" typeId="8y1r.5152824560131535438" id="5176405396049620452" nodeInfo="ng" />
+    </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="765565756796664188" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="statemachine" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="765565756796664191" nodeInfo="ng">
@@ -24,7 +32,7 @@
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="765565756796664141" nodeInfo="ng">
-      <property name="libPath" nameId="koo2.5865116309641288761" value="/Users/berndkolb/mps/mbeddr-split/mbeddr-30/mbeddr.arduino/lib" />
+      <property name="libPath" nameId="koo2.5865116309641288761" value="../../../../../../lib" />
       <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.2399978797584514209" resolveInfo="uno" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="765565756796664142" nodeInfo="ng">
@@ -103,7 +111,7 @@
       <node role="bindings" roleId="ttha.3239222353345620281" type="ttha.ArduinoInterruptInEventBinding" typeId="ttha.3239222353343560973" id="3239222353346131037" nodeInfo="ng">
         <link role="var" roleId="ttha.3239222353343614316" targetNodeId="3239222353346131533" resolveInfo="counter" />
         <link role="event" roleId="ttha.3239222353343883071" targetNodeId="3239222353346127363" resolveInfo="tick" />
-        <link role="interrupt" roleId="ttha.3239222353343609377" targetNodeId="1o4w.2399978797584548447" resolveInfo="Timer/Counter1 Compare Match A" />
+        <link role="interrupt" roleId="ttha.3239222353343609377" targetNodeId="1o4w.7926183820234495578" resolveInfo="TIMER1_COMPA_vect" />
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="3239222353350591919" nodeInfo="ng">
