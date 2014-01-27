@@ -8,6 +8,7 @@
   <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="6" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2426951403070495589" nodeInfo="ng">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="2426951403070495590" nodeInfo="ng">
       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -164,9 +165,6 @@
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="1125629915293421994" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="util_delay" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="util." />
-    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="1125629915293421995" nodeInfo="ng">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;util/delay.h&quot;" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="1125629915293421996" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="_UTIL_DELAY_H_" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
@@ -239,6 +237,9 @@
         </node>
       </node>
     </node>
+    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="5176405396052460610" nodeInfo="ng">
+      <property name="path" nameId="x27k.6116558314501417936" value="&lt;util/delay.h&gt;" />
+    </node>
   </root>
   <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="1125629915293422013" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="avr_io" />
@@ -253,8 +254,9 @@
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="1125629915293422016" nodeInfo="ng">
       <property name="path" nameId="x27k.6116558314501417936" value="&lt;avr/interrupt.h&gt;" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1125629915293422017" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1125629915293422013" resolveInfo="avr_io" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5176405396051106688" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1125629915293422013" resolveInfo="avr_io" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="1125629915293422018" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="__STRINGIFY" />
