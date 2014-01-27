@@ -47,7 +47,7 @@
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553598" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860202" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="led" />
+        <property name="name" nameId="tpck.1169194664001" value="meh" />
         <property name="configuration" nameId="koo2.3750746866331613775" value="output" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553599" />
       </node>
@@ -77,13 +77,13 @@
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553604" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860208" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin7" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
+        <property name="name" nameId="tpck.1169194664001" value="led" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="output" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553605" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860209" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin8" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
+        <property name="name" nameId="tpck.1169194664001" value="input" />
+        <property name="configuration" nameId="koo2.3750746866331613775" value="input" />
         <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553606" />
       </node>
       <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860210" nodeInfo="ng">
