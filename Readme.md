@@ -12,8 +12,9 @@ Currently this project nothing but a playground if offers some really limited su
 
 Obviously you will need a working MPS and mbeddr installation. You will need at least [version 0.6-EAP](https://github.com/mbeddr/mbeddr.core/releases/tag/0.6-EAP3).
 
-
 If you want to work with the master branch you will also need [version 3.0](http://www.jetbrains.com/mps/download/) of MPS.
+
+You can also use mbeddrs windows installer to get mbeddr if you are using windows.
 
 ### Setup
 
@@ -50,9 +51,21 @@ option in the installer.
 
 ### Get it
 
-There is no binary distribution at this time, since changes are likely. So you need to clone this repository to get it via:
+You can grab the latest release from the [release page](https://github.com/coolya/mbeddr.arduino/releases).
+The release contains two parts:
 
-	git clone https://github.com/coolya/mbeddr.arduino.git
+#### mbeddr extensions
+
+These are plugins for mebddr / MPS that extend mebddr with support for the Arduino platform.
+Those `mbeddr.arduino.core.zip` file contains these. You need to put them in the `plugins` folder in
+your MPS or mbeddr installation.
+
+#### Arduino support library
+
+This is a tiny C library that is used by the generator to handle some common use cases and to improve
+the readability of the generated code. It is contained in the `mbeddr.arduino.support.zip`. You can put
+it some where on you hard disk where you can find it later on. Please remember that path where you
+put it, because you need to set it in the `ArduinoConfiguration` of your project.
 
 ### Build it
 
