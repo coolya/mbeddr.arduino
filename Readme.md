@@ -2,7 +2,7 @@
 
 ## Background
 
-This is a DSL to write programs for the [Arduino][ar] platform. It is based on the [mbeddr][mbddr] project which is an extensible C implementation in [JetBrains MPS][mps]. 
+This is a DSL to write programs for the [Arduino][ar] platform. It is based on the [mbeddr][mbddr] project which is an extensible C implementation in [JetBrains MPS][mps].
 
 Currently this project nothing but a playground if offers some really limited support for the Arduino Uno and is likely to change and break stuff so this nothing you want to put you work on right now.
 
@@ -10,10 +10,10 @@ Currently this project nothing but a playground if offers some really limited su
 
 ### Prerequisites
 
-Obviously you will need a working MPS and mbeddr installation. You will need at least [version 0.5-EAP](https://github.com/mbeddr/mbeddr.core/releases/tag/0.5-EAP1).
+Obviously you will need a working MPS and mbeddr installation. You will need at least [version 0.6-EAP](https://github.com/mbeddr/mbeddr.core/releases/tag/0.6-EAP3).
 
 
-If you want to work with the master branch you will also need [version 3.0](http://www.jetbrains.com/mps/download/) of MPS. 
+If you want to work with the master branch you will also need [version 3.0](http://www.jetbrains.com/mps/download/) of MPS.
 
 ### Setup
 
@@ -30,7 +30,7 @@ On most Linux distributions you will get all these when you install the followin
 
 	avr-binutils avrdude avr-gcc avr-libc
 
-You might also want to install 
+You might also want to install
 
 	avr-gdb
 
@@ -45,7 +45,8 @@ You need to have a working [Mac Ports](http://www.macports.org/) installation to
 
 #### Windows
 
-ToDo (I don't have a working windows arduino environment, so I would be happy if someone would contribute this.)
+On Windows you need to install [WinAVR][winavr]. Please make sure that you check the "Add to PATH"
+option in the installer.
 
 ### Get it
 
@@ -57,24 +58,18 @@ There is no binary distribution at this time, since changes are likely. So you n
 
 The `mbeddr.arduino` repository contains tow parts:
 
-The first one is `mbeddr.arduino` itself which is a MPS plug-in that is using mbeddr. This plugin can be build two ways, directly from the MPS IDE or with `ant` from the command line. 
+The first one is `mbeddr.arduino` itself which is a MPS plug-in that is using mbeddr. This plugin can be build two ways, directly from the MPS IDE or with `ant` from the command line.
 
 #### Building the plug-in with MPS
 
-Open `mbeddr.arduino.mpr` from the root of the repository with MPS. If you are using mbeddr build from source you need to add a extra library to the project. To do so navigate to `File->Settings`, then select `Project Librariess` and add a new library named `mbeddr.core` that point to your mbeddr `code` directory **not** the mbeddr.ardunio directory. 
+Open `mbeddr.arduino.mpr` from the root of the repository with MPS. If you are using mbeddr build from source you need to add a extra library to the project. To do so navigate to `File->Settings`, then select `Project Librariess` and add a new library named `mbeddr.core` that point to your mbeddr `code` directory **not** the mbeddr.ardunio directory.
 Now you can build the solution.
 
 #### Building the plug-in with ant
 
-This is the preferred way to build when you are using mbeddr [build from source](http://logv.ws/b/2013/04/27/installing-mbeddr-on-ubuntu-13-04/). First you need the `build.properties` file. You can used the skeleton `build.properties.example` in the root directory of the repository to create your own.
+This is the preferred way to build when you are using mbeddr [build from source](http://logv.ws/b/2013/04/27/installing-mbeddr-on-ubuntu-13-04/). First you need the `build.properties` file. You can used the skeleton `build.properties.example` in the root directory of the repository to create your own. There is a `build.properties.examples`file which you can use as a blueprint.
 
-If should look like this:
-
-	mps.home=/path/to/mps
-	mps.platform.caches=/path/to/cache
-	mbeddr.github.core.home=/path/to/mbeddr.core/root
-
-Once you have done this you can run `ant` in the root of the repository and it should build fine.
+Once you have done this you can run `ant build-arduino` in the root of the repository and it should build fine.
 
 #### Building the support library
 
@@ -91,7 +86,7 @@ You will find the generated source code from the sample here which you can build
 	make
 
 This generates :
-	
+
 	bin/main.o
 	arduino
 	arduino.hex
@@ -116,3 +111,4 @@ For more information how stuff works have a look at the [wiki][wiki] which will 
 [avrdude]: http://savannah.nongnu.org/projects/avrdude
 [issues]: https://github.com/coolya/mbeddr.arduino/issues
 [wiki]: https://github.com/coolya/mbeddr.arduino/wiki
+[winavr]: http://sourceforge.net/projects/winavr
