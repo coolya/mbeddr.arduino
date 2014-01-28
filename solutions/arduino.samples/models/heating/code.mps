@@ -234,7 +234,6 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="6889993303965638508" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638509" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1386023821199_4" />
@@ -242,22 +241,14 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638510" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1386023821400_5" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638511" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1386023821546_6" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638512" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1386023821734_7" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6889993303965638513" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="arduino_uno_display" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="6889993303965638514" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6889993303965638515" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="displayManager" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6889993303965638956" resolveInfo="DisplayManager" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="6889993303965638516" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="6889993303965638517" nodeInfo="ng" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6889993303965638518" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="displayManager_update_heating" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6889993303965638519" nodeInfo="ng">
@@ -720,15 +711,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638663" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1384176804809_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638664" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1386023530443_3" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638665" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1384176805060_2" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6889993303965638666" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1384033863757_26" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="6889993303965638667" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="arduinoInstances" />
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6889993303965638668" nodeInfo="ng">
@@ -831,6 +813,9 @@
           <link role="config" roleId="v7ag.591155063063570514" targetNodeId="6889993303965638667" resolveInfo="arduinoInstances" />
         </node>
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="19868526337060733" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1390919149584_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="koo2.MainLoop" typeId="koo2.3705638916592120389" id="6889993303965638697" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mainloop" />
@@ -1508,7 +1493,7 @@
         <property name="name" nameId="tpck.1169194664001" value="ROOM_TEPERATURE" />
         <node role="value" roleId="3vkx.3534497005926847011" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6889993303965638907" nodeInfo="ng">
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.2212975673976043696" value="24" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="25" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6889993303965638908" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
