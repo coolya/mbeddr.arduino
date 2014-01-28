@@ -667,7 +667,7 @@
       </node>
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063305125" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="mbeddr.home" />
+      <property name="name" nameId="tpck.1169194664001" value="mbeddr.hombeddr.github.core.home" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="8043765019063305135" nodeInfo="ng">
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063305138" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value=".." />
@@ -683,7 +683,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063305158" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mebddr.core.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063305171" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063305175" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063305179" nodeInfo="nn">
@@ -704,7 +704,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063310404" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.comp.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063310448" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063310450" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063310454" nodeInfo="nn">
@@ -725,7 +725,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063311540" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.statemachines.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063311591" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063311593" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063311597" nodeInfo="nn">
@@ -746,7 +746,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063341618" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.statemachines.comp.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063344625" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063344777" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063344931" nodeInfo="nn">
@@ -767,7 +767,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063356052" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.mpsutil.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063359216" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063359318" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063360324" nodeInfo="nn">
@@ -788,7 +788,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063369848" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.platform.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063371919" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063371921" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063372127" nodeInfo="nn">
@@ -809,7 +809,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063380970" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.spawner.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063383048" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063383050" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063383054" nodeInfo="nn">
@@ -830,7 +830,7 @@
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8043765019063391895" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr.debugger.artifacts" />
       <node role="defaultPath" roleId="3ior.7389400916848144618" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8043765019063393530" nodeInfo="ng">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.home" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8043765019063305125" resolveInfo="mbeddr.hombeddr.github.core.home" />
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063393532" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value="build" />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8043765019063393536" nodeInfo="nn">

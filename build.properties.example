@@ -1,3 +1,4 @@
 mps.home=/path/to/mps
 mps.platform.caches=/path/to/cache
 mbeddr.github.core.home=/path/to/mbeddr.core/root
+mbeddr.arduino.home=/path/to/mbeddr.arduino/root
