@@ -56,26 +56,7 @@ There is no binary distribution at this time, since changes are likely. So you n
 
 ### Build it
 
-The `mbeddr.arduino` repository contains tow parts:
-
-The first one is `mbeddr.arduino` itself which is a MPS plug-in that is using mbeddr. This plugin can be build two ways, directly from the MPS IDE or with `ant` from the command line.
-
-#### Building the plug-in with MPS
-
-Open `mbeddr.arduino.mpr` from the root of the repository with MPS. If you are using mbeddr build from source you need to add a extra library to the project. To do so navigate to `File->Settings`, then select `Project Librariess` and add a new library named `mbeddr.core` that point to your mbeddr `code` directory **not** the mbeddr.ardunio directory.
-Now you can build the solution.
-
-#### Building the plug-in with ant
-
-This is the preferred way to build when you are using mbeddr [build from source](http://logv.ws/b/2013/04/27/installing-mbeddr-on-ubuntu-13-04/). First you need the `build.properties` file. You can used the skeleton `build.properties.example` in the root directory of the repository to create your own. There is a `build.properties.examples`file which you can use as a blueprint.
-
-Once you have done this you can run `ant build-arduino` in the root of the repository and it should build fine.
-
-#### Building the support library
-
-The second one is a support library that is used by the generated code to perform operations like accessing the analog inputs. This is done because the code needs some more complexity like loops and dealing with interrupts which would be a pain to express with generator templates. The code for this library is located in the `lib` [subdirectory](https://github.com/coolya/mbeddr.arduino/tree/master/lib).
-
-To build it navigate to the `lib` folder of the repository and run `make` this will build the library for all supported platforms.
+You can find the building instructions in the [wiki](https://github.com/coolya/mbeddr.arduino/wiki/Building)
 
 ### Try it
 
