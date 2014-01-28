@@ -67,10 +67,6 @@ the readability of the generated code. It is contained in the `mbeddr.arduino.su
 it some where on you hard disk where you can find it later on. Please remember that path where you
 put it, because you need to set it in the `ArduinoConfiguration` of your project.
 
-### Build it
-
-You can find the building instructions in the [wiki](https://github.com/coolya/mbeddr.arduino/wiki/Building)
-
 ### Try it
 
 Now open your favorite shell and navigate to `solutions/arduino.samples/source_gen/arduino/samples/Blinker` from the root of the source code.
@@ -91,9 +87,14 @@ The `arduino.hex` is the interesting stuff since it the executable for the ardui
 
 Now the Arduino will run a simple blinker sample the blinks the build in LED.
 
+### Build it
+
+You can find the building instructions in the [wiki](https://github.com/coolya/mbeddr.arduino/wiki/Building)
+
+
 ## State
 
-Currently this is nothing more than some kind of tech demo, also only the Arduino Uno supported. To see what is missing have a look at the [Issues][issues].
+Currently this project only has bare minimum support for the Arduino Uno. It has some rough edges but it should be good to try it. To see what is missing have a look at the [Issues][issues].
 
 For more information how stuff works have a look at the [wiki][wiki] which will contain a growing list of pages in the near future.
 
