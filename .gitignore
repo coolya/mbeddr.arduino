@@ -14,6 +14,7 @@ tests/*/source_gen.caches/
 *.o
 build.properties
 lib/out/*
+build/build/*
 
 classes_gen
 source_gen
