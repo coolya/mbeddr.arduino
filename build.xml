@@ -1,4 +1,4 @@
-<project name="mbeddr download and deploy plugins" default="build-languages">
+<project name="mbeddr download and deploy plugins" default="build-arduino">
   <property file="build.properties"/>
   <property name="plugins.folder.name" value="plugins"/>
 

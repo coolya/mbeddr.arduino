@@ -988,6 +988,7 @@
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="6889993303965638732" nodeInfo="ng">
       <property name="libPath" nameId="koo2.5865116309641288761" value="../../../../../lib" />
+      <property name="serialPort" nameId="koo2.7781743472117499566" value="/dev/tty.usbmodem1411" />
       <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.2399978797584514209" resolveInfo="uno" />
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6889993303965638733" nodeInfo="ng">
