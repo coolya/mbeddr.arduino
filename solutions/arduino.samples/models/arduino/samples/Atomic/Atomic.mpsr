@@ -7,6 +7,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="yes" />
   <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
   <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1617988773807677179" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Atomic" />
@@ -81,8 +82,9 @@
         </node>
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1630441749093587843" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="aelz.1125629915293422015" resolveInfo="avr_interrupt" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2691395781256730603" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="aelz.1125629915293422015" resolveInfo="avr_interrupt" />
     </node>
   </root>
 </model>

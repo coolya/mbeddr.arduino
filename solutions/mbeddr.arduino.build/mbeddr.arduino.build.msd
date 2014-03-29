@@ -9,7 +9,6 @@
   <dependencies>
     <dependency reexport="false">7f0575ee-ce26-49b7-a897-0e0b348b06af(com.mbeddr.core.dev.build)</dependency>
     <dependency reexport="false">16f4da20-e2ec-436c-9423-ccaadb6e9c38(com.mbeddr.debugger.dev.build)</dependency>
-    <dependency reexport="false">0ecd68a7-ad67-4d1c-adb3-67b1e6f82ffa(com.mbeddr.debugger.testing.build.dev.build)</dependency>
     <dependency reexport="false">8ea70440-eabe-4c88-95c7-cb0f5588827d(com.mbeddr.ext.components.dev.build)</dependency>
     <dependency reexport="false">5bd95aa5-16b4-4bf5-89f7-cd01297e7f2d(com.mbeddr.ext.statemachine.dev.build)</dependency>
     <dependency reexport="false">3cecacea-bd21-4633-bae9-d9c2c78f831d(com.mbeddr.ext.statemachinesInComponents.dev.build)</dependency>
