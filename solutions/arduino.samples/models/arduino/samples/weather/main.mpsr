@@ -14,6 +14,7 @@
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" implicit="yes" />
+  <import index="mxxh" modelUID="r:212131c6-6487-4d1b-8ba2-bd90410d8d08(mbeddr.arduino.header.include)" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3705638916587295523" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8043765019062132505" nodeInfo="ng">
@@ -400,19 +401,19 @@
                     <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="3705638916587304643" nodeInfo="ng">
                       <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="3705638916587305315" nodeInfo="ng">
                         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="3705638916587305318" nodeInfo="ng">
-                          <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="3705638916587307083" nodeInfo="ng">
-                            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="3705638916587310112" nodeInfo="ng">
-                              <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3705638916587310229" nodeInfo="ng">
-                                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587300365" resolveInfo="raw" />
+                          <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7857774153915177875" nodeInfo="ng">
+                            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="7857774153915177878" nodeInfo="ng">
+                              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587305504" nodeInfo="ng">
+                                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                                <property name="value" nameId="mj1l.2212975673976043696" value="4.64" />
                               </node>
-                              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587307086" nodeInfo="ng">
+                              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587307086" nodeInfo="ng">
                                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                                 <property name="value" nameId="mj1l.2212975673976043696" value="1023" />
                               </node>
                             </node>
-                            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3705638916587305504" nodeInfo="ng">
-                              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                              <property name="value" nameId="mj1l.2212975673976043696" value="4.64" />
+                            <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3705638916587310229" nodeInfo="ng">
+                              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3705638916587300365" resolveInfo="raw" />
                             </node>
                           </node>
                         </node>
@@ -594,7 +595,7 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4023332614668444161" nodeInfo="ng">
       <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="3705638916587324768" resolveInfo="math" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="mxxh.7857774153903264451" resolveInfo="math" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4023332614668434209" nodeInfo="ng">
       <property name="reexport" nameId="vs0r.747084250476874891" value="false" />

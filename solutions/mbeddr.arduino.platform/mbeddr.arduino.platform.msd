@@ -6,6 +6,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)</usedLanguage>
   </usedLanguages>
