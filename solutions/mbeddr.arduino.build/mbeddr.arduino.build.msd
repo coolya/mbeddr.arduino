@@ -13,8 +13,8 @@
     <dependency reexport="false">5bd95aa5-16b4-4bf5-89f7-cd01297e7f2d(com.mbeddr.ext.statemachine.dev.build)</dependency>
     <dependency reexport="false">3cecacea-bd21-4633-bae9-d9c2c78f831d(com.mbeddr.ext.statemachinesInComponents.dev.build)</dependency>
     <dependency reexport="false">dcd3e3f0-fb75-4b63-83e0-7a84aeddbb20(com.mbeddr.mpsutil.dev.build)</dependency>
-    <dependency reexport="false">9028e850-0b96-41ad-93fc-9e2901187ae5(com.mbeddr.platform.dev.build)</dependency>
     <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
+    <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
     <dependency reexport="false">f635fc54-10fa-4740-93b9-f8dfe124ea1b(de.slisson.mps.tables.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
