@@ -29,8 +29,8 @@ uint16_t ADC_Read( uint8_t channel )
 
 int uart_putc(unsigned char c)
 {
-     while(!(UCSR0A & (1<<UDRE0)));
-      UDR0 = c;
+     while(!(UCSRA & (1<<UDRE)));
+      UDR = c;
     return 0;
 }
 
@@ -45,14 +45,14 @@ void uart_write(char* s)
 
 void uart_write_byte(uint8_t d)
 {
-       while(!(UCSR0A & (1<<UDRE0)));
-       UDR0 = d;
+       while(!(UCSRA & (1<<UDRE)));
+       UDR = d;
 
 }
 
 unsigned char uart_receive(void){
  
- while(!(UCSR0A & (1<<RXC0)));
- return UDR0;
+ while(!(UCSRA & (1<<RXC)));
+ return UDR;
  
 }
