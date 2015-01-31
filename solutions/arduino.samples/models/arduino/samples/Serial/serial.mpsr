@@ -50,7 +50,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8357009515683993208" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.DelayExpression" typeId="koo2.2426951403070495999" id="8357009515683993204" nodeInfo="ng">
             <node role="expression" roleId="koo2.2426951403070520654" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8357009515683998050" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="1000" />
             </node>
           </node>
@@ -60,7 +59,6 @@
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="8357009515683992582" resolveInfo="mbeddr" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="5521277500682030766" resolveInfo="here" />
             <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5521277500682030852" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="2" />
             </node>
           </node>
@@ -68,7 +66,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5521277500682031378" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="koo2.DelayExpression" typeId="koo2.2426951403070495999" id="5521277500682031374" nodeInfo="ng">
             <node role="expression" roleId="koo2.2426951403070520654" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5521277500682031649" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.2212975673976043696" value="1000" />
             </node>
           </node>

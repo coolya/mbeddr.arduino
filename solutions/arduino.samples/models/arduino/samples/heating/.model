@@ -17,8 +17,6 @@
   <devkit namespace="2f7ba914-eed9-41bf-b0ae-6633a04a3894(com.mbeddr.statemachinesInComponents)" />
   <devkit namespace="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
   <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" version="-1" />
-  <import index="ntac" modelUID="r:61ae4672-db88-4303-98ca-fe825ef7d0f7(arduino.samples.weather)" version="-1" />
   <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" version="-1" />
-  <import index="fvks" modelUID="r:82362548-d5ec-4719-ab22-9779af713ab4(heating.doc)" version="-1" />
 </model>
 
