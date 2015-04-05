@@ -216,6 +216,9 @@
         <child id="3830958861296879115" name="items" index="19_wF2" />
         <child id="6275956088646286745" name="dummyType" index="3YFD5m" />
       </concept>
+      <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
+        <child id="8850915533694634146" name="elements" index="3o3WLE" />
+      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -243,9 +246,6 @@
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="7350547698080060956" name="com.mbeddr.core.pointers.structure.ArrayInitExpression" flags="ng" index="2ACJ8N">
-        <child id="7350547698080060962" name="exprs" index="2ACJ8d" />
-      </concept>
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
         <property id="6113173064526131578" name="value" index="PhEJT" />
       </concept>
@@ -6255,7 +6255,7 @@
                     <node concept="2OqwBi" id="7fU3Y2eV8j2" role="3clFbG">
                       <node concept="30H73N" id="7fU3Y2eV86f" role="2Oq$k0" />
                       <node concept="2qgKlT" id="7fU3Y2eVbJ_" role="2OqNvi">
-                        <ref role="37wK5l" to="yi43:5oFMniD7s1q" resolve="counterVarName" />
+                        <ref role="37wK5l" to="yi43:5oFMniD7s1q" resolve="genCounterVarName" />
                       </node>
                     </node>
                   </node>
@@ -6854,7 +6854,7 @@
                                   </node>
                                 </node>
                                 <node concept="2qgKlT" id="5oFMniD7$Zr" role="2OqNvi">
-                                  <ref role="37wK5l" to="yi43:5oFMniD7s1q" resolve="counterVarName" />
+                                  <ref role="37wK5l" to="yi43:5oFMniD7s1q" resolve="genCounterVarName" />
                                 </node>
                               </node>
                             </node>
@@ -7030,7 +7030,7 @@
                                   </node>
                                 </node>
                                 <node concept="2qgKlT" id="4Mvxa96veM_" role="2OqNvi">
-                                  <ref role="37wK5l" to="yi43:5oFMniD7s1q" resolve="counterVarName" />
+                                  <ref role="37wK5l" to="yi43:5oFMniD7s1q" resolve="genCounterVarName" />
                                 </node>
                               </node>
                             </node>
@@ -9717,8 +9717,8 @@
           </node>
         </node>
         <node concept="raruj" id="1Jb2Eko5LWK" role="lGtFl" />
-        <node concept="2ACJ8N" id="1Jb2Eko9Hy5" role="1cecVj">
-          <node concept="1S8S4T" id="1Jb2Eko9HM8" role="2ACJ8d">
+        <node concept="3o3WLD" id="7CEVeLBiTX6" role="1cecVj">
+          <node concept="1S8S4T" id="1Jb2Eko9HM8" role="3o3WLE">
             <node concept="1S7827" id="1Jb2Eko9HLu" role="1S8S4V">
               <ref role="1S7826" node="1Jb2Eko4hFv" resolve="foo" />
               <node concept="1ZhdrF" id="1Jb2EkoamHG" role="lGtFl">
