@@ -17,9 +17,9 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -308,16 +308,11 @@
     </node>
     <node concept="13i0hz" id="2GeljgLiafk" role="13h7CS">
       <property role="TrG5h" value="getBinaryKind" />
-      <property role="2Ki8OM" value="true" />
+      <property role="2Ki8OM" value="false" />
       <property role="13i0it" value="false" />
       <property role="13i0is" value="false" />
       <ref role="13i0hy" to="ahli:5HxjapwgqKP" resolve="getBinaryKind" />
       <node concept="3Tm1VV" id="2GeljgLiafl" role="1B3o_S" />
-      <node concept="_YKpA" id="2GeljgLiafi" role="3clF45">
-        <node concept="3Tqbb2" id="2GeljgLiafj" role="_ZDj9">
-          <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-        </node>
-      </node>
       <node concept="3clFbS" id="2GeljgLiafo" role="3clF47">
         <node concept="3cpWs8" id="2GeljgLiafs" role="3cqZAp">
           <node concept="3cpWsn" id="2GeljgLiaft" role="3cpWs9">
@@ -352,6 +347,11 @@
           <node concept="37vLTw" id="2GeljgLiafA" role="3cqZAk">
             <ref role="3cqZAo" node="2GeljgLiaft" resolve="result" />
           </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="7CEVeLBpqub" role="3clF45">
+        <node concept="3Tqbb2" id="7CEVeLBpquc" role="_ZDj9">
+          <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
         </node>
       </node>
     </node>
