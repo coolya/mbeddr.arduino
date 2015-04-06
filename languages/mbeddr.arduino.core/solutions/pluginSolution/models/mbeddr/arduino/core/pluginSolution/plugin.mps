@@ -18,15 +18,12 @@
     <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="ic0f" ref="r:76273c4a-4818-4f7c-8673-bfc2aeb6debb(jetbrains.mps.execution.api.settings)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
-    <import index="7ord" ref="r:73ed2111-380d-4165-b748-fc106633f87d(mbeddr.arduino.core.behavior)" />
     <import index="x3yd" ref="r:35144171-bbda-419f-9015-4d1f075e1db4(com.mbeddr.core.runconfiguration.pluginSolution.plugin)" />
     <import index="xk9i" ref="r:49e49752-a85e-4d81-811e-1dc850a8e4cd(jetbrains.mps.execution.lib.ui)" />
     <import index="awpe" ref="r:5a505993-793e-4b2d-84cf-271f9dde39b3(jetbrains.mps.execution.lib)" />
     <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="koo2" ref="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
-    <import index="rln7" ref="r:7c18dc15-9905-46ec-b367-653b14f7c191(mbeddr.arduino.core.pluginSolution.plugin)" />
     <import index="j9pa" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
     <import index="18oi" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.beans(JDK/java.beans@java_stub)" />
     <import index="8q6x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" />
@@ -99,6 +96,18 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1201370618622" name="jetbrains.mps.baseLanguage.structure.Property" flags="ig" index="2RhdJD">
+        <property id="1201371481316" name="propertyName" index="2RkwnN" />
+        <child id="1201371521209" name="type" index="2RkE6I" />
+        <child id="1201372378714" name="propertyImplementation" index="2RnVtd" />
+      </concept>
+      <concept id="1201372606839" name="jetbrains.mps.baseLanguage.structure.DefaultPropertyImplementation" flags="ng" index="2RoN1w">
+        <child id="1202065356069" name="defaultGetAccessor" index="3wFrgM" />
+        <child id="1202078082794" name="defaultSetAccessor" index="3xrYvX" />
+      </concept>
+      <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
+        <reference id="1201385237847" name="property" index="2S8YL0" />
+      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -140,6 +149,9 @@
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
+      <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
+        <reference id="5862977038373003188" name="property" index="338YkT" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -210,6 +222,10 @@
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1202065242027" name="jetbrains.mps.baseLanguage.structure.DefaultGetAccessor" flags="ng" index="3wEZqW" />
+      <concept id="1202077725299" name="jetbrains.mps.baseLanguage.structure.DefaultSetAccessor" flags="ng" index="3xqBd$">
+        <child id="1202077744034" name="visibility" index="3xqFEP" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -404,207 +420,127 @@
           <ref role="3uigEE" to="xk9i:7byHRlLC1T4" resolve="NodeByConceptChooser" />
         </node>
       </node>
+      <node concept="yHkD3" id="58Qq$Trf9Oe" role="yHkCN">
+        <property role="TrG5h" value="arduinoEditor" />
+        <node concept="3uibUv" id="58Qq$Trfad9" role="1tU5fm">
+          <ref role="3uigEE" node="5yNeVI8LrsB" resolve="ArduinoSettingsEditor" />
+        </node>
+      </node>
       <node concept="yHkDR" id="4aykRFtH3Tl" role="yHkDf">
         <node concept="3clFbS" id="4aykRFtH3Tm" role="2VODD2">
-          <node concept="3cpWs8" id="5TKboO2cNpf" role="3cqZAp">
-            <node concept="3cpWsn" id="5TKboO2cNpg" role="3cpWs9">
-              <property role="TrG5h" value="mainPanel" />
-              <node concept="3uibUv" id="5TKboO2cNph" role="1tU5fm">
+          <node concept="3cpWs8" id="7yLt8tTSJ0r" role="3cqZAp">
+            <node concept="3cpWsn" id="7yLt8tTSJ0s" role="3cpWs9">
+              <property role="TrG5h" value="panel" />
+              <node concept="3uibUv" id="7yLt8tTSJ0t" role="1tU5fm">
                 <ref role="3uigEE" to="dbrf:~JPanel" resolve="JPanel" />
               </node>
-              <node concept="2ShNRf" id="5TKboO2cNpj" role="33vP2m">
-                <node concept="1pGfFk" id="5TKboO2cNpl" role="2ShVmc">
+              <node concept="2ShNRf" id="7yLt8tTSJ0v" role="33vP2m">
+                <node concept="1pGfFk" id="7yLt8tTSJ0x" role="2ShVmc">
                   <ref role="37wK5l" to="dbrf:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
-                  <node concept="2ShNRf" id="5TKboO2cNpm" role="37wK5m">
-                    <node concept="1pGfFk" id="5TKboO2cNpy" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~GridLayout.&lt;init&gt;(int,int)" resolve="GridLayout" />
-                      <node concept="3cmrfG" id="5TKboO2cNp_" role="37wK5m">
-                        <property role="3cmrfH" value="3" />
-                      </node>
-                      <node concept="3cmrfG" id="5TKboO2cNpD" role="37wK5m">
-                        <property role="3cmrfH" value="2" />
-                      </node>
+                  <node concept="2ShNRf" id="7yLt8tTSJ0J" role="37wK5m">
+                    <node concept="1pGfFk" id="7yLt8tTSJ0T" role="2ShVmc">
+                      <ref role="37wK5l" to="1t7x:~GridBagLayout.&lt;init&gt;()" resolve="GridBagLayout" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="WVup5IF0kf" role="3cqZAp" />
-          <node concept="3cpWs8" id="5yNeVI8LruC" role="3cqZAp">
-            <node concept="3cpWsn" id="5yNeVI8LruD" role="3cpWs9">
-              <property role="TrG5h" value="formatter" />
-              <node concept="3uibUv" id="5yNeVI8LruE" role="1tU5fm">
-                <ref role="3uigEE" to="oj8w:~DefaultFormatter" resolve="DefaultFormatter" />
-              </node>
-              <node concept="2ShNRf" id="5yNeVI8LruF" role="33vP2m">
-                <node concept="1pGfFk" id="5yNeVI8LruG" role="2ShVmc">
-                  <ref role="37wK5l" to="x3yd:5yNeVI8Lrth" resolve="MbeddrSettingsEditor.MyDefaultFormatter" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="5yNeVI8LruH" role="3cqZAp">
-            <node concept="2OqwBi" id="5yNeVI8LruI" role="3clFbG">
-              <node concept="37vLTw" id="3GM_nagTwxX" role="2Oq$k0">
-                <ref role="3cqZAo" node="5yNeVI8LruD" resolve="formatter" />
-              </node>
-              <node concept="liA8E" id="5yNeVI8LruK" role="2OqNvi">
-                <ref role="37wK5l" to="oj8w:~DefaultFormatter.setAllowsInvalid(boolean):void" resolve="setAllowsInvalid" />
-                <node concept="3clFbT" id="5yNeVI8LruL" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="5yNeVI8LruM" role="3cqZAp">
-            <node concept="2OqwBi" id="5yNeVI8LruN" role="3clFbG">
-              <node concept="liA8E" id="5yNeVI8LruP" role="2OqNvi">
-                <ref role="37wK5l" to="oj8w:~DefaultFormatter.setCommitsOnValidEdit(boolean):void" resolve="setCommitsOnValidEdit" />
-                <node concept="3clFbT" id="5yNeVI8LruQ" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="3GM_nagTAyt" role="2Oq$k0">
-                <ref role="3cqZAo" node="5yNeVI8LruD" resolve="formatter" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="5yNeVI8LruR" role="3cqZAp">
-            <node concept="2OqwBi" id="5yNeVI8LruS" role="3clFbG">
-              <node concept="37vLTw" id="3GM_nagTxfd" role="2Oq$k0">
-                <ref role="3cqZAo" node="5yNeVI8LruD" resolve="formatter" />
-              </node>
-              <node concept="liA8E" id="5yNeVI8LruU" role="2OqNvi">
-                <ref role="37wK5l" to="oj8w:~DefaultFormatter.setOverwriteMode(boolean):void" resolve="setOverwriteMode" />
-                <node concept="3clFbT" id="5yNeVI8LruV" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="WVup5IF0n2" role="3cqZAp" />
-          <node concept="3clFbH" id="5TKboO2cNp7" role="3cqZAp" />
-          <node concept="3clFbF" id="1ptFCtLqsqA" role="3cqZAp">
-            <node concept="37vLTI" id="1ptFCtLqsqB" role="3clFbG">
-              <node concept="2OqwBi" id="3NyK2JelLdj" role="37vLTx">
-                <node concept="yHkDH" id="3NyK2JelLcI" role="2Oq$k0">
+          <node concept="3clFbH" id="7yLt8tTSJ0V" role="3cqZAp" />
+          <node concept="3clFbF" id="7udlxS$HuiT" role="3cqZAp">
+            <node concept="37vLTI" id="7udlxS$Hw3P" role="3clFbG">
+              <node concept="2OqwBi" id="7udlxS$H_wv" role="37vLTx">
+                <node concept="yHkDH" id="7udlxS$HzO0" role="2Oq$k0">
                   <ref role="yHkDG" node="1ptFCtLqsrq" resolve="myBinary" />
                 </node>
-                <node concept="yHkDv" id="3NyK2JelLdt" role="2OqNvi">
+                <node concept="yHkDv" id="7udlxS$HAzi" role="2OqNvi">
                   <ref role="yHkD0" to="awpe:7byHRlLC1R$" />
                 </node>
               </node>
-              <node concept="yHkD2" id="1ptFCtLqsqF" role="37vLTJ">
+              <node concept="yHkD2" id="58Qq$TrfdKt" role="37vLTJ">
                 <ref role="3cqZAo" node="1ptFCtLqsqy" resolve="binaryChooser" />
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="1ptFCtLqsqG" role="3cqZAp">
-            <node concept="3cpWsn" id="1ptFCtLqsqH" role="3cpWs9">
-              <property role="TrG5h" value="executablePanel" />
-              <node concept="3uibUv" id="1ptFCtLqsqI" role="1tU5fm">
-                <ref role="3uigEE" to="dbrf:~JPanel" resolve="JPanel" />
+          <node concept="3clFbF" id="7yLt8tTSJ0X" role="3cqZAp">
+            <node concept="2OqwBi" id="7yLt8tTSJ11" role="3clFbG">
+              <node concept="37vLTw" id="3GM_nagTtVQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="7yLt8tTSJ0s" resolve="panel" />
               </node>
-              <node concept="2ShNRf" id="1ptFCtLqsqJ" role="33vP2m">
-                <node concept="1pGfFk" id="1ptFCtLqsqK" role="2ShVmc">
-                  <ref role="37wK5l" to="dbrf:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
-                  <node concept="2ShNRf" id="1ptFCtLqsqL" role="37wK5m">
-                    <node concept="1pGfFk" id="1ptFCtLqsqM" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~BorderLayout.&lt;init&gt;()" resolve="BorderLayout" />
+              <node concept="liA8E" id="7yLt8tTSJHw" role="2OqNvi">
+                <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                <node concept="2ShNRf" id="7yLt8tTSJJd" role="37wK5m">
+                  <node concept="1pGfFk" id="7yLt8tTSJJp" role="2ShVmc">
+                    <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                    <node concept="Xl_RD" id="7yLt8tTSJJu" role="37wK5m">
+                      <property role="Xl_RC" value="Build project:" />
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="1ptFCtLqsqN" role="3cqZAp">
-            <node concept="3cpWsn" id="1ptFCtLqsqO" role="3cpWs9">
-              <property role="TrG5h" value="executableLabel" />
-              <node concept="3uibUv" id="1ptFCtLqsqP" role="1tU5fm">
-                <ref role="3uigEE" to="dbrf:~JLabel" resolve="JLabel" />
-              </node>
-              <node concept="2ShNRf" id="1ptFCtLqsqQ" role="33vP2m">
-                <node concept="1pGfFk" id="1ptFCtLqsqR" role="2ShVmc">
-                  <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
-                  <node concept="Xl_RD" id="1ptFCtLqsqS" role="37wK5m">
-                    <property role="Xl_RC" value="Executable: " />
+                <node concept="1rwKMM" id="5gyVhZ18bgg" role="37wK5m">
+                  <property role="1rwKMK" value="label" />
+                  <node concept="3cmrfG" id="5gyVhZ18bgh" role="1rxHDW">
+                    <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="1ptFCtLqsqT" role="3cqZAp">
-            <node concept="2OqwBi" id="1ptFCtLqsqU" role="3clFbG">
-              <node concept="37vLTw" id="2GeljgL483f" role="2Oq$k0">
-                <ref role="3cqZAo" node="1ptFCtLqsqH" resolve="executablePanel" />
+          <node concept="3clFbF" id="7yLt8tTSJIV" role="3cqZAp">
+            <node concept="2OqwBi" id="7yLt8tTSJIW" role="3clFbG">
+              <node concept="37vLTw" id="3GM_nagTz6N" role="2Oq$k0">
+                <ref role="3cqZAo" node="7yLt8tTSJ0s" resolve="panel" />
               </node>
-              <node concept="liA8E" id="1ptFCtLqsqW" role="2OqNvi">
+              <node concept="liA8E" id="7yLt8tTSJIY" role="2OqNvi">
                 <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-                <node concept="37vLTw" id="2GeljgL484J" role="37wK5m">
-                  <ref role="3cqZAo" node="1ptFCtLqsqO" resolve="executableLabel" />
-                </node>
-                <node concept="10M0yZ" id="1ptFCtLqsqY" role="37wK5m">
-                  <ref role="1PxDUh" to="1t7x:~BorderLayout" resolve="BorderLayout" />
-                  <ref role="3cqZAo" to="1t7x:~BorderLayout.WEST" resolve="WEST" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="1ptFCtLqsqZ" role="3cqZAp">
-            <node concept="2OqwBi" id="1ptFCtLqsr0" role="3clFbG">
-              <node concept="37vLTw" id="2GeljgL484t" role="2Oq$k0">
-                <ref role="3cqZAo" node="1ptFCtLqsqH" resolve="executablePanel" />
-              </node>
-              <node concept="liA8E" id="1ptFCtLqsr2" role="2OqNvi">
-                <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-                <node concept="yHkD2" id="1ptFCtLqsr3" role="37wK5m">
+                <node concept="yHkD2" id="58Qq$TrfeM9" role="37wK5m">
                   <ref role="3cqZAo" node="1ptFCtLqsqy" resolve="binaryChooser" />
                 </node>
-                <node concept="10M0yZ" id="1ptFCtLqsr4" role="37wK5m">
-                  <ref role="3cqZAo" to="1t7x:~BorderLayout.CENTER" resolve="CENTER" />
-                  <ref role="1PxDUh" to="1t7x:~BorderLayout" resolve="BorderLayout" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="5TKboO2cNpF" role="3cqZAp" />
-          <node concept="3cpWs8" id="5TKboO2cNpQ" role="3cqZAp">
-            <node concept="3cpWsn" id="5TKboO2cNpR" role="3cpWs9">
-              <property role="TrG5h" value="baudratePanel" />
-              <node concept="3uibUv" id="5TKboO2cNpS" role="1tU5fm">
-                <ref role="3uigEE" to="dbrf:~JPanel" resolve="JPanel" />
-              </node>
-              <node concept="2ShNRf" id="5TKboO2cNpT" role="33vP2m">
-                <node concept="1pGfFk" id="5TKboO2cNpU" role="2ShVmc">
-                  <ref role="37wK5l" to="dbrf:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
-                  <node concept="2ShNRf" id="5TKboO2cNpV" role="37wK5m">
-                    <node concept="1pGfFk" id="5TKboO2cNpW" role="2ShVmc">
-                      <ref role="37wK5l" to="1t7x:~BorderLayout.&lt;init&gt;()" resolve="BorderLayout" />
-                    </node>
+                <node concept="1rwKMM" id="7yLt8tTSJJ0" role="37wK5m">
+                  <property role="1rwKMK" value="field" />
+                  <node concept="3cmrfG" id="7yLt8tTSJJ1" role="1rxHDW">
+                    <property role="3cmrfH" value="1" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="5TKboO2cNpY" role="3cqZAp">
-            <node concept="3cpWsn" id="5TKboO2cNpZ" role="3cpWs9">
-              <property role="TrG5h" value="baudrateLabel" />
-              <node concept="3uibUv" id="5TKboO2cNq0" role="1tU5fm">
-                <ref role="3uigEE" to="dbrf:~JLabel" resolve="JLabel" />
+          <node concept="3clFbH" id="7yLt8tTSJHS" role="3cqZAp" />
+          <node concept="3clFbF" id="7udlxS$F9kO" role="3cqZAp">
+            <node concept="37vLTI" id="7udlxS$Fbad" role="3clFbG">
+              <node concept="2ShNRf" id="7udlxS$FmXz" role="37vLTx">
+                <node concept="1pGfFk" id="7udlxS$Foq2" role="2ShVmc">
+                  <ref role="37wK5l" node="5yNeVI8Lrui" resolve="ArduinoSettingsEditor" />
+                </node>
               </node>
-              <node concept="2ShNRf" id="5TKboO2cNq1" role="33vP2m">
-                <node concept="1pGfFk" id="5TKboO2cNq2" role="2ShVmc">
-                  <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
-                  <node concept="Xl_RD" id="5TKboO2cNq3" role="37wK5m">
-                    <property role="Xl_RC" value="Baudrate: " />
+              <node concept="yHkD2" id="58Qq$Trff1b" role="37vLTJ">
+                <ref role="3cqZAo" node="58Qq$Trf9Oe" resolve="arduinoEditor" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7yLt8tTSJLs" role="3cqZAp">
+            <node concept="2OqwBi" id="7yLt8tTSJLt" role="3clFbG">
+              <node concept="37vLTw" id="3GM_nagTzBR" role="2Oq$k0">
+                <ref role="3cqZAo" node="7yLt8tTSJ0s" resolve="panel" />
+              </node>
+              <node concept="liA8E" id="7yLt8tTSJLv" role="2OqNvi">
+                <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                <node concept="yHkD2" id="58Qq$Trfff4" role="37wK5m">
+                  <ref role="3cqZAo" node="58Qq$Trf9Oe" resolve="arduinoEditor" />
+                </node>
+                <node concept="1rwKMM" id="7yLt8tTSJLx" role="37wK5m">
+                  <property role="1rwKMK" value="panel" />
+                  <node concept="3cmrfG" id="7yLt8tTSJLy" role="1rxHDW">
+                    <property role="3cmrfH" value="2" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="6CecrTFCxRw" role="3cqZAp" />
-          <node concept="3cpWs6" id="1ptFCtLqsr5" role="3cqZAp">
-            <node concept="37vLTw" id="2GeljgL484F" role="3cqZAk">
-              <ref role="3cqZAo" node="5TKboO2cNpg" resolve="mainPanel" />
+          <node concept="3clFbH" id="7yLt8tTSJHT" role="3cqZAp" />
+          <node concept="3clFbF" id="7yLt8tTSJHV" role="3cqZAp">
+            <node concept="37vLTw" id="3GM_nagT$dJ" role="3clFbG">
+              <ref role="3cqZAo" node="7yLt8tTSJ0s" resolve="panel" />
             </node>
           </node>
         </node>
@@ -1037,31 +973,44 @@
     <property role="3GE5qa" value="ui" />
     <node concept="2tJIrI" id="7udlxS$_W00" role="jymVt" />
     <node concept="312cEg" id="5yNeVI8Lru3" role="jymVt">
-      <property role="TrG5h" value="myCommandTimeoutTextField" />
+      <property role="TrG5h" value="myBaudrateTextField" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="5yNeVI8Lru4" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JFormattedTextField" resolve="JFormattedTextField" />
+      <node concept="3uibUv" id="58Qq$Trf7RL" role="1tU5fm">
+        <ref role="3uigEE" to="dbrf:~JTextField" resolve="JTextField" />
       </node>
       <node concept="3Tm6S6" id="5yNeVI8Lru5" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="7udlxS$ACVE" role="jymVt">
-      <property role="TrG5h" value="myLaunchTimeoutTextField" />
+      <property role="TrG5h" value="myPortTextField" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7udlxS$ACVF" role="1tU5fm">
         <ref role="3uigEE" to="dbrf:~JFormattedTextField" resolve="JFormattedTextField" />
       </node>
       <node concept="3Tm6S6" id="7udlxS$ACVG" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="5yNeVI8Lru9" role="jymVt">
-      <property role="TrG5h" value="baudrate" />
-      <node concept="10Oyi0" id="5yNeVI8Lrua" role="1tU5fm" />
-      <node concept="3Tm6S6" id="5yNeVI8Lrub" role="1B3o_S" />
+    <node concept="2RhdJD" id="58Qq$TreKa$" role="jymVt">
+      <property role="2RkwnN" value="baudrate" />
+      <node concept="3Tm1VV" id="58Qq$TreKa_" role="1B3o_S" />
+      <node concept="2RoN1w" id="58Qq$TreKaA" role="2RnVtd">
+        <node concept="3wEZqW" id="58Qq$TreKaB" role="3wFrgM" />
+        <node concept="3xqBd$" id="58Qq$TreKaC" role="3xrYvX">
+          <node concept="3Tm6S6" id="58Qq$TreKaD" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10Oyi0" id="58Qq$TreKD9" role="2RkE6I" />
     </node>
-    <node concept="312cEg" id="7udlxS$AjpF" role="jymVt">
-      <property role="TrG5h" value="port" />
-      <node concept="17QB3L" id="WVup5IFy_T" role="1tU5fm" />
-      <node concept="3Tm6S6" id="7udlxS$AjpH" role="1B3o_S" />
+    <node concept="2RhdJD" id="58Qq$TreL9z" role="jymVt">
+      <property role="2RkwnN" value="port" />
+      <node concept="3Tm1VV" id="58Qq$TreL9$" role="1B3o_S" />
+      <node concept="2RoN1w" id="58Qq$TreL9_" role="2RnVtd">
+        <node concept="3wEZqW" id="58Qq$TreL9A" role="3wFrgM" />
+        <node concept="3xqBd$" id="58Qq$TreL9B" role="3xrYvX">
+          <node concept="3Tm6S6" id="58Qq$TreL9C" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="58Qq$TreLAZ" role="2RkE6I" />
     </node>
+    <node concept="2tJIrI" id="58Qq$TreLBH" role="jymVt" />
     <node concept="2tJIrI" id="7udlxS$A3k9" role="jymVt" />
     <node concept="3clFbW" id="5yNeVI8Lrui" role="jymVt">
       <node concept="3Tm1VV" id="5yNeVI8Lruj" role="1B3o_S" />
@@ -1130,59 +1079,11 @@
           <node concept="37vLTI" id="5yNeVI8LruX" role="3clFbG">
             <node concept="2ShNRf" id="5yNeVI8LruZ" role="37vLTx">
               <node concept="1pGfFk" id="5yNeVI8Lrv0" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JFormattedTextField.&lt;init&gt;(javax.swing.JFormattedTextField$AbstractFormatter)" resolve="JFormattedTextField" />
-                <node concept="37vLTw" id="3GM_nagTBqe" role="37wK5m">
-                  <ref role="3cqZAo" node="WVup5IFbrw" resolve="formatter" />
-                </node>
+                <ref role="37wK5l" to="dbrf:~JTextField.&lt;init&gt;()" resolve="JTextField" />
               </node>
             </node>
             <node concept="37vLTw" id="2BHiRxeuNXd" role="37vLTJ">
-              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myCommandTimeoutTextField" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7udlxS$B_lV" role="3cqZAp">
-          <node concept="3cpWsn" id="7udlxS$B_lW" role="3cpWs9">
-            <property role="TrG5h" value="commandTimeoutListener" />
-            <node concept="3uibUv" id="7udlxS$B_lX" role="1tU5fm">
-              <ref role="3uigEE" node="5yNeVI8LrsE" resolve="ArduinoSettingsEditor.MyKeyAdapter" />
-            </node>
-            <node concept="2ShNRf" id="7udlxS$B_lY" role="33vP2m">
-              <node concept="1pGfFk" id="7udlxS$B_lZ" role="2ShVmc">
-                <ref role="37wK5l" node="5yNeVI8LrsI" resolve="ArduinoSettingsEditor.MyKeyAdapter" />
-                <node concept="37vLTw" id="7udlxS$C0yz" role="37wK5m">
-                  <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myCommandTimeoutTextField" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5yNeVI8Lrv2" role="3cqZAp">
-          <node concept="2OqwBi" id="5yNeVI8Lrv3" role="3clFbG">
-            <node concept="37vLTw" id="2BHiRxeuVZi" role="2Oq$k0">
-              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myCommandTimeoutTextField" />
-            </node>
-            <node concept="liA8E" id="5yNeVI8Lrv5" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Container.addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener):void" resolve="addPropertyChangeListener" />
-              <node concept="Xl_RD" id="5yNeVI8Lrv6" role="37wK5m">
-                <property role="Xl_RC" value="value" />
-              </node>
-              <node concept="37vLTw" id="7udlxS$CdZa" role="37wK5m">
-                <ref role="3cqZAo" node="7udlxS$B_lW" resolve="commandTimeoutListener" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5yNeVI8Lrv8" role="3cqZAp">
-          <node concept="2OqwBi" id="5yNeVI8Lrv9" role="3clFbG">
-            <node concept="37vLTw" id="2BHiRxeuq7g" role="2Oq$k0">
-              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myCommandTimeoutTextField" />
-            </node>
-            <node concept="liA8E" id="5yNeVI8Lrvb" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Component.addKeyListener(java.awt.event.KeyListener):void" resolve="addKeyListener" />
-              <node concept="37vLTw" id="7udlxS$Cfpt" role="37wK5m">
-                <ref role="3cqZAo" node="7udlxS$B_lW" resolve="commandTimeoutListener" />
-              </node>
+              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myBaudrateTextField" />
             </node>
           </node>
         </node>
@@ -1198,7 +1099,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="7udlxS$Cs4v" role="37vLTJ">
-              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myLaunchTimeoutTextField" />
+              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myPortTextField" />
             </node>
           </node>
         </node>
@@ -1212,7 +1113,7 @@
               <node concept="1pGfFk" id="7udlxS$CnPy" role="2ShVmc">
                 <ref role="37wK5l" node="5yNeVI8LrsI" resolve="ArduinoSettingsEditor.MyKeyAdapter" />
                 <node concept="37vLTw" id="7udlxS$Cu4b" role="37wK5m">
-                  <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myLaunchTimeoutTextField" />
+                  <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myPortTextField" />
                 </node>
               </node>
             </node>
@@ -1221,7 +1122,7 @@
         <node concept="3clFbF" id="7udlxS$CnP$" role="3cqZAp">
           <node concept="2OqwBi" id="7udlxS$CnP_" role="3clFbG">
             <node concept="37vLTw" id="7udlxS$CtXi" role="2Oq$k0">
-              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myLaunchTimeoutTextField" />
+              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myPortTextField" />
             </node>
             <node concept="liA8E" id="7udlxS$CnPB" role="2OqNvi">
               <ref role="37wK5l" to="1t7x:~Container.addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener):void" resolve="addPropertyChangeListener" />
@@ -1237,7 +1138,7 @@
         <node concept="3clFbF" id="7udlxS$CnPE" role="3cqZAp">
           <node concept="2OqwBi" id="7udlxS$CnPF" role="3clFbG">
             <node concept="37vLTw" id="7udlxS$CtOm" role="2Oq$k0">
-              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myLaunchTimeoutTextField" />
+              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myPortTextField" />
             </node>
             <node concept="liA8E" id="7udlxS$CnPH" role="2OqNvi">
               <ref role="37wK5l" to="1t7x:~Component.addKeyListener(java.awt.event.KeyListener):void" resolve="addKeyListener" />
@@ -1255,7 +1156,7 @@
               <node concept="1pGfFk" id="5yNeVI8Lrvq" role="2ShVmc">
                 <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                 <node concept="Xl_RD" id="5yNeVI8Lrvr" role="37wK5m">
-                  <property role="Xl_RC" value="Launch timeout:" />
+                  <property role="Xl_RC" value="Port:" />
                 </node>
               </node>
             </node>
@@ -1271,7 +1172,7 @@
           <node concept="1rXfSq" id="4hiugqyyIbW" role="3clFbG">
             <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
             <node concept="37vLTw" id="7udlxS$C$i2" role="37wK5m">
-              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myLaunchTimeoutTextField" />
+              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myPortTextField" />
             </node>
             <node concept="1rwKMM" id="5yNeVI8Lrvx" role="37wK5m">
               <property role="1rwKMK" value="field" />
@@ -1288,7 +1189,7 @@
               <node concept="1pGfFk" id="5yNeVI8LrvA" role="2ShVmc">
                 <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                 <node concept="Xl_RD" id="5yNeVI8LrvB" role="37wK5m">
-                  <property role="Xl_RC" value="Command timeout:" />
+                  <property role="Xl_RC" value="Baudrate" />
                 </node>
               </node>
             </node>
@@ -1304,7 +1205,7 @@
           <node concept="1rXfSq" id="4hiugqyz8sX" role="3clFbG">
             <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
             <node concept="37vLTw" id="7udlxS$CAT6" role="37wK5m">
-              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myCommandTimeoutTextField" />
+              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myBaudrateTextField" />
             </node>
             <node concept="1rwKMM" id="5yNeVI8LrvH" role="37wK5m">
               <property role="1rwKMK" value="field" />
@@ -1326,23 +1227,23 @@
           <node concept="3clFbS" id="7udlxS$CVpR" role="SfCbr">
             <node concept="3clFbF" id="7udlxS$CXRD" role="3cqZAp">
               <node concept="37vLTI" id="7udlxS$D1Jh" role="3clFbG">
-                <node concept="37vLTw" id="7udlxS$D1Y9" role="37vLTJ">
-                  <ref role="3cqZAo" node="7udlxS$AjpF" resolve="port" />
+                <node concept="338YkY" id="58Qq$TreMs8" role="37vLTJ">
+                  <ref role="338YkT" node="58Qq$TreL9z" resolve="port" />
                 </node>
                 <node concept="2OqwBi" id="7udlxS$D1wL" role="37vLTx">
                   <node concept="liA8E" id="7udlxS$D1wM" role="2OqNvi">
                     <ref role="37wK5l" to="oj8w:~JTextComponent.getText():java.lang.String" resolve="getText" />
                   </node>
                   <node concept="37vLTw" id="7udlxS$D1wN" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myCommandTimeoutTextField" />
+                    <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myBaudrateTextField" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3clFbF" id="7udlxS$Dapd" role="3cqZAp">
               <node concept="37vLTI" id="7udlxS$Dape" role="3clFbG">
-                <node concept="37vLTw" id="7udlxS$DbsB" role="37vLTJ">
-                  <ref role="3cqZAo" node="5yNeVI8Lru9" resolve="baudrate" />
+                <node concept="338YkY" id="58Qq$TreMv7" role="37vLTJ">
+                  <ref role="338YkT" node="58Qq$TreKa$" resolve="baudrate" />
                 </node>
                 <node concept="2YIFZM" id="7udlxS$Dapg" role="37vLTx">
                   <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
@@ -1352,7 +1253,7 @@
                       <ref role="37wK5l" to="oj8w:~JTextComponent.getText():java.lang.String" resolve="getText" />
                     </node>
                     <node concept="37vLTw" id="7udlxS$De27" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myLaunchTimeoutTextField" />
+                      <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myPortTextField" />
                     </node>
                   </node>
                 </node>
@@ -1390,12 +1291,12 @@
         <node concept="3clFbF" id="7udlxS$Dmzi" role="3cqZAp">
           <node concept="2OqwBi" id="7udlxS$DpLf" role="3clFbG">
             <node concept="37vLTw" id="7udlxS$Dmzh" role="2Oq$k0">
-              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myLaunchTimeoutTextField" />
+              <ref role="3cqZAo" node="7udlxS$ACVE" resolve="myPortTextField" />
             </node>
             <node concept="liA8E" id="7udlxS$Dzwv" role="2OqNvi">
               <ref role="37wK5l" to="dbrf:~JFormattedTextField.setValue(java.lang.Object):void" resolve="setValue" />
-              <node concept="37vLTw" id="7udlxS$DSJ4" role="37wK5m">
-                <ref role="3cqZAo" node="5yNeVI8Lru9" resolve="baudrate" />
+              <node concept="338YkY" id="58Qq$TreMy$" role="37wK5m">
+                <ref role="338YkT" node="58Qq$TreKa$" resolve="baudrate" />
               </node>
             </node>
           </node>
@@ -1403,68 +1304,46 @@
         <node concept="3clFbF" id="7udlxS$DGYh" role="3cqZAp">
           <node concept="2OqwBi" id="7udlxS$DGYi" role="3clFbG">
             <node concept="37vLTw" id="7udlxS$DI9h" role="2Oq$k0">
-              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myCommandTimeoutTextField" />
+              <ref role="3cqZAo" node="5yNeVI8Lru3" resolve="myBaudrateTextField" />
             </node>
             <node concept="liA8E" id="7udlxS$DGYk" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JFormattedTextField.setValue(java.lang.Object):void" resolve="setValue" />
-              <node concept="37vLTw" id="7udlxS$DX7c" role="37wK5m">
-                <ref role="3cqZAo" node="7udlxS$AjpF" resolve="port" />
+              <ref role="37wK5l" to="oj8w:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+              <node concept="338YkY" id="58Qq$TreMA1" role="37wK5m">
+                <ref role="338YkT" node="58Qq$TreL9z" resolve="port" />
               </node>
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="3clFb_" id="5yNeVI8LrwD" role="jymVt">
-      <property role="TrG5h" value="formClientCommandLine" />
-      <node concept="3clFbS" id="5yNeVI8LrwG" role="3clF47">
-        <node concept="3cpWs6" id="5yNeVI8LrwH" role="3cqZAp">
-          <node concept="2YIFZM" id="5yNeVI8LrwI" role="3cqZAk">
-            <ref role="37wK5l" to="mcvh:2Y$mRnIClFJ" resolve="getClientCommandLine" />
-            <ref role="1Pybhc" to="mcvh:2Y$mRnIClFo" resolve="RemoteConnectionSettings" />
-            <node concept="3clFbT" id="5yNeVI8LrwJ" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="37vLTw" id="2BHiRxeuktJ" role="37wK5m">
-              <ref role="3cqZAo" node="5yNeVI8Lru9" resolve="baudrate" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="5yNeVI8LrwF" role="3clF45" />
-      <node concept="3Tm6S6" id="5yNeVI8LrwE" role="1B3o_S" />
-    </node>
+    <node concept="2tJIrI" id="58Qq$TreQX8" role="jymVt" />
     <node concept="2tJIrI" id="7udlxS$DZVS" role="jymVt" />
     <node concept="3clFb_" id="5yNeVI8LrwL" role="jymVt">
       <property role="TrG5h" value="reset" />
       <node concept="3clFbS" id="5yNeVI8LrwQ" role="3clF47">
         <node concept="3clFbF" id="7udlxS$E9kb" role="3cqZAp">
           <node concept="37vLTI" id="7udlxS$EePZ" role="3clFbG">
-            <node concept="2OqwBi" id="7udlxS$EhuL" role="37vLTx">
-              <node concept="37vLTw" id="7udlxS$Ef7G" role="2Oq$k0">
-                <ref role="3cqZAo" node="5yNeVI8LrwO" resolve="settings" />
-              </node>
-              <node concept="2OwXpG" id="7udlxS$Eiuv" role="2OqNvi">
-                <ref role="2Oxat5" to="x3yd:7udlxS$_t2U" resolve="launchTimeout" />
-              </node>
+            <node concept="37vLTw" id="58Qq$TrewAq" role="37vLTx">
+              <ref role="3cqZAo" node="5yNeVI8LrwO" resolve="baudrate" />
             </node>
-            <node concept="37vLTw" id="7udlxS$EbBZ" role="37vLTJ">
-              <ref role="3cqZAo" node="5yNeVI8Lru9" resolve="baudrate" />
+            <node concept="2OqwBi" id="58Qq$Tre$VL" role="37vLTJ">
+              <node concept="Xjq3P" id="58Qq$Tre$$a" role="2Oq$k0" />
+              <node concept="2S8uIT" id="58Qq$TreOH0" role="2OqNvi">
+                <ref role="2S8YL0" node="58Qq$TreKa$" resolve="baudrate" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7udlxS$ElvP" role="3cqZAp">
           <node concept="37vLTI" id="7udlxS$Eo2j" role="3clFbG">
-            <node concept="2OqwBi" id="7udlxS$EqPs" role="37vLTx">
-              <node concept="37vLTw" id="7udlxS$Epsz" role="2Oq$k0">
-                <ref role="3cqZAo" node="5yNeVI8LrwO" resolve="settings" />
-              </node>
-              <node concept="2OwXpG" id="7udlxS$EuG3" role="2OqNvi">
-                <ref role="2Oxat5" to="x3yd:7udlxS$__$B" resolve="commandTimeout" />
-              </node>
+            <node concept="37vLTw" id="58Qq$TrewUo" role="37vLTx">
+              <ref role="3cqZAo" node="58Qq$Trevb6" resolve="port" />
             </node>
-            <node concept="37vLTw" id="7udlxS$ElvO" role="37vLTJ">
-              <ref role="3cqZAo" node="7udlxS$AjpF" resolve="port" />
+            <node concept="2OqwBi" id="58Qq$TreGIt" role="37vLTJ">
+              <node concept="Xjq3P" id="58Qq$TreGps" role="2Oq$k0" />
+              <node concept="2S8uIT" id="58Qq$TreQ9n" role="2OqNvi">
+                <ref role="2S8YL0" node="58Qq$TreL9z" resolve="port" />
+              </node>
             </node>
           </node>
         </node>
@@ -1475,59 +1354,18 @@
         </node>
       </node>
       <node concept="37vLTG" id="5yNeVI8LrwO" role="3clF46">
-        <property role="TrG5h" value="settings" />
-        <node concept="3uibUv" id="7udlxS$E6iz" role="1tU5fm">
-          <ref role="3uigEE" to="x3yd:7udlxS$_svu" resolve="MbeddrSettings" />
-        </node>
+        <property role="TrG5h" value="baudrate" />
+        <node concept="10Oyi0" id="58Qq$Trex0c" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="58Qq$Trevb6" role="3clF46">
+        <property role="TrG5h" value="port" />
+        <node concept="17QB3L" id="58Qq$TrevA7" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="5yNeVI8LrwM" role="1B3o_S" />
       <node concept="3cqZAl" id="5yNeVI8LrwN" role="3clF45" />
     </node>
-    <node concept="3clFb_" id="5yNeVI8Lrx9" role="jymVt">
-      <property role="TrG5h" value="apply" />
-      <node concept="3cqZAl" id="5yNeVI8Lrxb" role="3clF45" />
-      <node concept="3Tm1VV" id="5yNeVI8Lrxa" role="1B3o_S" />
-      <node concept="37vLTG" id="5yNeVI8Lrxc" role="3clF46">
-        <property role="TrG5h" value="settings" />
-        <node concept="3uibUv" id="7udlxS$E8vy" role="1tU5fm">
-          <ref role="3uigEE" to="x3yd:7udlxS$_svu" resolve="MbeddrSettings" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="5yNeVI8Lrxe" role="3clF47">
-        <node concept="3clFbF" id="7udlxS$EzZF" role="3cqZAp">
-          <node concept="37vLTI" id="7udlxS$EDyJ" role="3clFbG">
-            <node concept="37vLTw" id="7udlxS$EEMk" role="37vLTx">
-              <ref role="3cqZAo" node="7udlxS$AjpF" resolve="port" />
-            </node>
-            <node concept="2OqwBi" id="7udlxS$EAg2" role="37vLTJ">
-              <node concept="37vLTw" id="7udlxS$EzZE" role="2Oq$k0">
-                <ref role="3cqZAo" node="5yNeVI8Lrxc" resolve="settings" />
-              </node>
-              <node concept="2OwXpG" id="7udlxS$EB71" role="2OqNvi">
-                <ref role="2Oxat5" to="x3yd:7udlxS$__$B" resolve="commandTimeout" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7udlxS$EHQG" role="3cqZAp">
-          <node concept="37vLTI" id="7udlxS$EOKQ" role="3clFbG">
-            <node concept="37vLTw" id="7udlxS$EP8D" role="37vLTx">
-              <ref role="3cqZAo" node="5yNeVI8Lru9" resolve="baudrate" />
-            </node>
-            <node concept="2OqwBi" id="7udlxS$EKrH" role="37vLTJ">
-              <node concept="37vLTw" id="7udlxS$EHQF" role="2Oq$k0">
-                <ref role="3cqZAo" node="5yNeVI8Lrxc" resolve="settings" />
-              </node>
-              <node concept="2OwXpG" id="7udlxS$ELiW" role="2OqNvi">
-                <ref role="2Oxat5" to="x3yd:7udlxS$_t2U" resolve="launchTimeout" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
+    <node concept="2tJIrI" id="58Qq$TreJ7K" role="jymVt" />
     <node concept="2tJIrI" id="7udlxS$BjL_" role="jymVt" />
-    <node concept="2tJIrI" id="7udlxS$BkBn" role="jymVt" />
     <node concept="312cEu" id="5yNeVI8LrsE" role="jymVt">
       <property role="TrG5h" value="MyKeyAdapter" />
       <property role="2bfB8j" value="true" />
