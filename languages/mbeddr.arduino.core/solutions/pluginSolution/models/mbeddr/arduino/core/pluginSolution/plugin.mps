@@ -587,7 +587,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4aykRFtH3Tn" role="3GxumY">
-      <property role="1QGGTI" value="/Users/kdummann/source/mbeddr.arduino/icons/arduino-icon-small.png" />
+      <property role="1QGGTI" value="${mbeddr.arduino}/icons/arduino-icon-small.png" />
     </node>
     <node concept="yHkDk" id="4aykRFtH7fz" role="yHkHj">
       <node concept="3clFbS" id="4aykRFtH7f$" role="2VODD2">
