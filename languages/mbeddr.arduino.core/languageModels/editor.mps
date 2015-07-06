@@ -1099,6 +1099,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="55_53lUxdL1" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="koo2:55_53lUxdKT" resolve="libPath" />
       </node>
       <node concept="3gTLQM" id="55_53lUxdL3" role="3EZMnx">

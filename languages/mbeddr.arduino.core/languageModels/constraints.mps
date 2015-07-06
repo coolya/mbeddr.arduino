@@ -159,6 +159,9 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
@@ -484,6 +487,106 @@
                 <node concept="1Wqviy" id="3WnQADV6rhx" role="3uHU7B" />
                 <node concept="3cmrfG" id="3WnQADV6t8d" role="3uHU7w">
                   <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1XyQ$8LuPos">
+    <property role="3GE5qa" value="pin" />
+    <ref role="1M2myG" to="koo2:4JsbL6NpngL" resolve="DigitalPin" />
+    <node concept="1N5Pfh" id="1XyQ$8LuPzh" role="1Mr941">
+      <ref role="1N5Vy1" to="koo2:4JsbL6NpKGY" />
+      <node concept="1MUpDS" id="4sbNL4NRyfJ" role="1N6uqs">
+        <node concept="3clFbS" id="4sbNL4NRyfK" role="2VODD2">
+          <node concept="3clFbF" id="4sbNL4NRyfL" role="3cqZAp">
+            <node concept="2OqwBi" id="4sbNL4NRyfM" role="3clFbG">
+              <node concept="2OqwBi" id="4sbNL4NRyfN" role="2Oq$k0">
+                <node concept="2OqwBi" id="4sbNL4NRyfO" role="2Oq$k0">
+                  <node concept="2rP1CM" id="4sbNL4NRyfP" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4sbNL4NRyfQ" role="2OqNvi">
+                    <node concept="1xMEDy" id="4sbNL4NRyfR" role="1xVPHs">
+                      <node concept="chp4Y" id="4sbNL4NRyfS" role="ri$Ld">
+                        <ref role="cht4Q" to="koo2:4JsbL6NpngK" resolve="ArduinoDescription" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="4sbNL4NRyfT" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="4sbNL4NRyfU" role="2OqNvi">
+                  <ref role="3TtcxE" to="koo2:5TY7OGK$Adi" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="4sbNL4NRyfV" role="2OqNvi">
+                <node concept="chp4Y" id="4sbNL4NRyfW" role="v3oSu">
+                  <ref role="cht4Q" to="koo2:4JsbL6NpGeD" resolve="ByteRegister" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="1XyQ$8LuPzn" role="1Mr941">
+      <ref role="1N5Vy1" to="koo2:4JsbL6NpKGU" />
+      <node concept="1MUpDS" id="4sbNL4NRy7W" role="1N6uqs">
+        <node concept="3clFbS" id="4sbNL4NRy7X" role="2VODD2">
+          <node concept="3clFbF" id="4sbNL4NRsGu" role="3cqZAp">
+            <node concept="2OqwBi" id="4sbNL4NRvaY" role="3clFbG">
+              <node concept="2OqwBi" id="4sbNL4NRtfF" role="2Oq$k0">
+                <node concept="2OqwBi" id="4sbNL4NRsI2" role="2Oq$k0">
+                  <node concept="2rP1CM" id="4sbNL4NRsGt" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4sbNL4NRsZs" role="2OqNvi">
+                    <node concept="1xMEDy" id="4sbNL4NRsZu" role="1xVPHs">
+                      <node concept="chp4Y" id="4sbNL4NRt5u" role="ri$Ld">
+                        <ref role="cht4Q" to="koo2:4JsbL6NpngK" resolve="ArduinoDescription" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="4sbNL4NRt9j" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="4sbNL4NRu3F" role="2OqNvi">
+                  <ref role="3TtcxE" to="koo2:5TY7OGK$Adi" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="4sbNL4NRxRH" role="2OqNvi">
+                <node concept="chp4Y" id="4sbNL4NRxU_" role="v3oSu">
+                  <ref role="cht4Q" to="koo2:4JsbL6NpGeD" resolve="ByteRegister" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="1XyQ$8LuPzx" role="1Mr941">
+      <ref role="1N5Vy1" to="koo2:2mpt1xbR9gV" />
+      <node concept="1MUpDS" id="4sbNL4NRymw" role="1N6uqs">
+        <node concept="3clFbS" id="4sbNL4NRymx" role="2VODD2">
+          <node concept="3clFbF" id="4sbNL4NRymy" role="3cqZAp">
+            <node concept="2OqwBi" id="4sbNL4NRymz" role="3clFbG">
+              <node concept="2OqwBi" id="4sbNL4NRym$" role="2Oq$k0">
+                <node concept="2OqwBi" id="4sbNL4NRym_" role="2Oq$k0">
+                  <node concept="2rP1CM" id="4sbNL4NRymA" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4sbNL4NRymB" role="2OqNvi">
+                    <node concept="1xMEDy" id="4sbNL4NRymC" role="1xVPHs">
+                      <node concept="chp4Y" id="4sbNL4NRymD" role="ri$Ld">
+                        <ref role="cht4Q" to="koo2:4JsbL6NpngK" resolve="ArduinoDescription" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="4sbNL4NRymE" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="4sbNL4NRymF" role="2OqNvi">
+                  <ref role="3TtcxE" to="koo2:5TY7OGK$Adi" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="4sbNL4NRymG" role="2OqNvi">
+                <node concept="chp4Y" id="4sbNL4NRymH" role="v3oSu">
+                  <ref role="cht4Q" to="koo2:4JsbL6NpGeD" resolve="ByteRegister" />
                 </node>
               </node>
             </node>

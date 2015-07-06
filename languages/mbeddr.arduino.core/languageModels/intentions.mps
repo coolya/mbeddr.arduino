@@ -20,8 +20,8 @@
     <import index="mywg" ref="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(de.slisson.mps.editor.multiline.runtime)" />
     <import index="lgzw" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -220,7 +220,15 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
+      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -631,18 +639,23 @@
                       </node>
                     </node>
                     <node concept="2c44tf" id="1ZXVTt33BkZ" role="37vLTx">
-                      <node concept="3Hbq_t" id="1ZXVTt33Bl0" role="2c44tc">
-                        <node concept="2EMmih" id="1ZXVTt33Bl1" role="lGtFl">
-                          <property role="2qtEX9" value="value" />
-                          <property role="P4ACc" value="61c69711-ed61-4850-81d9-7714ff227fb0/2212975673976017893/2212975673976043696" />
-                          <node concept="2OqwBi" id="1ZXVTt33Bl2" role="2c44t1">
-                            <node concept="37vLTw" id="1ZXVTt33Bl3" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1ZXVTt33Bkz" resolve="matcher" />
-                            </node>
-                            <node concept="liA8E" id="1ZXVTt33Bl4" role="2OqNvi">
-                              <ref role="37wK5l" to="lgzw:~Matcher.group(int):java.lang.String" resolve="group" />
-                              <node concept="3cmrfG" id="1ZXVTt33Bl5" role="37wK5m">
-                                <property role="3cmrfH" value="2" />
+                      <node concept="2BOciq" id="4sbNL4NROTf" role="2c44tc">
+                        <node concept="3Hbq_t" id="4sbNL4NROVE" role="3TlMhJ">
+                          <property role="2hmy$m" value="20" />
+                        </node>
+                        <node concept="3Hbq_t" id="1ZXVTt33Bl0" role="3TlMhI">
+                          <node concept="2EMmih" id="1ZXVTt33Bl1" role="lGtFl">
+                            <property role="2qtEX9" value="value" />
+                            <property role="P4ACc" value="61c69711-ed61-4850-81d9-7714ff227fb0/2212975673976017893/2212975673976043696" />
+                            <node concept="2OqwBi" id="1ZXVTt33Bl2" role="2c44t1">
+                              <node concept="37vLTw" id="1ZXVTt33Bl3" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1ZXVTt33Bkz" resolve="matcher" />
+                              </node>
+                              <node concept="liA8E" id="1ZXVTt33Bl4" role="2OqNvi">
+                                <ref role="37wK5l" to="lgzw:~Matcher.group(int):java.lang.String" resolve="group" />
+                                <node concept="3cmrfG" id="1ZXVTt33Bl5" role="37wK5m">
+                                  <property role="3cmrfH" value="2" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -788,18 +801,23 @@
                       </node>
                     </node>
                     <node concept="2c44tf" id="1ZXVTt33f0z" role="37vLTx">
-                      <node concept="3Hbq_t" id="1ZXVTt33f4F" role="2c44tc">
-                        <node concept="2EMmih" id="1ZXVTt33fk$" role="lGtFl">
-                          <property role="2qtEX9" value="value" />
-                          <property role="P4ACc" value="61c69711-ed61-4850-81d9-7714ff227fb0/2212975673976017893/2212975673976043696" />
-                          <node concept="2OqwBi" id="1ZXVTt33aN_" role="2c44t1">
-                            <node concept="37vLTw" id="1ZXVTt33aMg" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1ZXVTt3368X" resolve="matcher" />
-                            </node>
-                            <node concept="liA8E" id="1ZXVTt33b2L" role="2OqNvi">
-                              <ref role="37wK5l" to="lgzw:~Matcher.group(int):java.lang.String" resolve="group" />
-                              <node concept="3cmrfG" id="1ZXVTt33b4w" role="37wK5m">
-                                <property role="3cmrfH" value="2" />
+                      <node concept="2BOciq" id="4sbNL4NROYH" role="2c44tc">
+                        <node concept="3Hbq_t" id="4sbNL4NRP18" role="3TlMhJ">
+                          <property role="2hmy$m" value="20" />
+                        </node>
+                        <node concept="3Hbq_t" id="1ZXVTt33f4F" role="3TlMhI">
+                          <node concept="2EMmih" id="1ZXVTt33fk$" role="lGtFl">
+                            <property role="2qtEX9" value="value" />
+                            <property role="P4ACc" value="61c69711-ed61-4850-81d9-7714ff227fb0/2212975673976017893/2212975673976043696" />
+                            <node concept="2OqwBi" id="1ZXVTt33aN_" role="2c44t1">
+                              <node concept="37vLTw" id="1ZXVTt33aMg" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1ZXVTt3368X" resolve="matcher" />
+                              </node>
+                              <node concept="liA8E" id="1ZXVTt33b2L" role="2OqNvi">
+                                <ref role="37wK5l" to="lgzw:~Matcher.group(int):java.lang.String" resolve="group" />
+                                <node concept="3cmrfG" id="1ZXVTt33b4w" role="37wK5m">
+                                  <property role="3cmrfH" value="2" />
+                                </node>
                               </node>
                             </node>
                           </node>
