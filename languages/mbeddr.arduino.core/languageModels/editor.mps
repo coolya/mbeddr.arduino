@@ -1378,6 +1378,16 @@
         <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="koo2:6JYjBlsLOqI" resolve="serialPort" />
       </node>
+      <node concept="3F0ifn" id="oDdAT4TkJr" role="3EZMnx">
+        <property role="3F0ifm" value="compiler options:" />
+        <node concept="pVoyu" id="oDdAT4Tl67" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="oDdAT4TkJq" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="koo2:22vbFi$uihO" resolve="compilerOptions" />
+      </node>
       <node concept="l2Vlx" id="4JsbL6Nq3qn" role="2iSdaV" />
     </node>
   </node>

@@ -5246,7 +5246,38 @@
     </node>
     <node concept="3G52F3" id="5siC38Rs7Kd" role="3G52F0">
       <property role="TrG5h" value="CFLAGS" />
-      <property role="3G5mJX" value="-Os -std=c99" />
+      <property role="3G5mJX" value="-Os" />
+      <node concept="17Uvod" id="2t4Dw6aGvVi" role="lGtFl">
+        <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211365206/3373914745211446888" />
+        <property role="2qtEX9" value="value" />
+        <node concept="3zFVjK" id="2t4Dw6aGvVj" role="3zH0cK">
+          <node concept="3clFbS" id="2t4Dw6aGvVk" role="2VODD2">
+            <node concept="3clFbF" id="2t4Dw6aGxJg" role="3cqZAp">
+              <node concept="3cpWs3" id="2t4Dw6aGywd" role="3clFbG">
+                <node concept="Xl_RD" id="2t4Dw6aGxJf" role="3uHU7B">
+                  <property role="Xl_RC" value="-Os " />
+                </node>
+                <node concept="2OqwBi" id="2t4Dw6aG$xi" role="3uHU7w">
+                  <node concept="1eOMI4" id="2t4Dw6aG$xj" role="2Oq$k0">
+                    <node concept="1PxgMI" id="2t4Dw6aG$xk" role="1eOMHV">
+                      <ref role="1PxNhF" to="koo2:22vbFi$tgwm" resolve="ArduinoPlatform" />
+                      <node concept="2OqwBi" id="2t4Dw6aG$xl" role="1PxMeX">
+                        <node concept="30H73N" id="2t4Dw6aG$xm" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="2t4Dw6aG$xn" role="2OqNvi">
+                          <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="2t4Dw6aGCPo" role="2OqNvi">
+                    <ref role="37wK5l" to="7ord:2t4Dw6aGAcz" resolve="getCompilerOptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3G52F3" id="5siC38RsdOE" role="3G52F0">
       <property role="TrG5h" value="OBJCOPY" />
