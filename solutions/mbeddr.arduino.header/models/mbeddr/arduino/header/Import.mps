@@ -90,6 +90,12 @@
         <child id="3335993110369805710" name="specifications" index="MXv61" />
         <child id="8863019357864392147" name="sizeTType" index="2O5j3Q" />
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
+        <child id="7808382574383152989" name="intPtrType" index="3sasR9" />
+        <child id="7808382574383153001" name="uintPtrType" index="3sasRX" />
+        <child id="6658270785788810330" name="minFloatValue" index="3LaRDq" />
+        <child id="6658270785788810339" name="maxDoubleValue" index="3LaRDz" />
+        <child id="6658270785788810349" name="minDoubleValue" index="3LaRDH" />
+        <child id="6658270785788810029" name="maxFloatValue" index="3LaROH" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
@@ -99,6 +105,10 @@
       </concept>
       <concept id="8860443239512128108" name="com.mbeddr.core.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
+      <concept id="1670233242589902798" name="com.mbeddr.core.expressions.structure.ScientificNumber" flags="ng" index="3VGQI6">
+        <property id="1670233242589904217" name="prefix" index="3VGQ4h" />
+        <property id="1670233242589904219" name="postfix" index="3VGQ4j" />
+      </concept>
       <concept id="86532984527104137" name="com.mbeddr.core.expressions.structure.LongType" flags="ng" index="1X9cn3" />
     </language>
   </registry>
@@ -253,6 +263,30 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+    </node>
+    <node concept="3VGQI6" id="2QJpRjY2S75" role="3LaRDq">
+      <property role="3VGQ4h" value="-1" />
+      <property role="3VGQ4j" value="37" />
+    </node>
+    <node concept="3VGQI6" id="2QJpRjY2S76" role="3LaRDH">
+      <property role="3VGQ4h" value="-1" />
+      <property role="3VGQ4j" value="37" />
+    </node>
+    <node concept="3VGQI6" id="2QJpRjY2S77" role="3LaROH">
+      <property role="3VGQ4h" value="1" />
+      <property role="3VGQ4j" value="37" />
+    </node>
+    <node concept="3VGQI6" id="2QJpRjY2S78" role="3LaRDz">
+      <property role="3VGQ4h" value="1" />
+      <property role="3VGQ4j" value="37" />
+    </node>
+    <node concept="1X9cn3" id="XwFeF80AhN" role="3sasR9">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
+    </node>
+    <node concept="26VBNf" id="XwFeF80AhO" role="3sasRX">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
     </node>
   </node>
   <node concept="rcWEw" id="Yv2B6LBx6E">
