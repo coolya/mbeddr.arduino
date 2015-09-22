@@ -24,7 +24,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="nbyu" ref="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -323,38 +324,50 @@
                     </node>
                     <node concept="1sne01" id="2NO1T5RZKiG" role="1sne05">
                       <ref role="1snh0D" to="nbyu:SwwM9UHwwK" />
-                      <node concept="1sne01" id="2NO1T5RZKiH" role="1sne05">
+                      <node concept="1sne01" id="3ZE3IPbQyyI" role="1sne05">
                         <ref role="1snh0D" to="c4fa:3CmSUB7Fp_m" />
-                        <node concept="1sne01" id="2NO1T5RZKiI" role="1sne05">
-                          <ref role="1snh0D" to="clqz:6NQSyUTr1ds" />
-                          <node concept="1sh8R2" id="2NO1T5RZKiJ" role="1sne05">
-                            <ref role="1sh8R3" to="x27k:5IYyAOzCwFF" />
-                            <node concept="2OqwBi" id="2NO1T5RZKiK" role="1sh8R0">
-                              <node concept="2GrUjf" id="2NO1T5RZKiL" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="2NO1T5RZffJ" resolve="b" />
-                              </node>
-                              <node concept="3TrEf2" id="2NO1T5RZKiM" role="2OqNvi">
-                                <ref role="3Tt5mk" to="ttha:2NO1T5RzgPG" />
+                        <node concept="1sne01" id="3ZE3IPbQyzV" role="1sne05">
+                          <ref role="1snh0D" to="c4fa:6iIoqg1yCmj" />
+                          <node concept="1sne01" id="3ZE3IPbQyLs" role="1sne05">
+                            <ref role="1snh0D" to="mj1l:6iIoqg1yDLg" />
+                            <node concept="1sh8R2" id="3ZE3IPbQyMh" role="1sne05">
+                              <ref role="1sh8R3" to="x27k:5IYyAOzCwFF" />
+                              <node concept="2OqwBi" id="3ZE3IPbQzqX" role="1sh8R0">
+                                <node concept="2GrUjf" id="3ZE3IPbQzpr" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="2NO1T5RZffJ" resolve="b" />
+                                </node>
+                                <node concept="3TrEf2" id="3ZE3IPbQzUV" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="ttha:2NO1T5RzgPG" />
+                                </node>
                               </node>
                             </node>
+                            <node concept="1shVQo" id="3ZE3IPbQyLM" role="ccFIB">
+                              <ref role="1shVQp" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
+                            </node>
                           </node>
-                          <node concept="1shVQo" id="2NO1T5RZKiN" role="ccFIB">
-                            <ref role="1shVQp" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
+                          <node concept="1sne01" id="3ZE3IPbQ$qq" role="1sne05">
+                            <ref role="1snh0D" to="mj1l:66uzewbvZib" />
+                            <node concept="1sh8R2" id="3ZE3IPbQ$OH" role="1sne05">
+                              <ref role="1sh8R3" to="clqz:5jCi3tKclJc" />
+                              <node concept="2OqwBi" id="3ZE3IPbQ$QD" role="1sh8R0">
+                                <node concept="2GrUjf" id="3ZE3IPbQ$P7" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="2NO1T5RZffJ" resolve="b" />
+                                </node>
+                                <node concept="3TrEf2" id="3ZE3IPbQ_sk" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="ttha:2NO1T5R$isZ" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1shVQo" id="3ZE3IPbQ$Oe" role="ccFIB">
+                              <ref role="1shVQp" to="clqz:5jCi3tKclfA" resolve="SmTriggerTarget" />
+                            </node>
+                          </node>
+                          <node concept="1shVQo" id="3ZE3IPbQyKX" role="ccFIB">
+                            <ref role="1shVQp" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                           </node>
                         </node>
-                        <node concept="1sh8R2" id="2NO1T5RZKiO" role="1sne05">
-                          <ref role="1sh8R3" to="clqz:1z9MsBsVdGJ" />
-                          <node concept="2OqwBi" id="2NO1T5RZKiP" role="1sh8R0">
-                            <node concept="2GrUjf" id="2NO1T5RZKiQ" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="2NO1T5RZffJ" resolve="b" />
-                            </node>
-                            <node concept="3TrEf2" id="2NO1T5RZKiR" role="2OqNvi">
-                              <ref role="3Tt5mk" to="ttha:2NO1T5R$isZ" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1shVQo" id="2NO1T5RZKiS" role="ccFIB">
-                          <ref role="1shVQp" to="clqz:6NQSyUTr1dr" resolve="TriggerSMStatement" />
+                        <node concept="1shVQo" id="3ZE3IPbQyzs" role="ccFIB">
+                          <ref role="1shVQp" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
                         </node>
                       </node>
                       <node concept="1shVQo" id="2NO1T5RZKiT" role="ccFIB">
@@ -434,7 +447,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="60mYxM6p6pV" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="Xl_RD" id="60mYxM6p6pW" role="37wK5m">
                                 <property role="Xl_RC" value="&lt;avr/interrupt.h&gt;" />
                               </node>
