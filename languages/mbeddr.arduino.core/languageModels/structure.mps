@@ -2,7 +2,7 @@
 <model ref="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -40,6 +40,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -78,6 +79,7 @@
     <property role="TrG5h" value="ArduinoPlatform" />
     <property role="3GE5qa" value="platform" />
     <property role="34LRSv" value="arduino" />
+    <property role="1pbfSe" value="988530998" />
     <ref role="1TJDcQ" to="51wr:4BxItZJ4BoF" resolve="Platform" />
     <node concept="1TJgyj" id="4JsbL6NpX5B" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -107,14 +109,17 @@
   <node concept="PlHQZ" id="22vbFi$tHds">
     <property role="TrG5h" value="IMcuAwareComponent" />
     <property role="3GE5qa" value="platform" />
+    <property role="1pbfSe" value="988413424" />
   </node>
   <node concept="PlHQZ" id="22vbFi$tHdB">
     <property role="TrG5h" value="ICpuSpeedAwareComponent" />
     <property role="3GE5qa" value="platform" />
+    <property role="1pbfSe" value="988413413" />
   </node>
   <node concept="1TIwiD" id="4JsbL6NpngK">
     <property role="TrG5h" value="ArduinoDescription" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="12475583" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5cS3I48Zmhd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -197,6 +202,7 @@
   <node concept="1TIwiD" id="4JsbL6NpngL">
     <property role="TrG5h" value="DigitalPin" />
     <property role="3GE5qa" value="pin" />
+    <property role="1pbfSe" value="12475582" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4JsbL6NpKGV" role="1TKVEl">
       <property role="TrG5h" value="bit" />
@@ -235,6 +241,7 @@
   <node concept="PlHQZ" id="4JsbL6NpngN">
     <property role="TrG5h" value="IPin" />
     <property role="3GE5qa" value="pin" />
+    <property role="1pbfSe" value="12475580" />
     <node concept="1TJgyi" id="4JsbL6NpngO" role="1TKVEl">
       <property role="TrG5h" value="canBeInput" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -252,6 +259,7 @@
     <property role="TrG5h" value="Register" />
     <property role="3GE5qa" value="register" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="12475574" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5cS3I48YO7u" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -268,11 +276,13 @@
     <property role="3GE5qa" value="register" />
     <property role="R4oN_" value="a byte register" />
     <property role="34LRSv" value="register8" />
+    <property role="1pbfSe" value="12389702" />
     <ref role="1TJDcQ" node="4JsbL6NpngT" resolve="Register" />
   </node>
   <node concept="1TIwiD" id="4JsbL6NpTFx">
     <property role="TrG5h" value="AnalogPin" />
     <property role="3GE5qa" value="pin" />
+    <property role="1pbfSe" value="12334606" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyi" id="4JsbL6NpTF_" role="1TKVEl">
       <property role="TrG5h" value="muxSelector" />
@@ -289,6 +299,7 @@
   <node concept="1TIwiD" id="3gdl6si6JD4">
     <property role="3GE5qa" value="platform" />
     <property role="TrG5h" value="ArduinoConfiguration" />
+    <property role="1pbfSe" value="1177046699" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3gdl6si6LyV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -309,6 +320,7 @@
   <node concept="1TIwiD" id="3gdl6si6JD6">
     <property role="3GE5qa" value="platform" />
     <property role="TrG5h" value="DigitalPinConfiguration" />
+    <property role="1pbfSe" value="1177046701" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3gdl6si6JDf" role="1TKVEl">
       <property role="TrG5h" value="configuration" />
@@ -348,6 +360,7 @@
   <node concept="1TIwiD" id="4EC9auLEQrA">
     <property role="3GE5qa" value="pin" />
     <property role="TrG5h" value="InitializePinsAnnotation" />
+    <property role="1pbfSe" value="61633651" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="6qOINfCPivy" role="lGtFl">
       <property role="Hh88m" value="pinInit" />
@@ -359,6 +372,7 @@
   <node concept="1TIwiD" id="4EC9auLFa7I">
     <property role="3GE5qa" value="pin" />
     <property role="TrG5h" value="DigitalPinType" />
+    <property role="1pbfSe" value="61553003" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="4EC9auLFa7J" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
@@ -368,11 +382,13 @@
     <property role="3GE5qa" value="pin" />
     <property role="TrG5h" value="DigitalValueLiteral" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="61553001" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
   </node>
   <node concept="1TIwiD" id="4EC9auLFa7N">
     <property role="3GE5qa" value="pin" />
     <property role="TrG5h" value="DigitalPinRefExpression" />
+    <property role="1pbfSe" value="61552998" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4EC9auLFa7O" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -385,17 +401,20 @@
     <property role="3GE5qa" value="pin" />
     <property role="TrG5h" value="HighLiteral" />
     <property role="34LRSv" value="high" />
+    <property role="1pbfSe" value="2122968864" />
     <ref role="1TJDcQ" node="4EC9auLFa7K" resolve="DigitalValueLiteral" />
   </node>
   <node concept="1TIwiD" id="4tlTGsRdcXl">
     <property role="3GE5qa" value="pin" />
     <property role="TrG5h" value="LowLiteral" />
     <property role="34LRSv" value="low" />
+    <property role="1pbfSe" value="2123019804" />
     <ref role="1TJDcQ" node="4EC9auLFa7K" resolve="DigitalValueLiteral" />
   </node>
   <node concept="1TIwiD" id="cDLCOYiq1u">
     <property role="3GE5qa" value="register" />
     <property role="TrG5h" value="RegisterRefExpression" />
+    <property role="1pbfSe" value="1098082027" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="cDLCOYiq1v" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -410,6 +429,7 @@
   <node concept="1TIwiD" id="26IgR5b9LNZ">
     <property role="TrG5h" value="DelayExpression" />
     <property role="34LRSv" value="delay" />
+    <property role="1pbfSe" value="1825923184" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="26IgR5b9RPe" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -421,6 +441,7 @@
   <node concept="1TIwiD" id="1pOg3uxo38n">
     <property role="TrG5h" value="AtomicExpression" />
     <property role="34LRSv" value="atomic" />
+    <property role="1pbfSe" value="1210813874" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="zSFqGmbfWz" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
@@ -435,6 +456,7 @@
   <node concept="1TIwiD" id="1qwvy7xGC6o">
     <property role="3GE5qa" value="pin" />
     <property role="TrG5h" value="AnalogPinRefExpression" />
+    <property role="1pbfSe" value="128778311" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="1qwvy7xGC6t" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -446,6 +468,7 @@
   <node concept="1TIwiD" id="1qwvy7xGC73">
     <property role="3GE5qa" value="platform" />
     <property role="TrG5h" value="AnalogPinConfiguration" />
+    <property role="1pbfSe" value="128778268" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1qwvy7xGC75" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -461,12 +484,14 @@
     <property role="TrG5h" value="ArduinoExecutale" />
     <property role="R4oN_" value="an arduino executable binary" />
     <property role="34LRSv" value="arduino executalbe" />
+    <property role="1pbfSe" value="1451612430" />
     <ref role="1TJDcQ" to="51wr:4o9sgv8QoKi" resolve="Executable" />
   </node>
   <node concept="1TIwiD" id="5QG4IuautVs">
     <property role="TrG5h" value="SerialReportingStrategy" />
     <property role="R4oN_" value="reporting via UART" />
     <property role="34LRSv" value="serial" />
+    <property role="1pbfSe" value="400166461" />
     <ref role="1TJDcQ" to="k146:3R$6B6bKEUa" resolve="ReportingStrategy" />
     <node concept="1TJgyj" id="7fU3Y2eiWVo" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -492,6 +517,7 @@
     <property role="TrG5h" value="SerialConfiguration" />
     <property role="34LRSv" value="serial" />
     <property role="R4oN_" value="UART setup" />
+    <property role="1pbfSe" value="138523647" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3gQUTJ3y9pO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -524,6 +550,7 @@
     <property role="TrG5h" value="SerialPort" />
     <property role="34LRSv" value="serial port" />
     <property role="R4oN_" value="a serial port" />
+    <property role="1pbfSe" value="138449491" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7fU3Y2ecVfa" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -646,10 +673,12 @@
     <property role="3GE5qa" value="register" />
     <property role="R4oN_" value="a word register" />
     <property role="34LRSv" value="register16" />
+    <property role="1pbfSe" value="426927465" />
     <ref role="1TJDcQ" node="4JsbL6NpngT" resolve="Register" />
   </node>
   <node concept="PlHQZ" id="4Mvxa96Acs8">
     <property role="TrG5h" value="IWriteTarget" />
+    <property role="1pbfSe" value="1825027158" />
     <node concept="PrWs8" id="4Mvxa96Af43" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -658,6 +687,7 @@
     <property role="TrG5h" value="WriteStatement" />
     <property role="34LRSv" value="write" />
     <property role="R4oN_" value="writes data to a given target" />
+    <property role="1pbfSe" value="1825026142" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="4Mvxa96AcG3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -676,6 +706,7 @@
     <property role="TrG5h" value="SetUpVoid" />
     <property role="34LRSv" value="setup" />
     <property role="R4oN_" value="setup function called before the mainloop is executed" />
+    <property role="1pbfSe" value="1285482730" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3dH4JopctrM" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -700,6 +731,7 @@
     <property role="TrG5h" value="MainLoop" />
     <property role="34LRSv" value="mainLoop" />
     <property role="R4oN_" value="main loop that is called in an infinite loop" />
+    <property role="1pbfSe" value="1287865659" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3dH4Jopl$nI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -728,12 +760,14 @@
     <property role="R5$K7" value="true" />
     <property role="34LRSv" value="sleep mode" />
     <property role="3GE5qa" value="sleep" />
+    <property role="1pbfSe" value="49839446" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6RZtz2kYjem">
     <property role="TrG5h" value="SleepStatement" />
     <property role="34LRSv" value="sleep" />
     <property role="3GE5qa" value="sleep" />
+    <property role="1pbfSe" value="49850822" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="6RZtz2kYjen" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -751,36 +785,42 @@
     <property role="TrG5h" value="SleepModeIdle" />
     <property role="34LRSv" value="Idle Mode" />
     <property role="3GE5qa" value="sleep" />
+    <property role="1pbfSe" value="49855636" />
     <ref role="1TJDcQ" node="6RZtz2kYgsA" resolve="SleepMode" />
   </node>
   <node concept="1TIwiD" id="6RZtz2kYliE">
     <property role="3GE5qa" value="sleep" />
     <property role="TrG5h" value="SleepModeADC" />
     <property role="34LRSv" value="ADC Noise Reduction Mode" />
+    <property role="1pbfSe" value="49859290" />
     <ref role="1TJDcQ" node="6RZtz2kYgsA" resolve="SleepMode" />
   </node>
   <node concept="1TIwiD" id="6RZtz2kYl_y">
     <property role="3GE5qa" value="sleep" />
     <property role="TrG5h" value="SleepModePwrDown" />
     <property role="34LRSv" value="Power-Down Mode" />
+    <property role="1pbfSe" value="49860498" />
     <ref role="1TJDcQ" node="6RZtz2kYgsA" resolve="SleepMode" />
   </node>
   <node concept="1TIwiD" id="6RZtz2kYl_z">
     <property role="3GE5qa" value="sleep" />
     <property role="TrG5h" value="SleepModePwrSave" />
     <property role="34LRSv" value="Power-Save-Mode" />
+    <property role="1pbfSe" value="49860499" />
     <ref role="1TJDcQ" node="6RZtz2kYgsA" resolve="SleepMode" />
   </node>
   <node concept="1TIwiD" id="6RZtz2kYlEU">
     <property role="3GE5qa" value="sleep" />
     <property role="TrG5h" value="SleepModeStdBy" />
     <property role="34LRSv" value="Standby-Mode" />
+    <property role="1pbfSe" value="49860842" />
     <ref role="1TJDcQ" node="6RZtz2kYgsA" resolve="SleepMode" />
   </node>
   <node concept="1TIwiD" id="2$_w8oMMBHX">
     <property role="TrG5h" value="Time" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="time" />
+    <property role="1pbfSe" value="1542454275" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2$_w8oMMC12" role="1TKVEl">
       <property role="TrG5h" value="amount" />
@@ -790,6 +830,7 @@
   <node concept="1TIwiD" id="2$_w8oMMCQf">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="TimeConfiguration" />
+    <property role="1pbfSe" value="1542458901" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2$_w8oMMCQ$" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -798,47 +839,55 @@
   <node concept="PlHQZ" id="2$_w8oMMCRk">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="ITimeConfiguration" />
+    <property role="1pbfSe" value="1542458970" />
   </node>
   <node concept="1TIwiD" id="1Jb2EknEKI_">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="NanoSecond" />
     <property role="34LRSv" value="ns" />
+    <property role="1pbfSe" value="863376970" />
     <ref role="1TJDcQ" node="2$_w8oMMBHX" resolve="Time" />
   </node>
   <node concept="1TIwiD" id="1Jb2EknEY6Q">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="MicroSecond" />
     <property role="34LRSv" value="µs" />
+    <property role="1pbfSe" value="863431771" />
     <ref role="1TJDcQ" node="2$_w8oMMBHX" resolve="Time" />
   </node>
   <node concept="1TIwiD" id="1Jb2EknEYch">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="MilliSecond" />
     <property role="34LRSv" value="ms" />
+    <property role="1pbfSe" value="863432118" />
     <ref role="1TJDcQ" node="2$_w8oMMBHX" resolve="Time" />
   </node>
   <node concept="1TIwiD" id="1Jb2EknEYhI">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="Second" />
     <property role="34LRSv" value="s" />
+    <property role="1pbfSe" value="863432467" />
     <ref role="1TJDcQ" node="2$_w8oMMBHX" resolve="Time" />
   </node>
   <node concept="1TIwiD" id="1Jb2EknEYhJ">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="Minute" />
     <property role="34LRSv" value="m" />
+    <property role="1pbfSe" value="863432468" />
     <ref role="1TJDcQ" node="2$_w8oMMBHX" resolve="Time" />
   </node>
   <node concept="1TIwiD" id="1Jb2EknEYhK">
     <property role="3GE5qa" value="time" />
     <property role="TrG5h" value="Hour" />
     <property role="34LRSv" value="h" />
+    <property role="1pbfSe" value="863432469" />
     <ref role="1TJDcQ" node="2$_w8oMMBHX" resolve="Time" />
   </node>
   <node concept="1TIwiD" id="1Jb2EknHM2o">
     <property role="TrG5h" value="Task" />
     <property role="3GE5qa" value="scheduling" />
     <property role="34LRSv" value="task" />
+    <property role="1pbfSe" value="864168765" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1Jb2EknJfAJ" role="1TKVEl">
       <property role="TrG5h" value="proi" />
@@ -888,6 +937,7 @@
     <property role="TrG5h" value="ScheduleStatement" />
     <property role="34LRSv" value="schdule" />
     <property role="R4oN_" value="schedule a task" />
+    <property role="1pbfSe" value="866361413" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="1Jb2EknQ9mz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -904,6 +954,7 @@
   </node>
   <node concept="1TIwiD" id="1ZYgP9n4r$2">
     <property role="TrG5h" value="Interrupt" />
+    <property role="1pbfSe" value="1997536340" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1ZYgP9n4uno" role="1TKVEl">
       <property role="TrG5h" value="vector" />
