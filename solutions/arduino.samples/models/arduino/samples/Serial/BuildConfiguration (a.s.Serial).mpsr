@@ -1,138 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:8e04b281-9a9f-4392-893c-80a9ffab1a42(arduino.samples.Serial)" content="root">
-  <persistence version="8" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
-  <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
-  <import index="aelz" modelUID="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" implicit="yes" />
-  <import index="koo2" modelUID="r:3c7790ca-a687-4dfa-a94e-7b5e9848d78c(mbeddr.arduino.core.structure)" implicit="yes" />
-  <import index="1o4w" modelUID="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="yes" />
-  <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8357009515683983939" nodeInfo="ng">
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="nbyu.RegisterConfigurationItem" typeId="nbyu.6847490852669234129" id="4023332614668067304" nodeInfo="ng">
-      <node role="kind" roleId="nbyu.6847490852670616471" type="nbyu.EmulatedRegisterKind" typeId="nbyu.6847490852670653132" id="4023332614668067481" nodeInfo="ng" />
+<model ref="r:8e04b281-9a9f-4392-893c-80a9ffab1a42(arduino.samples.Serial)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="aelz" ref="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" implicit="true" />
+    <import index="1o4w" ref="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <child id="5046689135694070731" name="binaries" index="2ePNbc" />
+        <child id="5323740605968447026" name="target" index="2AWWZH" />
+      </concept>
+      <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
+        <reference id="7717755763392524108" name="module" index="2v9HqP" />
+      </concept>
+    </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
+      </concept>
+    </language>
+    <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
+      <concept id="6847490852669234129" name="com.mbeddr.core.embedded.structure.RegisterConfigurationItem" flags="ng" index="3V4jtR">
+        <child id="6847490852670616471" name="kind" index="3Vb1WL" />
+      </concept>
+      <concept id="6847490852670653132" name="com.mbeddr.core.embedded.structure.EmulatedRegisterKind" flags="ng" index="3VbeTE" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="3c4c8461-a533-4459-916a-dc0176793b4c" name="mbeddr.arduino.core">
+      <concept id="2350648883898812438" name="mbeddr.arduino.core.structure.ArduinoPlatform" flags="ng" index="24Uyqy">
+        <property id="5865116309641288761" name="libPath" index="FSswc" />
+        <reference id="5466295800791814503" name="description" index="3SIZTQ" />
+      </concept>
+      <concept id="3750746866331613766" name="mbeddr.arduino.core.structure.DigitalPinConfiguration" flags="ng" index="A5USx">
+        <property id="3750746866331613775" name="configuration" index="A5USC" />
+        <reference id="3750746866331613768" name="pin" index="A5USJ" />
+      </concept>
+      <concept id="3750746866331613764" name="mbeddr.arduino.core.structure.ArduinoConfiguration" flags="ng" index="A5USz">
+        <child id="3750746866331621563" name="digitalConfig" index="A5$Ns" />
+        <child id="1630441749093747254" name="analogPinConfiguration" index="3R4Rgn" />
+      </concept>
+      <concept id="6749790727191518940" name="mbeddr.arduino.core.structure.SerialReportingStrategy" flags="ng" index="3nPsKV">
+        <reference id="8357009515673800408" name="serialConfig" index="3XGs4S" />
+      </concept>
+      <concept id="1630441749093712323" name="mbeddr.arduino.core.structure.AnalogPinConfiguration" flags="ng" index="3R4JZy">
+        <reference id="1630441749093712325" name="analogPin" index="3R4JZ$" />
+      </concept>
+      <concept id="3762453592947515494" name="mbeddr.arduino.core.structure.SerialConfiguration" flags="ng" index="3RGoJX">
+        <property id="4546342499720444462" name="databits" index="143I14" />
+        <property id="4546342499720444453" name="stopbits" index="143I1f" />
+        <property id="4546342499720444441" name="baud" index="143I1N" />
+        <reference id="3762453592947594868" name="port" index="3RJBRJ" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2v9HqL" id="7fU3Y2eTN93">
+    <node concept="3V4jtR" id="3vlJV9eya7C" role="2Q9xDr">
+      <node concept="3VbeTE" id="3vlJV9eyaap" role="3Vb1WL" />
     </node>
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8357009515683984496" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="serial" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8357009515683984501" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8357009515683984487" resolveInfo="serial" />
+    <node concept="2eOfOl" id="7fU3Y2eTNhK" role="2ePNbc">
+      <property role="TrG5h" value="serial" />
+      <node concept="2v9HqM" id="7fU3Y2eTNhP" role="2eOfOg">
+        <ref role="2v9HqP" node="7fU3Y2eTNhB" resolve="serial" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8357009515683984506" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="aelz.1125629915293421994" resolveInfo="util_delay" />
-      </node>
-    </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.ArduinoConfiguration" typeId="koo2.3750746866331613764" id="1630441749093860200" nodeInfo="ng">
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860201" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="doorLock" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="output" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553598" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860202" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="lazerBeam" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553599" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860203" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="fluxCompensator" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553600" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860204" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin3" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553601" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860205" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin4" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553602" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860206" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin5" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553603" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860207" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin6" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553604" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860208" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin7" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553605" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860209" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin8" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553606" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860210" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin9" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553607" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860211" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin10" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553608" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860212" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin11" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553609" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860213" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="digitalPin12" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="none" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553610" />
-      </node>
-      <node role="digitalConfig" roleId="koo2.3750746866331621563" type="koo2.DigitalPinConfiguration" typeId="koo2.3750746866331613766" id="1630441749093860214" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="doorSwitch" />
-        <property name="configuration" nameId="koo2.3750746866331613775" value="output" />
-        <link role="pin" roleId="koo2.3750746866331613768" targetNodeId="1o4w.2399978797584553611" />
-      </node>
-      <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="1630441749093860215" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="lightSensor" />
-        <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.2399978797584558820" />
-      </node>
-      <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="1630441749093860216" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="analogPin1" />
-        <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.2399978797584558821" />
-      </node>
-      <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="1630441749093860217" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="analogPin2" />
-        <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.2399978797584558822" />
-      </node>
-      <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="1630441749093860218" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="analogPin3" />
-        <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.2399978797584558823" />
-      </node>
-      <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="1630441749093860219" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="analogPin4" />
-        <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.2399978797584558824" />
-      </node>
-      <node role="analogPinConfiguration" roleId="koo2.1630441749093747254" type="koo2.AnalogPinConfiguration" typeId="koo2.1630441749093712323" id="1630441749093860220" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="analogPin5" />
-        <link role="analogPin" roleId="koo2.1630441749093712325" targetNodeId="1o4w.2399978797584558825" />
+      <node concept="2v9HqM" id="7fU3Y2eTNhU" role="2eOfOg">
+        <ref role="2v9HqP" to="aelz:Yv2B6LBx6E" resolve="util_delay" />
       </node>
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="koo2.SerialConfiguration" typeId="koo2.3762453592947515494" id="8357009515671897558" nodeInfo="ng">
-      <property name="baud" nameId="koo2.4546342499720444441" value="57600" />
-      <property name="databits" nameId="koo2.4546342499720444462" value="8" />
-      <property name="stopbits" nameId="koo2.4546342499720444453" value="1" />
-      <link role="port" roleId="koo2.3762453592947594868" targetNodeId="1o4w.8357009515672189717" resolveInfo="Port A" />
-    </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="8357009515682369899" nodeInfo="ng">
-      <node role="strategy" roleId="k146.4459718605982051999" type="koo2.SerialReportingStrategy" typeId="koo2.6749790727191518940" id="8357009515682762884" nodeInfo="ng">
-        <link role="serialConfig" roleId="koo2.8357009515673800408" targetNodeId="8357009515671897558" />
+    <node concept="A5USz" id="1qwvy7xHcdC" role="2Q9xDr">
+      <node concept="A5USx" id="1qwvy7xHcdD" role="A5$Ns">
+        <property role="TrG5h" value="doorLock" />
+        <property role="A5USC" value="output" />
+        <ref role="A5USJ" to="1o4w:25es00MvLpY" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdE" role="A5$Ns">
+        <property role="TrG5h" value="lazerBeam" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLpZ" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdF" role="A5$Ns">
+        <property role="TrG5h" value="fluxCompensator" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq0" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdG" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin3" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq1" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdH" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin4" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq2" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdI" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin5" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq3" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdJ" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin6" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq4" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdK" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin7" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq5" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdL" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin8" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq6" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdM" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin9" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq7" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdN" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin10" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq8" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdO" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin11" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLq9" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdP" role="A5$Ns">
+        <property role="TrG5h" value="digitalPin12" />
+        <property role="A5USC" value="none" />
+        <ref role="A5USJ" to="1o4w:25es00MvLqa" />
+      </node>
+      <node concept="A5USx" id="1qwvy7xHcdQ" role="A5$Ns">
+        <property role="TrG5h" value="doorSwitch" />
+        <property role="A5USC" value="output" />
+        <ref role="A5USJ" to="1o4w:25es00MvLqb" />
+      </node>
+      <node concept="3R4JZy" id="1qwvy7xHcdR" role="3R4Rgn">
+        <property role="TrG5h" value="lightSensor" />
+        <ref role="3R4JZ$" to="1o4w:25es00MvMF$" />
+      </node>
+      <node concept="3R4JZy" id="1qwvy7xHcdS" role="3R4Rgn">
+        <property role="TrG5h" value="analogPin1" />
+        <ref role="3R4JZ$" to="1o4w:25es00MvMF_" />
+      </node>
+      <node concept="3R4JZy" id="1qwvy7xHcdT" role="3R4Rgn">
+        <property role="TrG5h" value="analogPin2" />
+        <ref role="3R4JZ$" to="1o4w:25es00MvMFA" />
+      </node>
+      <node concept="3R4JZy" id="1qwvy7xHcdU" role="3R4Rgn">
+        <property role="TrG5h" value="analogPin3" />
+        <ref role="3R4JZ$" to="1o4w:25es00MvMFB" />
+      </node>
+      <node concept="3R4JZy" id="1qwvy7xHcdV" role="3R4Rgn">
+        <property role="TrG5h" value="analogPin4" />
+        <ref role="3R4JZ$" to="1o4w:25es00MvMFC" />
+      </node>
+      <node concept="3R4JZy" id="1qwvy7xHcdW" role="3R4Rgn">
+        <property role="TrG5h" value="analogPin5" />
+        <ref role="3R4JZ$" to="1o4w:25es00MvMFD" />
       </node>
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="koo2.ArduinoPlatform" typeId="koo2.2350648883898812438" id="8357009515683984055" nodeInfo="ng">
-      <property name="libPath" nameId="koo2.5865116309641288761" value="../../../../../../lib" />
-      <link role="description" roleId="koo2.5466295800791814503" targetNodeId="1o4w.2399978797584514209" resolveInfo="uno" />
+    <node concept="3RGoJX" id="7fU3Y2ebGnm" role="2Q9xDr">
+      <property role="143I1N" value="57600" />
+      <property role="143I14" value="8" />
+      <property role="143I1f" value="1" />
+      <ref role="3RJBRJ" to="1o4w:7fU3Y2ecNGl" resolve="PortA" />
     </node>
-  </root>
+    <node concept="2Q9Fgs" id="7fU3Y2eND5F" role="2Q9xDr">
+      <node concept="3nPsKV" id="7fU3Y2eP924" role="2Q9FjI">
+        <ref role="3XGs4S" node="7fU3Y2ebGnm" />
+      </node>
+    </node>
+    <node concept="24Uyqy" id="7fU3Y2eTNaR" role="2AWWZH">
+      <property role="FSswc" value="../../../../../../lib" />
+      <ref role="3SIZTQ" to="1o4w:25es00MvBMx" resolve="uno" />
+    </node>
+  </node>
 </model>
 

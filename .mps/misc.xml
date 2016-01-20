@@ -4,7 +4,6 @@
     <favorites_list name="Heise">
       <favorite_root model_ref="r:d17b3c02-eb62-4d31-bd40-470ae787a5fc(arduino.samples.heating)" />
     </favorites_list>
+    <option name="keepMe" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" />
 </project>
-
