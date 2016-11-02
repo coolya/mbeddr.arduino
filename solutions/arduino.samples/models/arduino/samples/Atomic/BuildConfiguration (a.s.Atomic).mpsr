@@ -59,10 +59,10 @@
         <ref role="2v9HqP" node="1pOg3uxo5VV" resolve="Atomic" />
       </node>
       <node concept="2v9HqM" id="Yv2B6LBPQx" role="2eOfOg">
-        <ref role="2v9HqP" to="aelz:Yv2B6LBx6X" resolve="avr_io" />
+        <ref role="2v9HqP" to="aelz:4kqxgPFWhL7" resolve="avr_io" />
       </node>
       <node concept="2v9HqM" id="55_53lUxgHC" role="2eOfOg">
-        <ref role="2v9HqP" to="aelz:Yv2B6LBx6Z" resolve="avr_interrupt" />
+        <ref role="2v9HqP" to="aelz:3kpMhm4HRQv" resolve="avr_interrupt" />
       </node>
     </node>
     <node concept="A5USz" id="EvPvZE4n_e" role="2Q9xDr">

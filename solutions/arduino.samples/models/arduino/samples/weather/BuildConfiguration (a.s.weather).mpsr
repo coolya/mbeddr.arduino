@@ -80,10 +80,10 @@
         <ref role="2v9HqP" to="aelz:Yv2B6LBx6E" resolve="util_delay" />
       </node>
       <node concept="2v9HqM" id="3dH4Jop6nO6" role="2eOfOg">
-        <ref role="2v9HqP" to="aelz:Yv2B6LBx6Z" resolve="avr_interrupt" />
+        <ref role="2v9HqP" to="aelz:3kpMhm4HRQv" resolve="avr_interrupt" />
       </node>
       <node concept="2v9HqM" id="3dH4Jop6nO7" role="2eOfOg">
-        <ref role="2v9HqP" to="aelz:Yv2B6LBx6X" resolve="avr_io" />
+        <ref role="2v9HqP" to="aelz:4kqxgPFWhL7" resolve="avr_io" />
       </node>
       <node concept="2v9HqM" id="4u2wEbSzZdD" role="2eOfOg">
         <ref role="2v9HqP" to="1o4w:6RZtz2lxDoM" resolve="uno" />

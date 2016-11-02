@@ -154,7 +154,7 @@
       <node concept="3XIRFW" id="1pOg3uxo5WB" role="3XIRFX">
         <node concept="1_9egQ" id="2LVOPcbdblj" role="3XIRFZ">
           <node concept="BUAnR" id="2LVOPcbdbli" role="1_9egR">
-            <ref role="BUAnL" to="aelz:Yv2B6LBx7c" resolve="cli" />
+            <ref role="BUAnL" to="aelz:3kpMhm4HV5o" resolve="cli" />
           </node>
         </node>
         <node concept="3XISUE" id="2LVOPcbcBwg" role="3XIRFZ" />
@@ -292,7 +292,7 @@
         </node>
         <node concept="1_9egQ" id="2LVOPcbcg04" role="3XIRFZ">
           <node concept="BUAnR" id="2LVOPcbcg03" role="1_9egR">
-            <ref role="BUAnL" to="aelz:Yv2B6LBx78" resolve="sei" />
+            <ref role="BUAnL" to="aelz:3kpMhm4HVKL" resolve="sei" />
           </node>
         </node>
         <node concept="3XISUE" id="2LVOPcba_3Q" role="3XIRFZ" />
@@ -379,7 +379,7 @@
     </node>
     <node concept="3GEVxB" id="1ZYgP9nhm9J" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" to="aelz:Yv2B6LBx6Z" resolve="avr_interrupt" />
+      <ref role="3GEb4d" to="aelz:3kpMhm4HRQv" resolve="avr_interrupt" />
     </node>
   </node>
 </model>

@@ -15,6 +15,7 @@
       <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
         <property id="6116558314501417936" name="path" index="rcWEL" />
       </concept>
+      <concept id="6021475212425916971" name="com.mbeddr.core.modules.structure.GlobalConstantFunctionDeclaration" flags="ng" index="BTY7A" />
       <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
         <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
@@ -32,6 +33,7 @@
         <property id="9066372830132870213" name="hasEllipsis" index="3owap8" />
       </concept>
       <concept id="6437088627575724000" name="com.mbeddr.core.modules.structure.FunctionPrototype" flags="ng" index="N3Fnw" />
+      <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
         <property id="6708182213627045681" name="extern" index="3mNisv" />
@@ -356,6 +358,34 @@
     </node>
     <node concept="rcWE1" id="4vmikwH7Oh2" role="rcWEr">
       <property role="rcWEL" value="&lt;util/delay.h&gt;" />
+    </node>
+  </node>
+  <node concept="rcWEw" id="3kpMhm4HRQv">
+    <property role="TrG5h" value="avr_interrupt" />
+    <property role="3GE5qa" value="avr" />
+    <node concept="rcWE1" id="3kpMhm4HV5d" role="rcWEr">
+      <property role="rcWEL" value="&lt;avr/interrupt.h&gt;" />
+    </node>
+    <node concept="BTY7A" id="3kpMhm4HV5o" role="N3F5h">
+      <property role="TrG5h" value="cli" />
+      <property role="2OOxQR" value="true" />
+    </node>
+    <node concept="BTY7A" id="3kpMhm4HVKL" role="N3F5h">
+      <property role="TrG5h" value="sei" />
+      <property role="2OOxQR" value="true" />
+    </node>
+    <node concept="2NXPZ9" id="3kpMhm4HVKI" role="N3F5h">
+      <property role="TrG5h" value="empty_1478082120384_10" />
+    </node>
+  </node>
+  <node concept="rcWEw" id="4kqxgPFWhL7">
+    <property role="TrG5h" value="avr_io" />
+    <property role="3GE5qa" value="avr" />
+    <node concept="rcWE1" id="4kqxgPFWhL8" role="rcWEr">
+      <property role="rcWEL" value="&lt;avr/io.h&gt;" />
+    </node>
+    <node concept="2NXPZ9" id="4kqxgPFWhLb" role="N3F5h">
+      <property role="TrG5h" value="empty_1478082120384_10" />
     </node>
   </node>
 </model>
