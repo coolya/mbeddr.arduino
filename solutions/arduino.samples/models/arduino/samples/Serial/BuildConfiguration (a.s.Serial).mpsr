@@ -23,6 +23,7 @@
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -30,6 +31,10 @@
       </concept>
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
+      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
+      <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
+        <child id="9172009453269286214" name="kind" index="3_UBH6" />
+      </concept>
       <concept id="6847490852669234129" name="com.mbeddr.core.embedded.structure.RegisterConfigurationItem" flags="ng" index="3V4jtR">
         <child id="6847490852670616471" name="kind" index="3Vb1WL" />
       </concept>
@@ -68,6 +73,9 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="7fU3Y2eTN93">
+    <node concept="2Q9Fgs" id="3tp$LrDH2he" role="2Q9xDr">
+      <node concept="2Q9FjX" id="3tp$LrDH2hf" role="2Q9FjI" />
+    </node>
     <node concept="3V4jtR" id="3vlJV9eya7C" role="2Q9xDr">
       <node concept="3VbeTE" id="3vlJV9eyaap" role="3Vb1WL" />
     </node>
@@ -79,6 +87,9 @@
       <node concept="2v9HqM" id="7fU3Y2eTNhU" role="2eOfOg">
         <ref role="2v9HqP" to="aelz:Yv2B6LBx6E" resolve="util_delay" />
       </node>
+    </node>
+    <node concept="3_UEaq" id="3tp$LrDH2fj" role="2Q9xDr">
+      <node concept="3_UBHe" id="3tp$LrDH2gf" role="3_UBH6" />
     </node>
     <node concept="A5USz" id="1qwvy7xHcdC" role="2Q9xDr">
       <node concept="A5USx" id="1qwvy7xHcdD" role="A5$Ns">

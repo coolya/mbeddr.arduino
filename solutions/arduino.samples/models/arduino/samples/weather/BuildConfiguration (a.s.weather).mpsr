@@ -6,6 +6,9 @@
     <import index="1o4w" ref="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" implicit="true" />
   </imports>
   <registry>
+    <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
+      <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
+    </language>
     <language id="e562f51e-6403-4857-b773-44632077c67d" name="mbeddr.arduino.interrupts">
       <concept id="5152824560131535438" name="mbeddr.arduino.interrupts.structure.ArduinoInterruptKind" flags="ng" index="2Z3J3G" />
     </language>
@@ -180,6 +183,7 @@
         <ref role="3XGs4S" node="3dH4Jop39aI" />
       </node>
     </node>
+    <node concept="2eh4Hv" id="3tp$LrDH3Wd" role="2Q9xDr" />
     <node concept="3V4jtR" id="4u2wEbSv7z5" role="2Q9xDr">
       <node concept="3VbeTE" id="4u2wEbSwIS$" role="3Vb1WL" />
     </node>

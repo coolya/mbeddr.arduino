@@ -19,12 +19,22 @@
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
     </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
+      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
+      <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
+        <child id="9172009453269286214" name="kind" index="3_UBH6" />
+      </concept>
       <concept id="6847490852669234129" name="com.mbeddr.core.embedded.structure.RegisterConfigurationItem" flags="ng" index="3V4jtR">
         <child id="6847490852670616471" name="kind" index="3Vb1WL" />
       </concept>
@@ -50,6 +60,9 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="EvPvZE4n_c">
+    <node concept="2Q9Fgs" id="3tp$LrDH1rA" role="2Q9xDr">
+      <node concept="2Q9FjX" id="3tp$LrDH1rB" role="2Q9FjI" />
+    </node>
     <node concept="3V4jtR" id="3vlJV9ey2Fq" role="2Q9xDr">
       <node concept="3VbeTE" id="3vlJV9ey2Gp" role="3Vb1WL" />
     </node>
@@ -64,6 +77,9 @@
       <node concept="2v9HqM" id="55_53lUxgHC" role="2eOfOg">
         <ref role="2v9HqP" to="aelz:3kpMhm4HRQv" resolve="avr_interrupt" />
       </node>
+    </node>
+    <node concept="3_UEaq" id="3tp$LrDH1dc" role="2Q9xDr">
+      <node concept="3_UBHe" id="3tp$LrDH1dQ" role="3_UBH6" />
     </node>
     <node concept="A5USz" id="EvPvZE4n_e" role="2Q9xDr">
       <node concept="A5USx" id="EvPvZE4n_f" role="A5$Ns">
