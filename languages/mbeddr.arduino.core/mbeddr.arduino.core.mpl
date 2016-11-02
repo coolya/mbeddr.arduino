@@ -173,7 +173,7 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
+        <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
             <generator generatorUID="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb(mbeddr.arduino.core#2350648883898979172)" />
             <external-mapping>
