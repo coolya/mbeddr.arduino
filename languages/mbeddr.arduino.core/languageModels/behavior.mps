@@ -93,7 +93,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -143,6 +142,10 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
@@ -154,10 +157,7 @@
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -601,26 +601,26 @@
     </node>
     <node concept="13hLZK" id="3gdl6si72OK" role="13h7CW">
       <node concept="3clFbS" id="3gdl6si72OL" role="2VODD2">
-        <node concept="2Gpval" id="3gdl6si74on" role="3cqZAp">
-          <node concept="2GrKxI" id="3gdl6si74oo" role="2Gsz3X">
+        <node concept="2Gpval" id="3tp$LrDwmPn" role="3cqZAp">
+          <node concept="2GrKxI" id="3tp$LrDwmPo" role="2Gsz3X">
             <property role="TrG5h" value="item" />
           </node>
-          <node concept="3clFbS" id="3gdl6si74oq" role="2LFqv$">
-            <node concept="3clFbF" id="3gdl6si74or" role="3cqZAp">
-              <node concept="2OqwBi" id="3gdl6si74pP" role="3clFbG">
-                <node concept="2OqwBi" id="3gdl6si74oV" role="2Oq$k0">
-                  <node concept="13iPFW" id="3gdl6si74os" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="3gdl6si74p1" role="2OqNvi">
+          <node concept="3clFbS" id="3tp$LrDwmPp" role="2LFqv$">
+            <node concept="3clFbF" id="3tp$LrDwmPq" role="3cqZAp">
+              <node concept="2OqwBi" id="3tp$LrDwmPr" role="3clFbG">
+                <node concept="2OqwBi" id="3tp$LrDwmPs" role="2Oq$k0">
+                  <node concept="13iPFW" id="3tp$LrDwmPt" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="3tp$LrDwmPu" role="2OqNvi">
                     <ref role="3TtcxE" to="koo2:3gdl6si6LyV" resolve="digitalConfig" />
                   </node>
                 </node>
-                <node concept="TSZUe" id="3gdl6si74pV" role="2OqNvi">
-                  <node concept="2OqwBi" id="3gdl6si74qi" role="25WWJ7">
-                    <node concept="13iPFW" id="3gdl6si74pX" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3gdl6si74qo" role="2OqNvi">
+                <node concept="TSZUe" id="3tp$LrDwmPv" role="2OqNvi">
+                  <node concept="2OqwBi" id="3tp$LrDwmPw" role="25WWJ7">
+                    <node concept="13iPFW" id="3tp$LrDwmPx" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="3tp$LrDwmPy" role="2OqNvi">
                       <ref role="37wK5l" node="3gdl6si73Mz" resolve="getDigitalConfig" />
-                      <node concept="2GrUjf" id="3gdl6si74qp" role="37wK5m">
-                        <ref role="2Gs0qQ" node="3gdl6si74oo" resolve="item" />
+                      <node concept="2GrUjf" id="3tp$LrDwmPz" role="37wK5m">
+                        <ref role="2Gs0qQ" node="3tp$LrDwmPo" resolve="item" />
                       </node>
                     </node>
                   </node>
@@ -628,59 +628,59 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="3gdl6si73K8" role="2GsD0m">
-            <node concept="2OqwBi" id="3gdl6si73JG" role="2Oq$k0">
-              <node concept="1eOMI4" id="3gdl6si73Jn" role="2Oq$k0">
-                <node concept="1PxgMI" id="3gdl6si73ID" role="1eOMHV">
-                  <ref role="1PxNhF" to="koo2:22vbFi$tgwm" resolve="ArduinoPlatform" />
-                  <node concept="2OqwBi" id="4EC9auLEKIu" role="1PxMeX">
-                    <node concept="2OqwBi" id="4EC9auLEKI2" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4EC9auLEKI3" role="2Oq$k0">
-                        <node concept="2OqwBi" id="4EC9auLEKI4" role="2Oq$k0">
-                          <node concept="13iPFW" id="4EC9auLEKI5" role="2Oq$k0" />
-                          <node concept="I4A8Y" id="4EC9auLEKI6" role="2OqNvi" />
+          <node concept="2OqwBi" id="3tp$LrDwmP$" role="2GsD0m">
+            <node concept="2OqwBi" id="3tp$LrDwmP_" role="2Oq$k0">
+              <node concept="1eOMI4" id="3tp$LrDwmPA" role="2Oq$k0">
+                <node concept="1PxgMI" id="3tp$LrDwGNM" role="1eOMHV">
+                  <ref role="1m5ApE" to="koo2:22vbFi$tgwm" resolve="ArduinoPlatform" />
+                  <node concept="2OqwBi" id="3tp$LrDwEu5" role="1m5AlR">
+                    <node concept="2OqwBi" id="3tp$LrDw_8G" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3tp$LrDwyTV" role="2Oq$k0">
+                        <node concept="2OqwBi" id="3tp$LrDwxc8" role="2Oq$k0">
+                          <node concept="13iPFW" id="3tp$LrDwwwD" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="3tp$LrDwy7d" role="2OqNvi" />
                         </node>
-                        <node concept="2RRcyG" id="4EC9auLEKI7" role="2OqNvi">
+                        <node concept="2RRcyG" id="3tp$LrDwzJY" role="2OqNvi">
                           <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
                         </node>
                       </node>
-                      <node concept="1uHKPH" id="4EC9auLEKI8" role="2OqNvi" />
+                      <node concept="1uHKPH" id="3tp$LrDwDx1" role="2OqNvi" />
                     </node>
-                    <node concept="3TrEf2" id="4EC9auLEKI$" role="2OqNvi">
+                    <node concept="3TrEf2" id="3tp$LrDwFFQ" role="2OqNvi">
                       <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3TrEf2" id="3gdl6si73JM" role="2OqNvi">
+              <node concept="3TrEf2" id="3tp$LrDwIIX" role="2OqNvi">
                 <ref role="3Tt5mk" to="koo2:4JsbL6NpX5B" resolve="description" />
               </node>
             </node>
-            <node concept="3Tsc0h" id="3gdl6si73Ke" role="2OqNvi">
+            <node concept="3Tsc0h" id="3tp$LrDwmPM" role="2OqNvi">
               <ref role="3TtcxE" to="koo2:4JsbL6NpKIN" resolve="digitalPins" />
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="1qwvy7xHbPp" role="3cqZAp">
-          <node concept="2GrKxI" id="1qwvy7xHbPq" role="2Gsz3X">
+        <node concept="2Gpval" id="3tp$LrDwmPN" role="3cqZAp">
+          <node concept="2GrKxI" id="3tp$LrDwmPO" role="2Gsz3X">
             <property role="TrG5h" value="item" />
           </node>
-          <node concept="3clFbS" id="1qwvy7xHbPr" role="2LFqv$">
-            <node concept="3clFbF" id="1qwvy7xHbPs" role="3cqZAp">
-              <node concept="2OqwBi" id="1qwvy7xHbPt" role="3clFbG">
-                <node concept="2OqwBi" id="1qwvy7xHbPu" role="2Oq$k0">
-                  <node concept="13iPFW" id="1qwvy7xHbPv" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="1qwvy7xHbSL" role="2OqNvi">
+          <node concept="3clFbS" id="3tp$LrDwmPP" role="2LFqv$">
+            <node concept="3clFbF" id="3tp$LrDwmPQ" role="3cqZAp">
+              <node concept="2OqwBi" id="3tp$LrDwmPR" role="3clFbG">
+                <node concept="2OqwBi" id="3tp$LrDwmPS" role="2Oq$k0">
+                  <node concept="13iPFW" id="3tp$LrDwmPT" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="3tp$LrDwmPU" role="2OqNvi">
                     <ref role="3TtcxE" to="koo2:1qwvy7xGKCQ" resolve="analogPinConfiguration" />
                   </node>
                 </node>
-                <node concept="TSZUe" id="1qwvy7xHbPx" role="2OqNvi">
-                  <node concept="2OqwBi" id="1qwvy7xHbPy" role="25WWJ7">
-                    <node concept="13iPFW" id="1qwvy7xHbPz" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1qwvy7xHbP$" role="2OqNvi">
+                <node concept="TSZUe" id="3tp$LrDwmPV" role="2OqNvi">
+                  <node concept="2OqwBi" id="3tp$LrDwmPW" role="25WWJ7">
+                    <node concept="13iPFW" id="3tp$LrDwmPX" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="3tp$LrDwmPY" role="2OqNvi">
                       <ref role="37wK5l" node="1qwvy7xHbPS" resolve="getAnalogConfig" />
-                      <node concept="2GrUjf" id="1qwvy7xHbP_" role="37wK5m">
-                        <ref role="2Gs0qQ" node="1qwvy7xHbPq" resolve="item" />
+                      <node concept="2GrUjf" id="3tp$LrDwmPZ" role="37wK5m">
+                        <ref role="2Gs0qQ" node="3tp$LrDwmPO" resolve="item" />
                       </node>
                     </node>
                   </node>
@@ -688,40 +688,39 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="1qwvy7xHbPA" role="2GsD0m">
-            <node concept="2OqwBi" id="1qwvy7xHbPB" role="2Oq$k0">
-              <node concept="1eOMI4" id="1qwvy7xHbPC" role="2Oq$k0">
-                <node concept="1PxgMI" id="1qwvy7xHbPD" role="1eOMHV">
-                  <ref role="1PxNhF" to="koo2:22vbFi$tgwm" resolve="ArduinoPlatform" />
-                  <node concept="2OqwBi" id="1qwvy7xHbPE" role="1PxMeX">
-                    <node concept="2OqwBi" id="1qwvy7xHbPF" role="2Oq$k0">
-                      <node concept="2OqwBi" id="1qwvy7xHbPG" role="2Oq$k0">
-                        <node concept="2OqwBi" id="1qwvy7xHbPH" role="2Oq$k0">
-                          <node concept="13iPFW" id="1qwvy7xHbPI" role="2Oq$k0" />
-                          <node concept="I4A8Y" id="1qwvy7xHbPJ" role="2OqNvi" />
+          <node concept="2OqwBi" id="3tp$LrDwmQ0" role="2GsD0m">
+            <node concept="3Tsc0h" id="3tp$LrDwmQe" role="2OqNvi">
+              <ref role="3TtcxE" to="koo2:3gdl6si6AgN" resolve="analogPins" />
+            </node>
+            <node concept="2OqwBi" id="3tp$LrDwJAQ" role="2Oq$k0">
+              <node concept="1eOMI4" id="3tp$LrDwJAR" role="2Oq$k0">
+                <node concept="1PxgMI" id="3tp$LrDwJAS" role="1eOMHV">
+                  <ref role="1m5ApE" to="koo2:22vbFi$tgwm" resolve="ArduinoPlatform" />
+                  <node concept="2OqwBi" id="3tp$LrDwJAT" role="1m5AlR">
+                    <node concept="2OqwBi" id="3tp$LrDwJAU" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3tp$LrDwJAV" role="2Oq$k0">
+                        <node concept="2OqwBi" id="3tp$LrDwJAW" role="2Oq$k0">
+                          <node concept="13iPFW" id="3tp$LrDwJAX" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="3tp$LrDwJAY" role="2OqNvi" />
                         </node>
-                        <node concept="2RRcyG" id="1qwvy7xHbPK" role="2OqNvi">
+                        <node concept="2RRcyG" id="3tp$LrDwJAZ" role="2OqNvi">
                           <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
                         </node>
                       </node>
-                      <node concept="1uHKPH" id="1qwvy7xHbPL" role="2OqNvi" />
+                      <node concept="1uHKPH" id="3tp$LrDwJB0" role="2OqNvi" />
                     </node>
-                    <node concept="3TrEf2" id="1qwvy7xHbPM" role="2OqNvi">
+                    <node concept="3TrEf2" id="3tp$LrDwJB1" role="2OqNvi">
                       <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3TrEf2" id="1qwvy7xHbPN" role="2OqNvi">
+              <node concept="3TrEf2" id="3tp$LrDwJB2" role="2OqNvi">
                 <ref role="3Tt5mk" to="koo2:4JsbL6NpX5B" resolve="description" />
               </node>
             </node>
-            <node concept="3Tsc0h" id="1qwvy7xHbPR" role="2OqNvi">
-              <ref role="3TtcxE" to="koo2:3gdl6si6AgN" resolve="analogPins" />
-            </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1qwvy7xHbPo" role="3cqZAp" />
       </node>
     </node>
   </node>

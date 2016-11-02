@@ -34,7 +34,7 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu" />
       <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
         <property id="8974276187400029899" name="path" index="1QGGTI" />
       </concept>
@@ -350,13 +350,14 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -809,9 +810,9 @@
                             </node>
                             <node concept="2OqwBi" id="39xl5bPwGAB" role="3uHU7w">
                               <node concept="1eOMI4" id="39xl5bPwGA3" role="2Oq$k0">
-                                <node concept="1PxgMI" id="39xl5bPwGAr" role="1eOMHV">
-                                  <ref role="1PxNhF" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-                                  <node concept="2OqwBi" id="39xl5bPwGAf" role="1PxMeX">
+                                <node concept="1PxgMI" id="3tp$LrD_w0k" role="1eOMHV">
+                                  <ref role="1m5ApE" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                                  <node concept="2OqwBi" id="39xl5bPwGAf" role="1m5AlR">
                                     <node concept="2OqwBi" id="39xl5bPwG_T" role="2Oq$k0">
                                       <node concept="2LYoG9" id="39xl5bPwG_I" role="2Oq$k0">
                                         <ref role="2LYoGb" node="1CG6XUfjweF" resolve="config" />
@@ -826,7 +827,7 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="2qgKlT" id="6RZtz2kXSeP" role="2OqNvi">
+                              <node concept="2qgKlT" id="3tp$LrD_wMk" role="2OqNvi">
                                 <ref role="37wK5l" to="ahli:Dp4TemBUyu" resolve="executableFileName" />
                               </node>
                             </node>
@@ -853,18 +854,18 @@
                               <node concept="2YIFZM" id="CJowczrs9z" role="3CLvVj">
                                 <ref role="1Pybhc" to="x3yd:1ptFCtLqsnU" resolve="PlatformUtil" />
                                 <ref role="37wK5l" to="x3yd:CJowczpW7q" resolve="getFolderFQ" />
-                                <node concept="1PxgMI" id="39xl5bPwGBq" role="37wK5m">
-                                  <ref role="1PxNhF" to="51wr:4o9sgv8QoKk" resolve="Binary" />
-                                  <node concept="2OqwBi" id="39xl5bPwGB9" role="1PxMeX">
-                                    <node concept="2OqwBi" id="39xl5bPwGAS" role="2Oq$k0">
-                                      <node concept="2LYoG9" id="CJowczrs9$" role="2Oq$k0">
+                                <node concept="1PxgMI" id="3tp$LrD_yn1" role="37wK5m">
+                                  <ref role="1m5ApE" to="51wr:4o9sgv8QoKk" resolve="Binary" />
+                                  <node concept="2OqwBi" id="3tp$LrD_xEg" role="1m5AlR">
+                                    <node concept="2OqwBi" id="3tp$LrD_xEh" role="2Oq$k0">
+                                      <node concept="2LYoG9" id="3tp$LrD_xEi" role="2Oq$k0">
                                         <ref role="2LYoGb" node="1CG6XUfjweF" resolve="config" />
                                       </node>
-                                      <node concept="yHkDZ" id="39xl5bPwGAX" role="2OqNvi">
+                                      <node concept="yHkDZ" id="3tp$LrD_xEj" role="2OqNvi">
                                         <ref role="yHkDY" node="1ptFCtLqsrq" resolve="myBinary" />
                                       </node>
                                     </node>
-                                    <node concept="2XshWL" id="39xl5bPwGBf" role="2OqNvi">
+                                    <node concept="2XshWL" id="3tp$LrD_xEk" role="2OqNvi">
                                       <ref role="2WH_rO" to="awpe:7byHRlLC1PV" resolve="getNode" />
                                     </node>
                                   </node>
@@ -888,18 +889,18 @@
                                 <node concept="2YIFZM" id="CJowczrsac" role="3CLvVj">
                                   <ref role="1Pybhc" to="x3yd:1ptFCtLqsnU" resolve="PlatformUtil" />
                                   <ref role="37wK5l" to="x3yd:CJowczpW7q" resolve="getFolderFQ" />
-                                  <node concept="1PxgMI" id="39xl5bPwGCj" role="37wK5m">
-                                    <ref role="1PxNhF" to="51wr:4o9sgv8QoKk" resolve="Binary" />
-                                    <node concept="2OqwBi" id="39xl5bPwGC2" role="1PxMeX">
-                                      <node concept="2OqwBi" id="39xl5bPwGBA" role="2Oq$k0">
-                                        <node concept="2LYoG9" id="CJowczrsad" role="2Oq$k0">
+                                  <node concept="1PxgMI" id="3tp$LrD_zsb" role="37wK5m">
+                                    <ref role="1m5ApE" to="51wr:4o9sgv8QoKk" resolve="Binary" />
+                                    <node concept="2OqwBi" id="3tp$LrD_yQB" role="1m5AlR">
+                                      <node concept="2OqwBi" id="3tp$LrD_yQC" role="2Oq$k0">
+                                        <node concept="2LYoG9" id="3tp$LrD_yQD" role="2Oq$k0">
                                           <ref role="2LYoGb" node="1CG6XUfjweF" resolve="config" />
                                         </node>
-                                        <node concept="yHkDZ" id="39xl5bPwGBF" role="2OqNvi">
+                                        <node concept="yHkDZ" id="3tp$LrD_yQE" role="2OqNvi">
                                           <ref role="yHkDY" node="1ptFCtLqsrq" resolve="myBinary" />
                                         </node>
                                       </node>
-                                      <node concept="2XshWL" id="39xl5bPwGC8" role="2OqNvi">
+                                      <node concept="2XshWL" id="3tp$LrD_yQF" role="2OqNvi">
                                         <ref role="2WH_rO" to="awpe:7byHRlLC1PV" resolve="getNode" />
                                       </node>
                                     </node>

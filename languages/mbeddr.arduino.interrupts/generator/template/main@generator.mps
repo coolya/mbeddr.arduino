@@ -102,6 +102,10 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -111,10 +115,7 @@
       <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
         <reference id="1139867957129" name="concept" index="1_rbq0" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -184,14 +185,14 @@
             <node concept="10P_77" id="7X9xw2qE_zH" role="1tU5fm" />
             <node concept="2OqwBi" id="7X9xw2qE_zI" role="33vP2m">
               <node concept="2OqwBi" id="7X9xw2qE_zJ" role="2Oq$k0">
-                <node concept="1PxgMI" id="7X9xw2qE_zK" role="2Oq$k0">
-                  <ref role="1PxNhF" to="nbyu:7X9xw2qCMiq" resolve="InterruptConfigItem" />
-                  <node concept="37vLTw" id="7X9xw2qE_zL" role="1PxMeX">
+                <node concept="1PxgMI" id="3tp$LrD__7t" role="2Oq$k0">
+                  <ref role="1m5ApE" to="nbyu:7X9xw2qCMiq" resolve="InterruptConfigItem" />
+                  <node concept="37vLTw" id="3tp$LrD_$k$" role="1m5AlR">
                     <ref role="3cqZAo" node="7X9xw2qE_zy" resolve="rc" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="7X9xw2qEBRS" role="2OqNvi">
-                  <ref role="3Tt5mk" to="nbyu:7X9xw2qCZP6" />
+                <node concept="3TrEf2" id="3tp$LrD__KD" role="2OqNvi">
+                  <ref role="3Tt5mk" to="nbyu:7X9xw2qCZP6" resolve="kind" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="7X9xw2qE_zN" role="2OqNvi">
@@ -252,7 +253,7 @@
                     <ref role="2Gs0qQ" node="4vmikwGY6yp" resolve="isr" />
                   </node>
                   <node concept="3TrEf2" id="4vmikwGYaGJ" role="2OqNvi">
-                    <ref role="3Tt5mk" to="nbyu:SwwM9UHwwK" />
+                    <ref role="3Tt5mk" to="nbyu:SwwM9UHwwK" resolve="body" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="4vmikwGYaGK" role="37vLTJ">
@@ -260,7 +261,7 @@
                     <ref role="3cqZAo" node="4vmikwGYaGA" resolve="arduinoIsr" />
                   </node>
                   <node concept="3TrEf2" id="4vmikwGYaGM" role="2OqNvi">
-                    <ref role="3Tt5mk" to="8y1r:4u2wEbSxlZV" />
+                    <ref role="3Tt5mk" to="8y1r:4u2wEbSxlZV" resolve="body" />
                   </node>
                 </node>
               </node>
@@ -273,7 +274,7 @@
                       <ref role="2Gs0qQ" node="4vmikwGY6yp" resolve="isr" />
                     </node>
                     <node concept="3TrEf2" id="4vmikwGYaGS" role="2OqNvi">
-                      <ref role="3Tt5mk" to="nbyu:SwwM9UHwwO" />
+                      <ref role="3Tt5mk" to="nbyu:SwwM9UHwwO" resolve="interrupt" />
                     </node>
                   </node>
                   <node concept="3TrcHB" id="4vmikwGYaGT" role="2OqNvi">
