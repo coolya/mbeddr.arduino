@@ -1,5 +1,7 @@
 # mbeddr.arduino
 
+[![Join the chat at https://gitter.im/mbeddr-arduino/Lobby](https://badges.gitter.im/mbeddr-arduino/Lobby.svg)](https://gitter.im/mbeddr-arduino/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Background
 
 This is a DSL to write programs for the [Arduino][ar] platform. It is based on the [mbeddr][mbddr] project which is an extensible C implementation in [JetBrains MPS][mps].
