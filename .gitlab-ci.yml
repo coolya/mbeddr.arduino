@@ -7,12 +7,29 @@
 # https://github.com/gradle/gradle
 image: java:8
 
+
+variables:
+  VERSION: "0.1.6"
+
 # Make the gradle wrapper executable. This essentially downloads a copy of
 # Gradle to build the project with.
 # https://docs.gradle.org/current/userguide/gradle_wrapper.html
 # It is expected that any modern gradle project has a wrapper
 before_script:
-    - chmod +x gradlew
+  - chmod +x gradlew
+  # Install ssh-agent if not already installed, it is required by Docker.
+  # (change apt-get to yum if you use a CentOS-based image)
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  # Run ssh-agent (inside the build environment)
+  - eval $(ssh-agent -s)
+  # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  # For Docker builds disable host key checking. Be aware that by adding that
+  # you are suspectible to man-in-the-middle attacks.
+  # WARNING: Use this only with the Docker executor, if you use it with shell
+  # you will overwrite your user's SSH config.
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
 # We redirect the gradle user home using -g so that it caches the
 # wrapper and dependencies.
@@ -48,7 +65,11 @@ deploy:
   - mv bin/linux/amd64/github-release /usr/bin/
   - cd ..
   - rm -rf tmp/
-  - github-release release -s $GITHUB_TOKEN -u coolya -r mbeddr.arduino -t release-$CI_BUILD_ID -c $CI_BUILD_REF -p
-  - github-release upload -s $GITHUB_TOKEN  -u coolya -r mbeddr.arduino -t release-$CI_BUILD_ID -f gradle/build/artifacts/mbeddr-arduino/mbeddr-arduino.zip -n mbeddr-arduino.zip
+  - git tag $VERSION HEAD
+  - git remote add github git@github.com:coolya/mbeddr.arduino.git
+  - git push github HEAD:release
+  - git push github $VERSION
+  - github-release release -s $GITHUB_TOKEN -u coolya -r mbeddr.arduino -t $VERSION
+  - github-release upload -s $GITHUB_TOKEN  -u coolya -r mbeddr.arduino -t $VERSION -f gradle/build/artifacts/mbeddr-arduino/mbeddr-arduino.zip -n mbeddr-arduino.zip
   only:
     - release
