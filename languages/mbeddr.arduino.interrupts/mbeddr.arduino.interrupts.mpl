@@ -22,9 +22,7 @@
         <facet type="java" />
         <facet type="java" />
       </facets>
-      <external-templates>
-        <generator generatorUID="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb(mbeddr.arduino.core#2350648883898979172)" />
-      </external-templates>
+      <external-templates />
       <dependencies>
         <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
@@ -78,10 +76,8 @@
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
         <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
-        <module reference="3201b692-7d0a-49d1-ac65-5d4aaeb141fb(com.mbeddr.core.buildconfig#7717755763392579406)" version="0" />
         <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
         <module reference="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" version="0" />
-        <module reference="7f02a174-6bab-4ef7-8a81-22b54a82846a(com.mbeddr.core.embedded#6847490852669402965)" version="0" />
         <module reference="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" version="0" />
         <module reference="984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)" version="0" />
         <module reference="f93d1dbe-bfd1-42dd-932a-f375fa6f5373(com.mbeddr.core.make)" version="0" />
@@ -112,26 +108,10 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
-        <module reference="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb(mbeddr.arduino.core#2350648883898979172)" version="0" />
         <module reference="e562f51e-6403-4857-b773-44632077c67d(mbeddr.arduino.interrupts)" version="0" />
         <module reference="3bba6cee-44fc-4378-bb35-082abd0dafc4(mbeddr.arduino.interrupts#5152824560131035305)" version="0" />
       </dependencyVersions>
-      <mapping-priorities>
-        <mapping-priority-rule kind="before_or_together">
-          <greater-priority-mapping>
-            <generator generatorUID="3bba6cee-44fc-4378-bb35-082abd0dafc4(mbeddr.arduino.interrupts#5152824560131035305)" />
-            <external-mapping>
-              <mapping-node modelUID="r:76179f52-9153-4ef6-8a48-d3184b69d054(mbeddr.arduino.interrupts.generator.template.main@generator)" nodeID="5152824560131035306" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb(mbeddr.arduino.core#2350648883898979172)" />
-            <external-mapping>
-              <mapping-node modelUID="r:8770c24e-2b22-4d05-be0a-320d33d9ae04(mbeddr.arduino.core.generator.template.main@generator)" nodeID="2350648883898979203" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-      </mapping-priorities>
+      <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />

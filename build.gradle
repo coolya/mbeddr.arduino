@@ -1,0 +1,246 @@
+group 'com.mbeddr.'
+
+apply plugin: 'base'
+
+buildDir 'gradle/build'
+
+// Project version
+if (project.hasProperty('projectVersion')) {
+    version project.projectVersion
+} else {
+    def gitBranchCmd
+    if (System.getProperty('os.name').toLowerCase().contains('windows')) {
+        gitBranchCmd = 'cmd /c git rev-parse --abbrev-ref HEAD'
+    } else {
+        gitBranchCmd = 'git rev-parse --abbrev-ref HEAD'
+    }
+    def gitBranch = gitBranchCmd.execute().in.text.trim().toString().replace("/","-")
+
+    if (gitBranch == null || gitBranch.empty) {
+        gitBranch = 'HEAD'
+    }
+
+    version "0.1-$gitBranch-SNAPSHOT"
+}
+
+// Dependency versions
+ext.mpsVersion = '3.4.1'
+ext.mbeddrVersion = '1.0.+'
+ext.iets3Version = '0.1.+'
+
+// Default repository credentials
+if (!project.hasProperty('nexusUsername')) {
+    ext.nexusUsername = ''
+    ext.nexusPassword = ''
+}
+logger.info 'Repository username: {}', project.nexusUsername
+
+ext.releaseRepository = ''
+ext.snapshotRepository = ''
+ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+]
+
+ext.artifactsDir = new File(buildDir, 'artifacts')
+ext.projectLibrariesDir = new File(buildDir, 'project-libraries')
+
+apply plugin: 'maven-publish'
+
+task wrapper(type: Wrapper) {
+    gradleVersion '3.1'
+    distributionType 'all'
+}
+
+configurations {
+    mps
+    mpsArtifacts
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    mpsArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
+    mpsArtifacts "com.mbeddr:allInOne:$mbeddrVersion"
+}
+
+repositories {
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+}
+
+task resolveMps(type: Copy) {
+    def outputDir = "$buildDir/mps"
+
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into outputDir
+    doFirst { delete outputDir }
+}
+
+task resolveMpsArtifacts(type: Copy) {
+    dependsOn configurations.mpsArtifacts
+    from {
+        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+    }
+    into artifactsDir
+    doFirst { delete artifactsDir }
+}
+
+task resolveProjectLibraries {
+    description "Downloads dependencies, unzips them, unzips the zips inside, and puts them into $projectLibrariesDir"
+    dependsOn resolveMpsArtifacts
+    File inputDir = resolveMpsArtifacts.destinationDir
+    File outputDir = projectLibrariesDir
+    inputs.dir inputDir
+    outputs.dir projectLibrariesDir
+
+    doFirst { delete projectLibrariesDir }
+    doLast {
+        fileTree(inputDir).visit new EmptyFileVisitor() {
+            @Override
+            void visitFile(FileVisitDetails f) {
+                def outputName = f.relativePath.getFile(outputDir)
+                if (f.name.endsWith('.zip')) {
+                    copy {
+                        from zipTree(f.file)
+                        into outputName
+                    }
+                } else {
+                    copy {
+                        from f.file
+                        into outputName.parent
+                    }
+                }
+            }
+        }
+    }
+}
+
+task generateLibrariesXml {
+    def defaultsFile = file('projectlibraries.properties')
+    def overridesFile = file('projectlibraries.overrides.properties')
+    def librariesFile = file('.mps/libraries.xml')
+
+    description "Generates libraries.xml for MPS from $defaultsFile and $overridesFile (if present)"
+
+    inputs.files defaultsFile, overridesFile
+    outputs.file librariesFile
+
+    def properties = new Properties()
+    defaultsFile.withInputStream { properties.load(it) }
+    if (overridesFile.exists()) {
+        overridesFile.withInputStream { properties.load(it) }
+    }
+
+    doLast {
+        librariesFile.withWriter { writer ->
+            def xml = new groovy.xml.MarkupBuilder(writer)
+            xml.project(version: 4) {
+                component(name: 'ProjectLibraryManager') {
+                    option(name: 'libraries') {
+                        map() {
+                            for (lib in properties.entrySet()) {
+                                entry(key: lib.key) {
+                                    value() {
+                                        Library() {
+                                            option(name: 'name', value: lib.key)
+                                            option(name: 'path', value: lib.value)
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+task setup {
+    // We resolve MPS not for the users to use it but for the distribution packaging script to be able to refer to it.
+    dependsOn resolveMps
+    dependsOn resolveProjectLibraries, generateLibrariesXml
+    description 'Set up MPS project libraries'
+}
+
+ant.properties['mbeddr.arduino'] = projectDir
+ant.properties['build.dir'] = buildDir
+ant.properties['mps.home'] = resolveMps.destinationDir
+ant.properties['artifacts.root'] = resolveMpsArtifacts.destinationDir
+
+ant.importBuild('build.xml') { target -> 'ant-' + target }
+
+//tasks['ant-check-mps-home'].dependsOn resolveMps
+tasks['ant-build-allScripts'].dependsOn resolveMps, resolveMpsArtifacts, 'ant-clean'
+tasks['ant-build-arduino'].dependsOn 'ant-build-allScripts', 'ant-clean'
+
+task packageArduino(type: Zip, dependsOn: 'ant-build-arduino') {
+    baseName ''
+    from artifactsDir
+    include ''
+}
+
+task packageArduinoDistribution(dependsOn: 'ant-build-arduino') {
+    doLast {
+        ant.ant(antfile: file('build/<fixme>/build-distribution.xml'), target: 'build')
+    }
+}
+
+assemble.dependsOn packageArduino, packageArduinoDistribution
+
+publishing {
+    repositories {
+        maven {
+            url project.publishingRepository
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+    publications {
+        arduino(MavenPublication) {
+            artifactId 'arduino'
+            artifact packageArduino
+        }
+    }
+}
+
+// Ant <junit> task support
+repositories {
+    mavenCentral()
+}
+configurations {
+    junitAnt
+}
+dependencies {
+    junitAnt 'junit:junit:4.12'
+    junitAnt('org.apache.ant:ant-junit:1.9.7') {
+        transitive = false
+    }
+    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
+        transitive = false
+    }
+}
+ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
+        classpath: configurations.junitAnt.asPath)
+ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+        classpath: configurations.junitAnt.asPath)
+
+check.dependsOn 'ant-build-arduino'

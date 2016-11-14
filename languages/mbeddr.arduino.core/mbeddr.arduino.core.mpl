@@ -187,6 +187,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="after_or_together">
+          <greater-priority-mapping>
+            <generator generatorUID="151f32f8-2c45-4b6c-ad8c-3b4e2f69cfdb(mbeddr.arduino.core#2350648883898979172)" />
+            <external-mapping>
+              <mapping-node modelUID="r:8770c24e-2b22-4d05-be0a-320d33d9ae04(mbeddr.arduino.core.generator.template.main@generator)" nodeID="2350648883898979203" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="3bba6cee-44fc-4378-bb35-082abd0dafc4(mbeddr.arduino.interrupts#5152824560131035305)" />
+            <external-mapping>
+              <mapping-node modelUID="r:76179f52-9153-4ef6-8a48-d3184b69d054(mbeddr.arduino.interrupts.generator.template.main@generator)" nodeID="5152824560131035306" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
@@ -269,7 +283,6 @@
     <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
-    <language slang="l:3c4c8461-a533-4459-916a-dc0176793b4c:mbeddr.arduino.core" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

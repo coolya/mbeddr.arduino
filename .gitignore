@@ -22,3 +22,5 @@ source_gen.caches
 
 */.DS_Store
 .mps/workspace.xml
+.gradle
+gradle/build
