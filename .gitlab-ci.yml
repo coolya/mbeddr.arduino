@@ -48,5 +48,7 @@ deploy:
   - mv bin/linux/amd64/github-release /usr/bin/
   - cd ..
   - rm -rf tmp/
+  - github-release release -s $GITHUB_TOKEN -u coolya -r mbeddr.arduino -t release-$CI_BUILD_ID -c $CI_BUILD_REF -p
+  - github-release upload -s $GITHUB_TOKEN  -u coolya -r mbeddr.arduino -t release-$CI_BUILD_ID -f gradle/build/artifacts/mbeddr-arduino/mbeddr-arduino.zip -n mbeddr-arduino.zip
   only:
     - release
