@@ -28,9 +28,7 @@ before_script:
   # you will overwrite your user's SSH config.
   - mkdir -p ~/.ssh
   # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
-  - echo "$SSH_PRIVATE_KEY" >> ~/key
-  - chmod 0600 ~/key
-  - ssh-add ~/key
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
 after_script:
