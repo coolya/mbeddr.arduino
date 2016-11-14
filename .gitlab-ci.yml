@@ -43,10 +43,10 @@ deploy:
   script:
   - mkdir tmp
   - cd tmp
-	- wget https://github.com/aktau/github-release/releases/download/v0.6.2/linux-amd64-github-release.tar.bz2
-	- tar -xjvf linux-amd64-github-release.tar.bz2
-	- mv bin/linux/amd64/github-release /usr/bin/
+  - wget https://github.com/aktau/github-release/releases/download/v0.6.2/linux-amd64-github-release.tar.bz2
+  - tar -xjvf linux-amd64-github-release.tar.bz2
+  - mv bin/linux/amd64/github-release /usr/bin/
   - cd ..
-	- rm -rf tmp/
+  - rm -rf tmp/
   only:
     - release
