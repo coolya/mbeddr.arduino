@@ -200,8 +200,6 @@ task packageArduinoDistribution(dependsOn: 'ant-build-arduino') {
     }
 }
 
-assemble.dependsOn packageArduino, packageArduinoDistribution
-
 publishing {
     repositories {
         maven {
