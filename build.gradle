@@ -243,4 +243,5 @@ ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.ju
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
-check.dependsOn 'ant-build-arduino'
+assemble.dependsOn 'ant-build-arduino'
+check.dependsOn 'ant-run-tests'

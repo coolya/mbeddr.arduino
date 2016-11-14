@@ -29,5 +29,7 @@
       <ant antfile="${mbeddr.arduino.build-file.name}" dir="${mbeddr.arduino.build-file.location}" target="${clean-plugins.task}" />
 	    <ant antfile="${mbeddr.arduino.build-file.name}" dir="${mbeddr.arduino.build-file.location}" target="${clean-generated-code.task}" />
     </target>
+    <target name="run-tests">
+    </target>
 
 </project>
