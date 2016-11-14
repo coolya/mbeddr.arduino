@@ -27,7 +27,11 @@ build:
   script:
     - ./gradlew -g /cache/.gradle clean assemble
   allow_failure: false
-
+  artifacts: 
+    paths:
+    - gradle/build/artifacts/mbeddr-arduino/
+    expire_in: 1 week
+    
 # Use the generated build output to run the tests.
 test:
   stage: test
