@@ -29,6 +29,7 @@ before_script:
   - mkdir -p ~/.ssh
   # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
   - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_ed25519
+  - chmod 0600 ~/.ssh/id_ed25519
   - ssh-add
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
