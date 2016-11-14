@@ -27,13 +27,26 @@ build:
   script:
     - ./gradlew -g /cache/.gradle clean assemble
   allow_failure: false
-  artifacts: 
+  artifacts:
     paths:
     - gradle/build/artifacts/mbeddr-arduino/
     expire_in: 1 week
-    
+
 # Use the generated build output to run the tests.
 test:
   stage: test
   script:
     - ./gradlew -g /cache./gradle check
+
+deploy:
+  stage: deploy
+  script:
+  - mkdir tmp
+  - cd tmp
+	- wget https://github.com/aktau/github-release/releases/download/v0.6.2/linux-amd64-github-release.tar.bz2
+	- tar -xjvf linux-amd64-github-release.tar.bz2
+	- mv bin/linux/amd64/github-release /usr/bin/
+  - cd ..
+	- rm -rf tmp/
+  only:
+    - release
