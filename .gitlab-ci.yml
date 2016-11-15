@@ -55,13 +55,11 @@ deploy:
     # WARNING: Use this only with the Docker executor, if you use it with shell
     # you will overwrite your user's SSH config.
     - mkdir -p ~/.ssh
-    # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
-    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_ed25519
-    - chmod 0600 ~/.ssh/id_ed25519
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - git remote add github https://$GITHUB_TOKEN@github.com/coolya/mbeddr.arduino.git
 
   after_script:
-    - rm ~/.ssh/id_ed25519
+    - git remote remove github
 
   script:
   - mkdir tmp
@@ -72,7 +70,6 @@ deploy:
   - cd ..
   - rm -rf tmp/
   - git tag $VERSION HEAD
-  - git remote add github https://$GITHUB_TOKEN@github.com/coolya/mbeddr.arduino.git
   - git push github HEAD:release
   - git push github $VERSION
   - github-release release -s $GITHUB_TOKEN -u coolya -r mbeddr.arduino -t $VERSION
