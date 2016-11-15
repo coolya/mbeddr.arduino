@@ -72,7 +72,7 @@ deploy:
   - cd ..
   - rm -rf tmp/
   - git tag $VERSION HEAD
-  - git remote add github git@github.com:coolya/mbeddr.arduino.git
+  - git remote add github https://$GITHUB_TOKEN@github.com/coolya/mbeddr.arduino.git
   - git push github HEAD:release
   - git push github $VERSION
   - github-release release -s $GITHUB_TOKEN -u coolya -r mbeddr.arduino -t $VERSION
