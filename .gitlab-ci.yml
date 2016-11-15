@@ -98,4 +98,4 @@ deploy github:
   only:
     - master
   script:
-      - git push github HEAD:release
+      - git push github HEAD:master
