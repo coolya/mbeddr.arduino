@@ -72,6 +72,7 @@ deploy github release:
   - git tag $VERSION HEAD
   - git push github HEAD:release
   - git push github $VERSION
+  - git push $VERSION
   - github-release release -s $GITHUB_TOKEN -u coolya -r mbeddr.arduino -t $VERSION
   - github-release upload -s $GITHUB_TOKEN  -u coolya -r mbeddr.arduino -t $VERSION -f gradle/build/artifacts/mbeddr-arduino/mbeddr-arduino.zip -n mbeddr-arduino.zip
   only:
