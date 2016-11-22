@@ -36,6 +36,13 @@ build:
     - gradle/build/artifacts/mbeddr-arduino/
     expire_in: 1 week
 
+build lib with GCC 4.9:
+  stage: build
+  image: coolya/gcc-avr:4.9
+  script:
+    - cd lib
+    - make
+
 # Use the generated build output to run the tests.
 test:
   stage: test
