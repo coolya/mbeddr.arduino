@@ -525,10 +525,7 @@
       <concept id="1240930444945" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberOperation" flags="ng" index="3HdYuL">
         <reference id="1240930444946" name="member" index="3HdYuM" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept_old" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression_old" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -3807,8 +3804,8 @@
                                         <node concept="2OqwBi" id="EvPvZE4nEP" role="2Oq$k0">
                                           <node concept="1eOMI4" id="EvPvZE4nEQ" role="2Oq$k0">
                                             <node concept="1PxgMI" id="EvPvZE4nER" role="1eOMHV">
-                                              <ref role="1PxNhF" to="koo2:22vbFi$tgwm" resolve="ArduinoPlatform" />
-                                              <node concept="2OqwBi" id="EvPvZE4nES" role="1PxMeX">
+                                              <ref role="1m5ApE" to="koo2:22vbFi$tgwm" resolve="ArduinoPlatform" />
+                                              <node concept="2OqwBi" id="EvPvZE4nES" role="1m5AlR">
                                                 <node concept="37vLTw" id="2GeljgL483N" role="2Oq$k0">
                                                   <ref role="3cqZAo" node="EvPvZE4nED" resolve="bc" />
                                                 </node>
