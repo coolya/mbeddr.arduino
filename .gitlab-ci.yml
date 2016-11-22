@@ -39,6 +39,8 @@ build:
 build lib with GCC 4.9:
   stage: build
   image: coolya/gcc-avr:4.9
+  variables:
+    GIT_STRATEGY: none
   before_script:
     - apt-get install git
   script:
