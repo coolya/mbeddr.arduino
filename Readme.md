@@ -6,7 +6,7 @@
 
 This is a DSL to write programs for the [Arduino][ar] platform. It is based on the [mbeddr][mbddr] project which is an extensible C implementation in [JetBrains MPS][mps].
 
-Currently this project nothing but a playground if offers some really limited support for the Arduino Uno and is likely to change and break stuff so this nothing you want to put you work on right now.
+Currently this project nothing but a playground it offers some really limited support for the Arduino Uno and is likely to change and break stuff so this nothing you want to put you work on right now.
 
 ## Installation
 
