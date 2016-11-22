@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:85ad1dcd-51a2-4011-8682-690adc5a12a8(arduino.samples.Atomic)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="aelz" ref="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" implicit="true" />
+  </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
@@ -24,6 +26,11 @@
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
+    </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
@@ -33,6 +40,7 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
@@ -149,6 +157,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3GEVxB" id="1VFlOLT1Yd0" role="2OODSX">
+      <ref role="3GEb4d" to="aelz:3kpMhm4HRQv" resolve="avr_interrupt" />
     </node>
   </node>
 </model>
