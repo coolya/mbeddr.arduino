@@ -9,7 +9,7 @@ image: java:8
 
 
 variables:
-  VERSION: "0.1.6"
+  VERSION: "0.1.7"
 
 # Make the gradle wrapper executable. This essentially downloads a copy of
 # Gradle to build the project with.
@@ -36,13 +36,24 @@ build:
     - gradle/build/artifacts/mbeddr-arduino/
     expire_in: 1 week
 
+build lib with GCC 4.9:
+  stage: build
+  image: coolya/gcc-avr:4.9
+  artifacts:
+    paths:
+    - lib/build/
+    expire_in: 1 week
+  script:
+    - cd lib
+    - make
+
 # Use the generated build output to run the tests.
 test:
   stage: test
   script:
     - ./gradlew -g /cache./gradle check
 
-deploy:
+deploy github release:
   stage: deploy
   before_script:
     # Install ssh-agent if not already installed, it is required by Docker.
@@ -72,7 +83,31 @@ deploy:
   - git tag $VERSION HEAD
   - git push github HEAD:release
   - git push github $VERSION
+  - git push $VERSION
   - github-release release -s $GITHUB_TOKEN -u coolya -r mbeddr.arduino -t $VERSION
   - github-release upload -s $GITHUB_TOKEN  -u coolya -r mbeddr.arduino -t $VERSION -f gradle/build/artifacts/mbeddr-arduino/mbeddr-arduino.zip -n mbeddr-arduino.zip
   only:
     - release
+
+deploy github:
+  stage: deploy
+  before_script:
+    # Install ssh-agent if not already installed, it is required by Docker.
+    # (change apt-get to yum if you use a CentOS-based image)
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    # Run ssh-agent (inside the build environment)
+    - eval $(ssh-agent -s)
+    # For Docker builds disable host key checking. Be aware that by adding that
+    # you are suspectible to man-in-the-middle attacks.
+    # WARNING: Use this only with the Docker executor, if you use it with shell
+    # you will overwrite your user's SSH config.
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - git remote add github https://$GITHUB_TOKEN@github.com/coolya/mbeddr.arduino.git
+
+  after_script:
+    - git remote remove github
+  only:
+    - master
+  script:
+      - git push github HEAD:master

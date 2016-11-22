@@ -2,7 +2,7 @@
 <model ref="r:e0ee660a-32fe-4b0d-b08e-ab53b362dcbd(mbeddr.arduino.statemachine.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -117,7 +117,7 @@
         <property role="3F0ifm" value="bind" />
       </node>
       <node concept="1iCGBv" id="2NO1T5RzgQV" role="3EZMnx">
-        <ref role="1NtTu8" to="ttha:2NO1T5RzgPG" />
+        <ref role="1NtTu8" to="ttha:2NO1T5RzgPG" resolve="var" />
         <node concept="1sVBvm" id="2NO1T5RzgQW" role="1sWHZn">
           <node concept="1HlG4h" id="2NO1T5RzgR1" role="2wV5jI">
             <node concept="1HfYo3" id="2NO1T5RzgR3" role="1HlULh">
@@ -169,7 +169,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2NO1T5R$iLD" role="3EZMnx">
-        <ref role="1NtTu8" to="ttha:2NO1T5R$isZ" />
+        <ref role="1NtTu8" to="ttha:2NO1T5R$isZ" resolve="event" />
         <node concept="1sVBvm" id="2NO1T5R$iLE" role="1sWHZn">
           <node concept="3F0A7n" id="2NO1T5R$iM5" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -181,7 +181,7 @@
         <property role="3F0ifm" value="to" />
       </node>
       <node concept="1iCGBv" id="2NO1T5R$iNq" role="3EZMnx">
-        <ref role="1NtTu8" to="ttha:2NO1T5RzfCx" />
+        <ref role="1NtTu8" to="ttha:2NO1T5RzfCx" resolve="interrupt" />
         <node concept="1sVBvm" id="2NO1T5R$iNr" role="1sWHZn">
           <node concept="3F0A7n" id="2NO1T5R$iNU" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -199,7 +199,7 @@
         <property role="3F0ifm" value="statemachine-interrupt bindings {" />
       </node>
       <node concept="3F2HdR" id="2NO1T5REUAs" role="3EZMnx">
-        <ref role="1NtTu8" to="ttha:2NO1T5REU$T" />
+        <ref role="1NtTu8" to="ttha:2NO1T5REU$T" resolve="bindings" />
         <node concept="l2Vlx" id="2NO1T5REUAt" role="2czzBx" />
         <node concept="pVoyu" id="2NO1T5REUC0" role="3F10Kt">
           <property role="VOm3f" value="true" />
