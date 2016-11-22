@@ -9,7 +9,7 @@ image: java:8
 
 
 variables:
-  VERSION: "0.1.6"
+  VERSION: "0.1.7"
 
 # Make the gradle wrapper executable. This essentially downloads a copy of
 # Gradle to build the project with.
