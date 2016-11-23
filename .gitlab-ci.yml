@@ -47,6 +47,17 @@ build lib with GCC 4.9:
     - cd lib
     - make
 
+build lib with GCC 5.4:
+  stage: build
+  image: coolya/gcc-avr:5.4
+  artifacts:
+    paths:
+    - lib/build/
+    expire_in: 1 week
+  script:
+    - cd lib
+    - make
+
 # Use the generated build output to run the tests.
 test:
   stage: test
