@@ -24,7 +24,7 @@ if (project.hasProperty('projectVersion')) {
 }
 
 // Dependency versions
-ext.mpsVersion = '3.4.1'
+ext.mpsVersion = '3.4.3'
 ext.mbeddrVersion = '1.0.+'
 ext.iets3Version = '0.1.+'
 
@@ -62,7 +62,7 @@ configurations {
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     mpsArtifacts "com.mbeddr:allScripts:$mbeddrVersion"
-    mpsArtifacts "com.mbeddr:allInOne:$mbeddrVersion"
+    mpsArtifacts "com.mbeddr:mbeddr:$mbeddrVersion"
 }
 
 repositories {
