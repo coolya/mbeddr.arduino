@@ -26,7 +26,6 @@ if (project.hasProperty('projectVersion')) {
 // Dependency versions
 ext.mpsVersion = '3.4.3'
 ext.mbeddrVersion = '1.0.+'
-ext.iets3Version = '0.1.+'
 
 // Default repository credentials
 if (!project.hasProperty('nexusUsername')) {
@@ -99,36 +98,6 @@ task resolveMpsArtifacts(type: Copy) {
     doFirst { delete artifactsDir }
 }
 
-task resolveProjectLibraries {
-    description "Downloads dependencies, unzips them, unzips the zips inside, and puts them into $projectLibrariesDir"
-    dependsOn resolveMpsArtifacts
-    File inputDir = resolveMpsArtifacts.destinationDir
-    File outputDir = projectLibrariesDir
-    inputs.dir inputDir
-    outputs.dir projectLibrariesDir
-
-    doFirst { delete projectLibrariesDir }
-    doLast {
-        fileTree(inputDir).visit new EmptyFileVisitor() {
-            @Override
-            void visitFile(FileVisitDetails f) {
-                def outputName = f.relativePath.getFile(outputDir)
-                if (f.name.endsWith('.zip')) {
-                    copy {
-                        from zipTree(f.file)
-                        into outputName
-                    }
-                } else {
-                    copy {
-                        from f.file
-                        into outputName.parent
-                    }
-                }
-            }
-        }
-    }
-}
-
 task generateLibrariesXml {
     def defaultsFile = file('projectlibraries.properties')
     def overridesFile = file('projectlibraries.overrides.properties')
@@ -172,8 +141,8 @@ task generateLibrariesXml {
 
 task setup {
     // We resolve MPS not for the users to use it but for the distribution packaging script to be able to refer to it.
-    dependsOn resolveMps
-    dependsOn resolveProjectLibraries, generateLibrariesXml
+    dependsOn resolveMps, resolveMpsArtifacts
+    dependsOn generateLibrariesXml
     description 'Set up MPS project libraries'
 }
 

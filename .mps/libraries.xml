@@ -1,21 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectLibraryManager">
-    <option name="libraries">
+<project version='4'>
+  <component name='ProjectLibraryManager'>
+    <option name='libraries'>
       <map>
-        <entry key="mbeddr">
+        <entry key='mbeddr.scripts'>
           <value>
             <Library>
-              <option name="name" value="mbeddr" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+              <option name='name' value='mbeddr.scripts' />
+              <option name='path' value='$PROJECT_DIR$/gradle/build/artifacts/com.mbeddr.allScripts.build' />
             </Library>
           </value>
         </entry>
-        <entry key="sl-all">
+        <entry key='mbeddr.platform'>
           <value>
             <Library>
-              <option name="name" value="sl-all" />
-              <option name="path" value="${mbeddr.github.core.home}/code/plugins" />
+              <option name='name' value='mbeddr.platform' />
+              <option name='path' value='$PROJECT_DIR$/gradle/build/artifacts/com.mbeddr.platform' />
+            </Library>
+          </value>
+        </entry>
+        <entry key='mbeddr'>
+          <value>
+            <Library>
+              <option name='name' value='mbeddr' />
+              <option name='path' value='$PROJECT_DIR$/gradle/build/artifacts/mbeddr' />
             </Library>
           </value>
         </entry>
@@ -23,4 +30,3 @@
     </option>
   </component>
 </project>
-
